@@ -174,7 +174,27 @@ When you first run `swirl`, it presents you with a list of useful commands. You 
 
 ![List of helpful `swirl`commands](../images/lab-01/fig-6-swirl-commands.png){#fig-6}
 
- 
+------------------------------------------------------------------------
+
+# Learn and Practice More (Optional)
+
+1.  Log in to DataCamp with the email you used to join the course account (see instructions on Moodle).
+
+2.  Complete the course **Introduction to R**.
+
+    2.1. In the search bar, type "Introduction to R". Select the *Course* of same name or
+
+    2.2. Click [here](https://app.datacamp.com/learn/courses/free-introduction-to-r) after logging in.
+
+3.  Practice exercises about **Introduction to R**
+
+    2.1. Click on **Learn**.
+
+    2.2. Click on **Practice** in the left side menu.
+
+    2.3. Click on the **R** tag.
+
+    2.4. Look for the **Introduction to R** practice and press **Start**.
 
 ------------------------------------------------------------------------
 
