@@ -158,7 +158,7 @@ swirl()
 ::: {.callout-note collapse="false"}
 ## What does `sink()` do?
 
-The command `sink("my_tutorial.txt")` below will create a TXT file where everything that appears in the console during the tutorial will be written to (NOTE: it has to be issued before the command `swirl()`). You can then use the file to review what you learned in this tutorial without having to run `swilr()` again. To close the TXT file and export it to your computer after finishing the tutorial, see [Step 8](#step-8).
+The command `sink("my_tutorial.txt")` below will create a TXT file where everything that appears in the console during the tutorial will be written to *my_tutorial.txt* (NOTE: it has to be issued before the command `swirl()`). You can then use the file to review what you learned in this tutorial without having to run `swilr()` again. To close the TXT file and export it to your computer after finishing the tutorial, see [Step 8](#step-8).
 :::
 
 ::: {.callout-tip collapse="false"}
@@ -187,7 +187,7 @@ When you first run `swirl`, it presents you with a list of useful commands. You 
 
 ## Step 8 — Export the console output {#step-8}
 
-Once you have finished the tutorial, execute the run the command below in the **Console** to close the *my_tutorial.txt* file you created in [Step 7](#step-7):
+Once you have finished the tutorial, run the command below in the **Console** to close the *my_tutorial.txt* file you created in [Step 7](#step-7):
 
 ``` r
 sink()
