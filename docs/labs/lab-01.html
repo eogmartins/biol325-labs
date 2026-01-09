@@ -155,7 +155,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-4-install-the-swirl-package" id="toc-step-4-install-the-swirl-package" class="nav-link" data-scroll-target="#step-4-install-the-swirl-package">Step 4 — Install the <code>swirl</code> package</a></li>
   <li><a href="#step-5-load-the-swirl-package" id="toc-step-5-load-the-swirl-package" class="nav-link" data-scroll-target="#step-5-load-the-swirl-package">Step 5 — Load the <code>swirl</code> package</a></li>
   <li><a href="#step-6-install-the-lab-exercises" id="toc-step-6-install-the-lab-exercises" class="nav-link" data-scroll-target="#step-6-install-the-lab-exercises">Step 6 — Install the lab exercises</a></li>
-  <li><a href="#step-7-start-swirl" id="toc-step-7-start-swirl" class="nav-link" data-scroll-target="#step-7-start-swirl">Step 7 — Start swirl</a></li>
+  <li><a href="#step-7" id="toc-step-7" class="nav-link" data-scroll-target="#step-7">Step 7 — Start swirl</a></li>
+  <li><a href="#step-8" id="toc-step-8" class="nav-link" data-scroll-target="#step-8">Step 8 — Export the console output</a></li>
   </ul></li>
   <li><a href="#learn-and-practice-more-optional" id="toc-learn-and-practice-more-optional" class="nav-link" data-scroll-target="#learn-and-practice-more-optional">Learn and Practice More (Optional)</a></li>
   <li><a href="#sec-apx-A" id="toc-sec-apx-A" class="nav-link" data-scroll-target="#sec-apx-A">Appendix A — Optional: Installing R and RStudio on your own computer</a>
@@ -201,13 +202,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Launch <a href="https://swirlstats.com/">swirl</a>, an interactive tool that teaches R inside R (and RStudio)</li>
 <li>Understand the basics of using R</li>
 </ul>
-<p>Before we can get going:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Before we can get going:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
 <ul>
 <li>Login to a UNBC computer (or your own laptop if you prefer)</li>
 <li>Open a web browser (Chrome recommended)</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -216,7 +231,7 @@ Posit Cloud vs RStudio on your personal computer
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p><strong>Use Posit Cloud if:</strong></p>
 <ul>
@@ -230,21 +245,7 @@ Posit Cloud vs RStudio on your personal computer
 <li>You expect to use R regularly beyond this course and will exceed Posit Cloud limit of 25 hours / month for free accounts</li>
 <li>You are comfortable installing software and resolving occasional OS-specific issues</li>
 </ul>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Recommended setup
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
+<p><strong>Recommended setup</strong></p>
 <p>We strongly recommend you use <strong>Posit Cloud</strong> (or RStudio on the UNBC computers <strong>when</strong> instructed to do so) during labs so everyone has the same R and RStudio setup. Installing R and RStudio on your own personal computer is <strong>optional</strong>, but can be beneficial if you’re comfortable installing software on your own computer. It’s likely that you will be using R on RStudio throughout your career to analyse data, so eventually you will want to have both on your computer anyway. Installation instructions for R and RStudio are described in <a href="#sec-apx-A">Appendix A</a> at the bottom of this page.</p>
 </div>
 </div>
@@ -337,7 +338,7 @@ Figure&nbsp;5: View of an initial RStudio session on Posit Cloud. Make sure to r
 </figcaption>
 </figure>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -362,7 +363,7 @@ Naming matters
 <h2 class="anchored" data-anchor-id="step-4-install-the-swirl-package">Step 4 — Install the <code>swirl</code> package</h2>
 <p>In the <strong>Console</strong>, run:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"swirl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -381,8 +382,9 @@ Package installation
 </section>
 <section id="step-5-load-the-swirl-package" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-load-the-swirl-package">Step 5 — Load the <code>swirl</code> package</h2>
+<p>In the <strong>Console</strong>, run:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(swirl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -401,14 +403,32 @@ Loading packages
 </section>
 <section id="step-6-install-the-lab-exercises" class="level2">
 <h2 class="anchored" data-anchor-id="step-6-install-the-lab-exercises">Step 6 — Install the lab exercises</h2>
-<p>Run the command below:</p>
+<p>In the <strong>Console</strong>, run:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install_course_github</span>(<span class="st">"eogmartins"</span>, <span class="st">"biol325-swirl-labs"</span>, <span class="at">multi =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="step-7-start-swirl" class="level2">
-<h2 class="anchored" data-anchor-id="step-7-start-swirl">Step 7 — Start swirl</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">swirl</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="step-7" class="level2">
+<h2 class="anchored" data-anchor-id="step-7">Step 7 — Start swirl</h2>
+<p>In the <strong>Console</strong>, run:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sink</span>(<span class="st">"my_tutorial.txt"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">swirl</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What does <code>sink()</code> do?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>The command <code>sink("my_tutorial.txt")</code> below will create a TXT file where everything that appears in the console during the tutorial will be written to (NOTE: it has to be issued before the command <code>swirl()</code>). You can then use the file to review what you learned in this tutorial without having to run <code>swilr()</code> again. To close the TXT file and export it to your computer after finishing the tutorial, see <a href="#step-8">Step 8</a>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -417,7 +437,7 @@ Interacting with <code>swirl</code>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>Every time you start <code>swirl</code>, it will ask your name. Be consistent and always use the same name (e.g., avoid sometimes using your full first name and your nickname at other times - pick one and stick to it) so swirl knows what lessons you already completed.</p>
 </div>
@@ -447,6 +467,19 @@ Figure&nbsp;6: List of helpful <code>swirl</code>commands
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="step-8" class="level2">
+<h2 class="anchored" data-anchor-id="step-8">Step 8 — Export the console output</h2>
+<p>Once you have finished the tutorial, execute the run the command below in the <strong>Console</strong> to close the <em>my_tutorial.txt</em> file you created in <a href="#step-7">Step 7</a>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sink</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then:</p>
+<ul>
+<li>Go to the <strong>Files</strong> tab (located on the bottom right pane of RStudio)</li>
+<li>Select the file <em>my_tutorial.txt</em> by checking the box beside it</li>
+<li>Click on <strong>More</strong> (gear icon)</li>
+<li>Click on <strong>Export</strong></li>
+<li>Rename the file if you want and click <strong>Download</strong> (the file should be saved in your computer’s Downloads folder)</li>
+</ul>
 <hr>
 </section>
 </section>
@@ -457,7 +490,7 @@ Figure&nbsp;6: List of helpful <code>swirl</code>commands
 <li><p>Complete the course <strong>Introduction to R</strong>.</p>
 <p>2.1. In the search bar, type “Introduction to R”. Select the <em>Course</em> of same name or</p>
 <p>2.2. Click <a href="https://app.datacamp.com/learn/courses/free-introduction-to-r">here</a> after logging in.</p></li>
-<li><p>Practice exercises on “Introduction to R”</p>
+<li><p>Practice exercises about <strong>Introduction to R</strong></p>
 <p>2.1. Click on <strong>Learn</strong>.</p>
 <p>2.2. Click on <strong>Practice</strong> in the left side menu.</p>
 <p>2.3. Click on the <strong>R</strong> tag.</p>
