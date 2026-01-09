@@ -25,12 +25,15 @@ The goals of this lab are to introduce you to the basics of using R on RStudio. 
 -   Launch [swirl](https://swirlstats.com/), an interactive tool that teaches R inside R (and RStudio)
 -   Understand the basics of using R
 
-Before we can get going:
+
+::: {.callout-note collapse="false"}
+## Before we can get going:
 
 -   Login to a UNBC computer (or your own laptop if you prefer)
 -   Open a web browser (Chrome recommended)
+:::
 
-::: {.callout-note collapse="false"}
+:::{.callout-important collapse="false"}
 ## Posit Cloud vs RStudio on your personal computer
 
 **Use Posit Cloud if:**
@@ -44,10 +47,8 @@ Before we can get going:
 -   You want to work offline
 -   You expect to use R regularly beyond this course and will exceed Posit Cloud limit of 25 hours / month for free accounts
 -   You are comfortable installing software and resolving occasional OS-specific issues
-:::
 
-::: {.callout-important collapse="false"}
-## Recommended setup
+**Recommended setup**
 
 We strongly recommend you use **Posit Cloud** (or RStudio on the UNBC computers **when** instructed to do so) during labs so everyone has the same R and RStudio setup. Installing R and RStudio on your own personal computer is **optional**, but can be beneficial if you're comfortable installing software on your own computer. It's likely that you will be using R on RStudio throughout your career to analyse data, so eventually you will want to have both on your computer anyway. Installation instructions for R and RStudio are described in [Appendix A](#sec-apx-A) at the bottom of this page.
 :::
@@ -100,7 +101,7 @@ You're now ready to start learning R in this lab!
 
 ![View of an initial RStudio session on Posit Cloud. Make sure to rename the project we will use in this lab as **01 - Introduction to R** by double clicking on Untitled Project (red arrow)](../images/lab-01/fig-5-rename-project.png){#fig-5}
 
-::: {.callout-tip collapse="false"}
+::: {.callout-note collapse="false"}
 ## Naming matters
 
 We will use consistent project names all term to keep your work organized.
@@ -118,7 +119,7 @@ In the **Console**, run:
 install.packages("swirl")
 ```
 
-::: {.callout-tip collapse="false"}
+::: {.callout-note collapse="false"}
 ## Package installation
 
 You only need to go through this package installation step **once** within an RStudio project in Posit Cloud. If you need the same package in another RStudio project in Posit cloud, it will need to be installed in that project. However, if you're using RStudio on your computer, you only need to install a package once and it will be available to be loaded in all projects you create.
@@ -126,11 +127,13 @@ You only need to go through this package installation step **once** within an RS
 
 ## Step 5 — Load the `swirl` package
 
+In the **Console**, run:
+
 ``` r
 library(swirl)
 ```
 
-::: {.callout-tip collapse="false"}
+::: {.callout-note collapse="false"}
 ## Loading packages
 
 All R packages that you install, like `swirl`, have to be loaded with function `library()` every time you start a new RStudio session if you plan on using the package. There is a way to automatically load packages you use often whenever you start RStudio, but we will not show that in the course. Just keep in mind that if you're trying to use a function from a package that you're certain you have already installed, but get an error that the function doesn't exist, it's likely that you forgot to load the package...
@@ -138,17 +141,25 @@ All R packages that you install, like `swirl`, have to be loaded with function `
 
 ## Step 6 — Install the lab exercises
 
-Run the command below:
+In the **Console**, run:
 
 ``` r
 install_course_github("eogmartins", "biol325-swirl-labs", multi = TRUE)
 ```
 
-## Step 7 — Start swirl
+## Step 7 — Start swirl {#step-7}
+
+In the **Console**, run:
 
 ``` r
+sink("my_tutorial.txt")
 swirl()
 ```
+::: {.callout-note collapse="false"}
+## What does `sink()` do?
+
+The command `sink("my_tutorial.txt")` below will create a TXT file where everything that appears in the console during the tutorial will be written to (NOTE: it has to be issued before the command `swirl()`). You can then use the file to review what you learned in this tutorial without having to run `swilr()` again. To close the TXT file and export it to your computer after finishing the tutorial, see [Step 8](#step-8).
+:::
 
 ::: {.callout-tip collapse="false"}
 ## Interacting with `swirl`
@@ -173,6 +184,22 @@ Once you finish a Lesson, swirl will once again show you a list of courses. Sele
 When you first run `swirl`, it presents you with a list of useful commands. You can always see that menu again during the lesson if you execute command `info()` when you're are at the prompt (you will know the prompt is waiting for a command if you see `>` on the far left side of the R console). Below is a screenshot of the list for your reference.
 
 ![List of helpful `swirl`commands](../images/lab-01/fig-6-swirl-commands.png){#fig-6}
+
+## Step 8 — Export the console output {#step-8}
+
+Once you have finished the tutorial, execute the run the command below in the **Console** to close the *my_tutorial.txt* file you created in [Step 7](#step-7):
+
+``` r
+sink()
+```
+
+Then:
+
+-   Go to the **Files** tab (located on the bottom right pane of RStudio)
+-   Select the file *my_tutorial.txt* by checking the box beside it
+-   Click on **More** (gear icon)
+-   Click on **Export**
+-   Rename the file if you want and click **Download** (the file should be saved in your computer's Downloads folder)
 
 ------------------------------------------------------------------------
 
