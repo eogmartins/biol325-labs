@@ -1,0 +1,163 @@
+[
+  {
+    "objectID": "files/lab02/assignment01-rubric.html",
+    "href": "files/lab02/assignment01-rubric.html",
+    "title": "BIOL325 — Lab 02 Assignment Marking Rubric (Total = 12)",
+    "section": "",
+    "text": "2: crab_csv &lt;- read_csv(\"data/crab.csv\") (or equivalent)\n1: imported but path/function issues (e.g., wrong file name but easily fixable)\n0: not imported\n\n\n\n\n2A. Filters missing values correctly (2) - 2: filters out missing size (e.g., !is.na(size)) - 1: filters incorrectly but intent is clear - 0: not attempted\n2B. Creates size_cm correctly (2) - 2: size_cm = size / 10 created in mutate() - 1: conversion attempted but incorrect (e.g., wrong divisor) - 0: not attempted\n2C. Summary table correct structure and stats (4) - 4: groups by site, summarises mean_size_cm and n - 3: correct grouping but one summary missing or named incorrectly - 2: summary attempted but grouping wrong - 1: minimal attempt - 0: not attempted\n\n\n\n4A. Exports summary table correctly (2) - 2: write_csv(crab_summary, \"outputs/crab_summary_by_site.csv\") - 1: exports but wrong file name/location - 0: not attempted\n\n\n\n1: clear comments and readable pipelines (one verb per line) 1: consistent naming + no absolute paths + no setwd()\n0: messy, hard to read, minimal commenting 0: uses setwd() or absolute paths, or overwrites raw data files\n\n\n\n\nIf a student’s code runs with minor typos (e.g., filename case), award partial credit as described.\nPrefer solutions that use tidyverse functions shown in the tutorial (readr, dplyr verbs, write_csv)."
+  },
+  {
+    "objectID": "files/lab02/assignment01-rubric.html#exercise-1-import-the-pie_crab-csv-file-2-marks",
+    "href": "files/lab02/assignment01-rubric.html#exercise-1-import-the-pie_crab-csv-file-2-marks",
+    "title": "BIOL325 — Lab 02 Assignment Marking Rubric (Total = 12)",
+    "section": "",
+    "text": "2: crab_csv &lt;- read_csv(\"data/crab.csv\") (or equivalent)\n1: imported but path/function issues (e.g., wrong file name but easily fixable)\n0: not imported"
+  },
+  {
+    "objectID": "files/lab02/assignment01-rubric.html#exercise-2-wrangle-filter-mutate-summarise-8-marks",
+    "href": "files/lab02/assignment01-rubric.html#exercise-2-wrangle-filter-mutate-summarise-8-marks",
+    "title": "BIOL325 — Lab 02 Assignment Marking Rubric (Total = 12)",
+    "section": "",
+    "text": "2A. Filters missing values correctly (2) - 2: filters out missing size (e.g., !is.na(size)) - 1: filters incorrectly but intent is clear - 0: not attempted\n2B. Creates size_cm correctly (2) - 2: size_cm = size / 10 created in mutate() - 1: conversion attempted but incorrect (e.g., wrong divisor) - 0: not attempted\n2C. Summary table correct structure and stats (4) - 4: groups by site, summarises mean_size_cm and n - 3: correct grouping but one summary missing or named incorrectly - 2: summary attempted but grouping wrong - 1: minimal attempt - 0: not attempted"
+  },
+  {
+    "objectID": "files/lab02/assignment01-rubric.html#exercise-3-export-your-summary-table-2-marks",
+    "href": "files/lab02/assignment01-rubric.html#exercise-3-export-your-summary-table-2-marks",
+    "title": "BIOL325 — Lab 02 Assignment Marking Rubric (Total = 12)",
+    "section": "",
+    "text": "4A. Exports summary table correctly (2) - 2: write_csv(crab_summary, \"outputs/crab_summary_by_site.csv\") - 1: exports but wrong file name/location - 0: not attempted"
+  },
+  {
+    "objectID": "files/lab02/assignment01-rubric.html#coding-practices-2-marks",
+    "href": "files/lab02/assignment01-rubric.html#coding-practices-2-marks",
+    "title": "BIOL325 — Lab 02 Assignment Marking Rubric (Total = 12)",
+    "section": "",
+    "text": "1: clear comments and readable pipelines (one verb per line) 1: consistent naming + no absolute paths + no setwd()\n0: messy, hard to read, minimal commenting 0: uses setwd() or absolute paths, or overwrites raw data files"
+  },
+  {
+    "objectID": "files/lab02/assignment01-rubric.html#notes",
+    "href": "files/lab02/assignment01-rubric.html#notes",
+    "title": "BIOL325 — Lab 02 Assignment Marking Rubric (Total = 12)",
+    "section": "",
+    "text": "If a student’s code runs with minor typos (e.g., filename case), award partial credit as described.\nPrefer solutions that use tidyverse functions shown in the tutorial (readr, dplyr verbs, write_csv)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BIOL 325 — Ecological Analyses",
+    "section": "",
+    "text": "Welcome to the lab website of BIOL 325 — Ecological Analyses at UNBC. This site contains lab materials and instructions."
+  },
+  {
+    "objectID": "index.html#labs",
+    "href": "index.html#labs",
+    "title": "BIOL 325 — Ecological Analyses",
+    "section": "Labs",
+    "text": "Labs\n\nLab 01 — Introduction to R"
+  },
+  {
+    "objectID": "labs/lab02.html",
+    "href": "labs/lab02.html",
+    "title": "Lab 02 — Importing & Wrangling Data in R",
+    "section": "",
+    "text": "The goals of this lab are to introduce you to a workflow you will use all term:\nAfter completing this lab tutorial and assignment, you should be able to:\nEquiped with these skills, you should be comfortable moving from I have a data file to I have a clean data frame I can analyze."
+  },
+  {
+    "objectID": "labs/lab02.html#rscript",
+    "href": "labs/lab02.html#rscript",
+    "title": "Lab 02 — Importing & Wrangling Data in R",
+    "section": "What is an R script?",
+    "text": "What is an R script?\nAn R script is a plain text file ending in .R that contains your code (and comments). Scripts are how we conduct reproducible data analysis tasks because they record every step of your analysis, can be re-run later to reproduce results, and make it easier to debug and collaborate. Learn more about R scripts in Chapter 6 of R4DS.\n\n\n\n\n\n\nBest coding practices\n\n\n\n\n\n\nStart with a header: name, date, purpose\nUse clear object names (e.g., penguins_csv, not df1)\nUse paths relative to the working directory (e.g., data/penguins.csv), never setwd()\nComment why you did something (not just what)\n\nComments can be added by using # before any text. R will ignore anything after #.\n\nUse one tidyverse verb per line in pipelines for readability\nUse spaces between either side of operators and after commas. For example, do this x &lt;- 5 * y + mean(z, na.rm = TRUE) rather than this x&lt;-5*y+mean(z,na.rm=TRUE)\n\nLearn more about good coding practices in Chapter 4 of R4DS."
+  },
+  {
+    "objectID": "labs/lab01.html",
+    "href": "labs/lab01.html",
+    "title": "Lab 01 — Introduction to R",
+    "section": "",
+    "text": "The goals of this lab are to introduce you to the basics of using R on RStudio. By the end of this lab, you will be able to:"
+  },
+  {
+    "objectID": "labs/lab01.html#step-1-create-a-free-posit-cloud-account",
+    "href": "labs/lab01.html#step-1-create-a-free-posit-cloud-account",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step 1 — Create a free Posit Cloud account",
+    "text": "Step 1 — Create a free Posit Cloud account\n\nClick here to open Posit Cloud on your browser.\nIf you do not already have an account:\n\nClick the Get Started button at the center of the main Posit Cloud page or Sign Up on the top right of the page (Figure 1).\nOn the next page, select a Free account (click on the button Learn more under the Free option, NOT Student account) (Figure 2).\nThen, on the next page, click the big Sign Up button (if you selected the Free account option in the previous step you will see cost $0/forever above the Sign Up button) (Figure 3).\nOn the next page, fill up the required information (username, password, first name, and last name), click Sign up, and follow the instructions to activate your account.\n\n\n \n\n\n\n\n\n\nFigure 1: Main Posit Cloud page. Red arrows show where you can click to sign up for an account, whereas blue arrows show where to click to login once you have an acccount\n\n\n\n \n\n\n\n\n\n\nFigure 2: Account options at Posit Cloud. Make sure to select the Free account by clicking at the Learn more button under Free as indicated by the red arrow.\n\n\n\n \n\n\n\n\n\n\nFigure 3: Sign up page for the Free account. After confirming that you picked the Free account by checking that cost is $0/forever click Sign Up as indicated by the red arrow"
+  },
+  {
+    "objectID": "labs/lab01.html#step-2-log-in-to-posit-cloud",
+    "href": "labs/lab01.html#step-2-log-in-to-posit-cloud",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step 2 — Log in to Posit Cloud",
+    "text": "Step 2 — Log in to Posit Cloud\n\nGo to Posit Cloud in your web browser.\nClick Log In (Figure 1).\nEnter your credentials."
+  },
+  {
+    "objectID": "labs/lab01.html#step-3-create-a-new-rstudio-project",
+    "href": "labs/lab01.html#step-3-create-a-new-rstudio-project",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step 3 — Create a new RStudio project",
+    "text": "Step 3 — Create a new RStudio project\n\nAfter logging in, you will see your workspace in Posit Cloud. On the far right of the page, click on New Project (Figure 4).\nThis will open a menu. Now, click on New RStudio Project (Figure 4).\nWait for the RStudio session to launch.\nWhen you see RStudio, double click on Untitled Project (top left) and rename the project to 01 - Introduction to R (Figure 5).\n\nYou’re now ready to start learning R in this lab!\n \n\n\n\n\n\n\nFigure 4: View of the workspace in Posit Cloud. To start a new RStudio project, click on New Project (red arrow) and then on New RStudio Project (blue arrow)\n\n\n\n \n\n\n\n\n\n\nFigure 5: View of an initial RStudio session on Posit Cloud. Make sure to rename the project we will use in this lab as 01 - Introduction to R by double clicking on Untitled Project (red arrow)\n\n\n\n\n\n\n\n\n\nNaming matters\n\n\n\n\n\nWe will use consistent project names all term to keep your work organized."
+  },
+  {
+    "objectID": "labs/lab01.html#step-4-install-the-swirl-package",
+    "href": "labs/lab01.html#step-4-install-the-swirl-package",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step 4 — Install the swirl package",
+    "text": "Step 4 — Install the swirl package\nIn the Console, run:\ninstall.packages(\"swirl\")\n\n\n\n\n\n\nPackage installation\n\n\n\n\n\nYou only need to go through this package installation step once within an RStudio project in Posit Cloud. If you need the same package in another RStudio project in Posit cloud, it will need to be installed in that project. However, if you’re using RStudio on your computer, you only need to install a package once and it will be available to be loaded in all projects you create."
+  },
+  {
+    "objectID": "labs/lab01.html#step-5-load-the-swirl-package",
+    "href": "labs/lab01.html#step-5-load-the-swirl-package",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step 5 — Load the swirl package",
+    "text": "Step 5 — Load the swirl package\nIn the Console, run:\nlibrary(swirl)\n\n\n\n\n\n\nLoading packages\n\n\n\n\n\nAll R packages that you install, like swirl, have to be loaded with function library() every time you start a new RStudio session if you plan on using the package. There is a way to automatically load packages you use often whenever you start RStudio, but we will not show that in the course. Just keep in mind that if you’re trying to use a function from a package that you’re certain you have already installed, but get an error that the function doesn’t exist, it’s likely that you forgot to load the package…"
+  },
+  {
+    "objectID": "labs/lab01.html#step-6-install-the-lab-exercises",
+    "href": "labs/lab01.html#step-6-install-the-lab-exercises",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step 6 — Install the lab exercises",
+    "text": "Step 6 — Install the lab exercises\nIn the Console, run:\ninstall_course_github(\"eogmartins\", \"biol325-swirl-labs\", multi = TRUE)"
+  },
+  {
+    "objectID": "labs/lab01.html#step-7-start-swirl",
+    "href": "labs/lab01.html#step-7-start-swirl",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step 7 — Start swirl",
+    "text": "Step 7 — Start swirl\nIn the Console, run:\nswirl()\n\n\n\n\n\n\nInteracting with swirl\n\n\n\n\n\nEvery time you start swirl, it will ask your name. Be consistent and always use the same name (e.g., avoid sometimes using your full first name and your nickname at other times - pick one and stick to it) so swirl knows what lessons you already completed.\n\n\n\nYou should now see an interactive prompt in the R console guiding you through the lab. Once swirl presents you with a list of courses, type the number of the course associated with 01 - Introduction to R (should be 1) and press Enter/Return. You will then be presented with a list of lessons in the course that you must go through (select by typing the number of the lesson in the R console and pressing Enter/Return) in the following order:\n\nBasic Building Blocks\nWorkspace and Files\nSequences of Numbers\nVectors\nMissing Values\nSubsetting Vectors\nMatrices and Data Frames\nLooking at Data\nBase Graphics\n\nOnce you finish a Lesson, swirl will once again show you a list of courses. Select 01 - Introduction to R and then the next lesson in the list that appears. Then rinse and repeat until you complete all nine lessons in this lab.\nWhen you first run swirl, it presents you with a list of useful commands. You can always see that menu again during the lesson if you execute command info() when you’re are at the prompt (you will know the prompt is waiting for a command if you see &gt; on the far left side of the R console). Below is a screenshot of the list for your reference.\n\n\n\n\n\n\nFigure 6: List of helpful swirlcommands"
+  },
+  {
+    "objectID": "labs/lab01.html#step-a1-install-r",
+    "href": "labs/lab01.html#step-a1-install-r",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step A1 — Install R",
+    "text": "Step A1 — Install R\n\nGo to the Comprehensive R Archive Network (CRAN).\nChoose your operating system (Windows, macOS, or Linux).\n\n\nNOTE: If you have an older Mac running on Intel processors, you will need the legacy version of R (latest version is 4.2.3)\n\n\nDownload and install the latest version of R using the default settings."
+  },
+  {
+    "objectID": "labs/lab01.html#step-a2-install-rstudio",
+    "href": "labs/lab01.html#step-a2-install-rstudio",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step A2 — Install RStudio",
+    "text": "Step A2 — Install RStudio\n\nGo to the RStudio Desktop download page.\nDownload the free version of RStudio Desktop compatible with your OS.\nInstall it using the default settings."
+  },
+  {
+    "objectID": "labs/lab01.html#step-a3-create-a-project-for-this-lab",
+    "href": "labs/lab01.html#step-a3-create-a-project-for-this-lab",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step A3 — Create a project for this lab",
+    "text": "Step A3 — Create a project for this lab\n\nOpen RStudio on your computer.\nSelect File → New Project.\nChoose New Directory → New Project.\nName the project: 01 - Introduction to R\nChoose a location on your computer where you will keep BIOL 325 course work.\nClick Create Project."
+  },
+  {
+    "objectID": "labs/lab01.html#step-a4-complete-the-same-lab-steps-locally",
+    "href": "labs/lab01.html#step-a4-complete-the-same-lab-steps-locally",
+    "title": "Lab 01 — Introduction to R",
+    "section": "Step A4 — Complete the same lab steps locally",
+    "text": "Step A4 — Complete the same lab steps locally\nFollow the same instructions as described above in Step 4 — Install the swirl package\nAt this point, everything should be identical to using Posit Cloud."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]

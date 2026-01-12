@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BIOL 325 — Ecological Analyses – Lab 01 — Introduction to R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/unbc_logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">BIOL 325 — Ecological Analyses</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Labs</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#setup-instructions-for-posit-cloud" id="toc-setup-instructions-for-posit-cloud" class="nav-link active" data-scroll-target="#setup-instructions-for-posit-cloud">Setup instructions for Posit Cloud</a>
+  <ul class="collapse">
+  <li><a href="#step-1-create-a-free-posit-cloud-account" id="toc-step-1-create-a-free-posit-cloud-account" class="nav-link" data-scroll-target="#step-1-create-a-free-posit-cloud-account">Step 1 — Create a free Posit Cloud account</a></li>
+  <li><a href="#step-2-log-in-to-posit-cloud" id="toc-step-2-log-in-to-posit-cloud" class="nav-link" data-scroll-target="#step-2-log-in-to-posit-cloud">Step 2 — Log in to Posit Cloud</a></li>
+  <li><a href="#step-3-create-a-new-rstudio-project" id="toc-step-3-create-a-new-rstudio-project" class="nav-link" data-scroll-target="#step-3-create-a-new-rstudio-project">Step 3 — Create a new RStudio project</a></li>
+  </ul></li>
+  <li><a href="#sec-swirl" id="toc-sec-swirl" class="nav-link" data-scroll-target="#sec-swirl">Inside RStudio: install and start swirl</a>
+  <ul class="collapse">
+  <li><a href="#step-4-install-the-swirl-package" id="toc-step-4-install-the-swirl-package" class="nav-link" data-scroll-target="#step-4-install-the-swirl-package">Step 4 — Install the <code>swirl</code> package</a></li>
+  <li><a href="#step-5-load-the-swirl-package" id="toc-step-5-load-the-swirl-package" class="nav-link" data-scroll-target="#step-5-load-the-swirl-package">Step 5 — Load the <code>swirl</code> package</a></li>
+  <li><a href="#step-6-install-the-lab-exercises" id="toc-step-6-install-the-lab-exercises" class="nav-link" data-scroll-target="#step-6-install-the-lab-exercises">Step 6 — Install the lab exercises</a></li>
+  <li><a href="#step-7-start-swirl" id="toc-step-7-start-swirl" class="nav-link" data-scroll-target="#step-7-start-swirl">Step 7 — Start swirl</a></li>
+  </ul></li>
+  <li><a href="#cheatsheets" id="toc-cheatsheets" class="nav-link" data-scroll-target="#cheatsheets">Cheatsheets</a></li>
+  <li><a href="#learn-and-practice-more-optional" id="toc-learn-and-practice-more-optional" class="nav-link" data-scroll-target="#learn-and-practice-more-optional">Learn and Practice More (Optional)</a></li>
+  <li><a href="#sec-apx-A" id="toc-sec-apx-A" class="nav-link" data-scroll-target="#sec-apx-A">Appendix A — Installing R and RStudio on your own computer</a>
+  <ul class="collapse">
+  <li><a href="#step-a1-install-r" id="toc-step-a1-install-r" class="nav-link" data-scroll-target="#step-a1-install-r">Step A1 — Install R</a></li>
+  <li><a href="#step-a2-install-rstudio" id="toc-step-a2-install-rstudio" class="nav-link" data-scroll-target="#step-a2-install-rstudio">Step A2 — Install RStudio</a></li>
+  <li><a href="#step-a3-create-a-project-for-this-lab" id="toc-step-a3-create-a-project-for-this-lab" class="nav-link" data-scroll-target="#step-a3-create-a-project-for-this-lab">Step A3 — Create a project for this lab</a></li>
+  <li><a href="#step-a4-complete-the-same-lab-steps-locally" id="toc-step-a4-complete-the-same-lab-steps-locally" class="nav-link" data-scroll-target="#step-a4-complete-the-same-lab-steps-locally">Step A4 — Complete the same lab steps locally</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 01 — Introduction to R</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The goals of this lab are to introduce you to the basics of using R on RStudio. By the end of this lab, you will be able to:</p>
+<ul>
+<li>Use R via RStudio on <a href="https://posit.cloud/">Posit Cloud</a> or your own computer (optional)</li>
+<li>Create an RStudio project and install R packages</li>
+<li>Launch <a href="https://swirlstats.com/">swirl</a>, an interactive tool that teaches R inside R (and RStudio)</li>
+<li>Understand the basics of using R</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Before we can get going
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Login to a UNBC computer (or your own laptop if you prefer)</li>
+<li>Open a web browser (Chrome recommended)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Posit Cloud vs RStudio on your personal computer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Use Posit Cloud if:</strong></p>
+<ul>
+<li>You want the <em>fastest</em> setup with minimal troubleshooting</li>
+<li>You are using a UNBC computer, which requires admin permissions for installing packages</li>
+<li>You want an identical setup to what we will demonstrate in class</li>
+</ul>
+<p><strong>Install R + RStudio on your computer if:</strong></p>
+<ul>
+<li>You want to work offline</li>
+<li>You expect to use R regularly beyond this course and will exceed Posit Cloud limit of 25 hours / month for free accounts</li>
+<li>You are comfortable installing software and resolving occasional OS-specific issues</li>
+</ul>
+<p><strong>Recommended setup</strong></p>
+<p>We strongly recommend you use <strong>Posit Cloud</strong> (or RStudio on the UNBC computers <strong>when</strong> instructed to do so) during labs so everyone has the same R and RStudio setup. Installing R and RStudio on your own personal computer is <strong>optional</strong>, but can be beneficial if you’re comfortable installing software on your own computer. It’s likely that you will be using R on RStudio throughout your career to analyse data, so eventually you will want to have both on your computer anyway. Installation instructions for R and RStudio are described in <a href="#sec-apx-A">Appendix A</a> at the bottom of this page.</p>
+</div>
+</div>
+</div>
+<section id="setup-instructions-for-posit-cloud" class="level1">
+<h1>Setup instructions for Posit Cloud</h1>
+<section id="step-1-create-a-free-posit-cloud-account" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-create-a-free-posit-cloud-account">Step 1 — Create a free Posit Cloud account</h2>
+<ol type="1">
+<li>Click <a href="https://posit.cloud/">here</a> to open <strong>Posit Cloud</strong> on your browser.</li>
+<li>If you do <strong>not</strong> already have an account:
+<ul>
+<li>Click the <strong>Get Started</strong> button at the center of the main Posit Cloud page or <strong>Sign Up</strong> on the top right of the page (<a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a>).</li>
+<li>On the next page, select a <strong>Free</strong> account (click on the button <em>Learn more</em> under the <strong>Free</strong> option, <strong>NOT</strong> Student account) (<a href="#fig-2" class="quarto-xref">Figure&nbsp;2</a>).</li>
+<li>Then, on the next page, click the big <em>Sign Up</em> button (if you selected the <strong>Free</strong> account option in the previous step you will see cost <strong>$0/forever</strong> above the <strong>Sign Up</strong> button) (<a href="#fig-3" class="quarto-xref">Figure&nbsp;3</a>).</li>
+<li>On the next page, fill up the required information (username, password, first name, and last name), click <strong>Sign up</strong>, and follow the instructions to activate your account.</li>
+</ul></li>
+</ol>
+<p>&nbsp;</p>
+<div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/lab-01/fig-1-posit-signup-login.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Main Posit Cloud page. Red arrows show where you can click to sign up for an account, whereas blue arrows show where to click to login once you have an acccount
+</figcaption>
+</figure>
+</div>
+<p>&nbsp;</p>
+<div id="fig-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/lab-01/fig-2-posit-account-options.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Account options at Posit Cloud. Make sure to select the <strong>Free</strong> account by clicking at the <strong>Learn more</strong> button under Free as indicated by the red arrow.
+</figcaption>
+</figure>
+</div>
+<p>&nbsp;</p>
+<div id="fig-3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/lab-01/fig-3-posit-signup-free.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Sign up page for the <strong>Free</strong> account. After confirming that you picked the <strong>Free</strong> account by checking that cost is <strong>$0/forever</strong> click <strong>Sign Up</strong> as indicated by the red arrow
+</figcaption>
+</figure>
+</div>
+<p>&nbsp;</p>
+</section>
+<section id="step-2-log-in-to-posit-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-log-in-to-posit-cloud">Step 2 — Log in to Posit Cloud</h2>
+<ol type="1">
+<li>Go to <a href="https://posit.cloud/">Posit Cloud</a> in your web browser.</li>
+<li>Click <strong>Log In</strong> (<a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a>).</li>
+<li>Enter your credentials.</li>
+</ol>
+</section>
+<section id="step-3-create-a-new-rstudio-project" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-create-a-new-rstudio-project">Step 3 — Create a new RStudio project</h2>
+<ol type="1">
+<li>After logging in, you will see your workspace in Posit Cloud. On the far right of the page, click on <strong>New Project</strong> (<a href="#fig-4" class="quarto-xref">Figure&nbsp;4</a>).</li>
+<li>This will open a menu. Now, click on <strong>New RStudio Project</strong> (<a href="#fig-4" class="quarto-xref">Figure&nbsp;4</a>).</li>
+<li>Wait for the RStudio session to launch.</li>
+<li>When you see RStudio, double click on Untitled Project (top left) and rename the project to <strong>01 - Introduction to R</strong> (<a href="#fig-5" class="quarto-xref">Figure&nbsp;5</a>).</li>
+</ol>
+<p>You’re now ready to start learning R in this lab!</p>
+<p>&nbsp;</p>
+<div id="fig-4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/lab-01/fig-4-create-new-project.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: View of the workspace in Posit Cloud. To start a new RStudio project, click on <strong>New Project</strong> (red arrow) and then on <strong>New RStudio Project</strong> (blue arrow)
+</figcaption>
+</figure>
+</div>
+<p>&nbsp;</p>
+<div id="fig-5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/lab-01/fig-5-rename-project.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: View of an initial RStudio session on Posit Cloud. Make sure to rename the project we will use in this lab as <strong>01 - Introduction to R</strong> by double clicking on Untitled Project (red arrow)
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Naming matters
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>We will use consistent project names all term to keep your work organized.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="sec-swirl" class="level1">
+<h1>Inside RStudio: install and start swirl</h1>
+<section id="step-4-install-the-swirl-package" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-install-the-swirl-package">Step 4 — Install the <code>swirl</code> package</h2>
+<p>In the <strong>Console</strong>, run:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"swirl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Package installation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>You only need to go through this package installation step <strong>once</strong> within an RStudio project in Posit Cloud. If you need the same package in another RStudio project in Posit cloud, it will need to be installed in that project. However, if you’re using RStudio on your computer, you only need to install a package once and it will be available to be loaded in all projects you create.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="step-5-load-the-swirl-package" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-load-the-swirl-package">Step 5 — Load the <code>swirl</code> package</h2>
+<p>In the <strong>Console</strong>, run:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(swirl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Loading packages
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>All R packages that you install, like <code>swirl</code>, have to be loaded with function <code>library()</code> every time you start a new RStudio session if you plan on using the package. There is a way to automatically load packages you use often whenever you start RStudio, but we will not show that in the course. Just keep in mind that if you’re trying to use a function from a package that you’re certain you have already installed, but get an error that the function doesn’t exist, it’s likely that you forgot to load the package…</p>
+</div>
+</div>
+</div>
+</section>
+<section id="step-6-install-the-lab-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-install-the-lab-exercises">Step 6 — Install the lab exercises</h2>
+<p>In the <strong>Console</strong>, run:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install_course_github</span>(<span class="st">"eogmartins"</span>, <span class="st">"biol325-swirl-labs"</span>, <span class="at">multi =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-7-start-swirl" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-start-swirl">Step 7 — Start swirl</h2>
+<p>In the <strong>Console</strong>, run:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">swirl</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Interacting with <code>swirl</code>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Every time you start <code>swirl</code>, it will ask your name. Be consistent and always use the same name (e.g., avoid sometimes using your full first name and your nickname at other times - pick one and stick to it) so swirl knows what lessons you already completed.</p>
+</div>
+</div>
+</div>
+<p>You should now see an interactive prompt in the R console guiding you through the lab. Once <code>swirl</code> presents you with a list of courses, type the number of the course associated with <strong>01 - Introduction to R</strong> (should be 1) and press Enter/Return. You will then be presented with a list of lessons in the course that you must go through (select by typing the number of the lesson in the R console and pressing Enter/Return) in the following order:</p>
+<ol type="1">
+<li>Basic Building Blocks</li>
+<li>Workspace and Files</li>
+<li>Sequences of Numbers</li>
+<li>Vectors</li>
+<li>Missing Values</li>
+<li>Subsetting Vectors</li>
+<li>Matrices and Data Frames</li>
+<li>Looking at Data</li>
+<li>Base Graphics</li>
+</ol>
+<p>Once you finish a Lesson, swirl will once again show you a list of courses. Select <strong>01 - Introduction to R</strong> and then the next lesson in the list that appears. Then rinse and repeat until you complete all nine lessons in this lab.</p>
+<p>When you first run <code>swirl</code>, it presents you with a list of useful commands. You can always see that menu again during the lesson if you execute command <code>info()</code> when you’re are at the prompt (you will know the prompt is waiting for a command if you see <code>&gt;</code> on the far left side of the R console). Below is a screenshot of the list for your reference.</p>
+<div id="fig-6" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/lab-01/fig-6-swirl-commands.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: List of helpful <code>swirl</code>commands
+</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="cheatsheets" class="level1">
+<h1>Cheatsheets</h1>
+<ul>
+<li>RStudio IDE: <a href="https://rstudio.github.io/cheatsheets/html/rstudio-ide.html" class="uri">https://rstudio.github.io/cheatsheets/html/rstudio-ide.html</a></li>
+</ul>
+<hr>
+</section>
+<section id="learn-and-practice-more-optional" class="level1">
+<h1>Learn and Practice More (Optional)</h1>
+<ol type="1">
+<li><p>Log in to DataCamp with the email you used to join the course account (see instructions on Moodle).</p></li>
+<li><p>Complete the course <strong>Introduction to R</strong>. 2.1. In the search bar, type “Introduction to R”. Select the <em>Course</em> of same name or 2.2. Click <a href="https://app.datacamp.com/learn/courses/free-introduction-to-r">here</a> after logging in.</p></li>
+<li><p>Practice exercises about <strong>Introduction to R</strong> 2.1. Click on <strong>Learn</strong>. 2.2. Click on <strong>Practice</strong> in the left side menu. 2.3. Click on the <strong>R</strong> tag. 2.4. Look for the <strong>Introduction to R</strong> practice and press <strong>Start</strong>.</p></li>
+</ol>
+<hr>
+</section>
+<section id="sec-apx-A" class="level1">
+<h1>Appendix A — Installing R and RStudio on your own computer</h1>
+<section id="step-a1-install-r" class="level2">
+<h2 class="anchored" data-anchor-id="step-a1-install-r">Step A1 — Install R</h2>
+<ol type="1">
+<li>Go to the <a href="https://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a>.</li>
+<li>Choose your operating system (Windows, macOS, or Linux).</li>
+</ol>
+<ul>
+<li>NOTE: If you have an older Mac running on Intel processors, you will need the legacy version of R (latest version is 4.2.3)</li>
+</ul>
+<ol start="3" type="1">
+<li>Download and install the latest version of R using the default settings.</li>
+</ol>
+</section>
+<section id="step-a2-install-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="step-a2-install-rstudio">Step A2 — Install RStudio</h2>
+<ol type="1">
+<li>Go to the <a href="https://posit.co/download/rstudio-desktop/">RStudio Desktop</a> download page.</li>
+<li>Download the <strong>free</strong> version of RStudio Desktop compatible with your OS.</li>
+<li>Install it using the default settings.</li>
+</ol>
+</section>
+<section id="step-a3-create-a-project-for-this-lab" class="level2">
+<h2 class="anchored" data-anchor-id="step-a3-create-a-project-for-this-lab">Step A3 — Create a project for this lab</h2>
+<ol type="1">
+<li>Open <strong>RStudio</strong> on your computer.</li>
+<li>Select <em>File → New Project</em>.</li>
+<li>Choose <em>New Directory → New Project</em>.</li>
+<li>Name the project: <strong>01 - Introduction to R</strong></li>
+<li>Choose a location on your computer where you will keep BIOL 325 course work.</li>
+<li>Click <em>Create Project</em>.</li>
+</ol>
+</section>
+<section id="step-a4-complete-the-same-lab-steps-locally" class="level2">
+<h2 class="anchored" data-anchor-id="step-a4-complete-the-same-lab-steps-locally">Step A4 — Complete the same lab steps locally</h2>
+<p>Follow the same instructions as described above in <a href="#sec-swirl">Step 4 — Install the <code>swirl</code> package</a></p>
+<p>At this point, everything should be identical to using Posit Cloud.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
