@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+
+/* Bootstrap theme variable overrides */
+$primary:   #035642;  // main accent (links, buttons, active nav)
+$secondary: #6c757d;
+$success:   #2e7d32;
+$info:      #0277bd;
+$warning:   #f9a825;
+$danger:    #c62828;
+
+$body-bg:    #ffffff;
+$body-color: #212529;
+
+$link-color: $primary;
+$link-hover-color: darken($primary, 10%);
+
+$callout-color-note: #0277bd;
+
+/* If your navbar is dark (Journal often is), these help */
+$navbar-dark-bg: $primary;
+$navbar-dark-color: rgba(255, 255, 255, 0.85);
+$navbar-dark-hover-color: #ffffff;
+
+/*-- scss:rules --*/
+
+/* Optional small overrides that are easier as rules */
+.navbar a.nav-link.active {
+  font-weight: 600;
+}

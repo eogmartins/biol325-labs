@@ -1,0 +1,11 @@
+---
+title: ""
+author: "Eduardo Martins and Avery Dextrase"
+author-title: "Instructors"
+---
+
+Welcome to the lab website of **BIOL 325 — Ecological Analyses** at UNBC. This site contains lab materials and instructions.
+
+## Labs
+
+-   [Lab 01 — Introduction to R](labs/lab01.qmd)

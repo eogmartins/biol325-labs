@@ -1,0 +1,17 @@
+Dataset: Palmer Penguins (subset)
+
+Source: palmerpenguins dataset (Gorman, Williams & Fraser 2014; packaged by 
+Horst/Hill/Gorman) 
+
+Note: This teaching file is a subset of the full dataset (rows 1–131).
+
+Variables:
+- rowid: Row identifier (integer)
+- species: Penguin species (Adelie, Chinstrap, Gentoo) [subset contains Adelie]
+- island: Island in Palmer Archipelago where sampling occurred (Biscoe, Dream, Torgersen)
+- bill_length_mm: Bill length (mm)
+- bill_depth_mm: Bill depth (mm)
+- flipper_length_mm: Flipper length (mm)
+- body_mass_g: Body mass (g)
+- sex: Sex (male/female); missing values present
+- year: Sampling year

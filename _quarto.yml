@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - images
+    - files
+
+execute:
+  dir: project
+
+website:
+  title: "BIOL 325 — Ecological Analyses"
+  navbar:
+    logo: images/unbc_logo.png
+    left:
+      - href: index.qmd
+        text: Labs
+
+format:
+  html:
+    theme: [journal, theme.scss]
+    css: styles.css
+    toc: false

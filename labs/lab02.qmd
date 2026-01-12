@@ -1,0 +1,212 @@
+---
+title: "Lab 02 — Importing & Wrangling Data in R"
+title-block-banner: false
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-title: "Contents"
+    toc-depth: 3
+    toc-float: true
+    number-sections: false
+    code-copy: true
+    code-link: true
+    link-external-newwindow: true
+execute:
+  echo: true
+  warning: false
+  message: true
+---
+
+The goals of this lab are to introduce you to a workflow you will use all term: 
+
+> Import → Inspect → Wrangle Data (see also [Fig. 1 of R4DS](https://r4ds.hadley.nz/whole-game.html#fig-ds-whole-game)).
+
+After completing this lab tutorial and assignment, you should be able to:
+
+- Import ecological data from common file types (.csv, .txt, .xlsx)
+- Inspect data quickly to catch problems early (names, missing values, column types)
+- Wrangle data using tidyverse verbs/functions
+- Explain the difference between *long* and *wide* data formats and reshape data between these formats
+- Write a clean, commented, reproducible R script that someone else can run
+
+Equiped with these skills, you should be comfortable moving from *I have a data file* to *I have a clean data frame I can analyze.*
+
+------------------------------------------------------------------------
+
+# What is the tidyverse?
+
+The [**tidyverse**](https://tidyverse.org/) is a collection of R packages designed for data science. Its packages share an underlying *design philosophy*, a common *grammar*, and consistent *data structures*, so they work together smoothly. It includes packages you’ll use constantly in ecology, such as:
+
+- **readr** (import comma or tab delimited text files)
+- **readxl** (import Excel files)
+- **dplyr** (wrangle data with consistent “verbs”)
+- **tidyr** (reshape between long and wide formats)
+- **ggplot2** (make data visualizations)
+
+------------------------------------------------------------------------
+
+# Lab tutorial
+
+The tutorial for this lab was prepared using the package [learnr](https://rstudio.github.io/learnr/). It turns R Markdown (predecessor of Quarto that you will learn about in this course) into interactive tutorials. To run this lab tutorial:
+
+1. Create a new project in Posit Cloud called **learnr Labs**
+2. First, install package **remotes** (used to install packages from GitHub) by running the command below in the **Console**
+
+```r
+install.packages("remotes")
+```
+
+3. Second, install the **gradethis** package (it's used to auto check your responses to tutorial exercises) by running the command below in the **Console**
+
+```r
+remotes::install_github("rstudio/gradethis")
+```
+
+4. Lastly, install the **biol325labs** package (it has learnr tutorials for our labs) by running the command below in the **Console**
+
+```r
+remotes::install_github("eogmartins/biol325labs")
+```
+
+5. After installations are complete (it can take several minutes), load the **biol325labs** package by running the command below in the **Console**
+
+```r
+library(biol325labs)
+```
+
+6. Finally, start this lab tutorial by running the following command in the **Console**
+
+```r
+learnr::run_tutorial("lab02", package = "biol325labs")
+```
+
+::: {.callout-tip collapse="false"}
+## How to work through the tutorial effectively
+- Read explanations before each task indicated by **Your Turn**. If anything is unclear, ask us questions.
+- If you get stuck:
+  - Click at **Hints** (sometimes there will be more than one hint in an exercise and you will have to click on **Next Hint** to reveal subsequent hints)
+  - Check function documentation links in the tutorial (each function mentioned in the tutorial is linked to its help page, so just hover the mouse over the function name and click on it)
+- Test your answers with **Run Code** and use **Submit Answer** to check if your code is what we expect.
+:::
+
+::: {.callout-note collapse="false"}
+## Data dictonary for the tutorial data set
+
+**Dataset**: Palmer Penguins (subset)
+
+**Source**: palmerpenguins dataset (Gorman, Williams & Fraser 2014; packaged by 
+Horst/Hill/Gorman) 
+
+**Study system:** Penguins sampled at Palmer Basin in the Antarctic Peninsula.
+
+**Study focus**: Biological characteristics of penguins.
+
+**Note**: This teaching file is a subset of the full dataset (rows 1–131).
+
+**Variables:**
+
+- rowid: Row identifier (integer)
+- species: Penguin species (Adelie, Chinstrap, Gentoo) [subset contains Adelie]
+- island: Island in Palmer Archipelago where sampling occurred (Biscoe, Dream, Torgersen)
+- bill_length_mm: Bill length (mm)
+- bill_depth_mm: Bill depth (mm)
+- flipper_length_mm: Flipper length (mm)
+- body_mass_g: Body mass (g)
+- sex: Sex (male/female); missing values present
+- year: Sampling year
+:::
+
+------------------------------------------------------------------------
+
+# Assignment # 1
+
+After you complete the tutorial, you will be required to submit an assignment that demonstrates you understand how to use some of the functions that were covered in the tutorial. The assignment must be completed and submitted as an [R Script](#rscript). The assignment must be submitted via Moodle. 
+
+1. Download the template R script file for the assignment: <a href="../files/lab02/assignment01.R" download>assignment01.R</a>
+2. In Posit Cloud, create a new project and name it **Assignments**
+3. Install package **tidyverse** by running the command below in the **Console**
+
+```r
+install.packages("tidyverse")
+```
+4. In the **Files** tab (located in the bottom right panel of RStudio), click on **Import** and then **Choose File**. Navigate to where the assignment file was downloaded to in your computer, select it, and click Open or OK.
+
+5. After upload, click on the assignment file name in the **Files** tab. An R script file will open in the Sources panel of RStudio. Follow the instructions in the R script.
+
+::: {.callout-note collapse="false"}
+## Data dictonary for the assignment data set
+
+**Dataset**: Pie Crab (Fiddler crab morphology and environment)
+
+**Source**: U.S. Long Term Ecological Research (LTER) Network; distributed for 
+teaching via the lterdatasampler R package
+
+**Study system:** Fiddler crabs sampled at salt marsh sites associated with the Plum Island Ecosystems (PIE) LTER, USA.
+
+**Study focus:** Variation in crab body size in relation to environmental conditions across marsh sites during summer 2016.
+
+**Variables:**
+
+- site: Salt marsh sampling site identifier (character)
+- latitude: Latitude of the sampling site (decimal degrees)
+- longitude: Longitude of the sampling site (decimal degrees)
+- date: Date the individual crab was sampled (YYYY-MM-DD)
+- time: Time of sampling (local time; HH:MM)
+- air_temp: Air temperature at the time of sampling (°C)
+- water_temp: Water temperature at the time of sampling (°C)
+- size: Crab body size (carapace width, mm); missing values present
+:::
+
+------------------------------------------------------------------------
+
+## What is an R script? {#rscript}
+
+An **R script** is a plain text file ending in `.R` that contains your code (and comments). Scripts are how we conduct reproducible data analysis tasks because they record every step of your analysis, can be re-run later to reproduce results, and make it easier to debug and collaborate. Learn more about R scripts in [Chapter 6](https://r4ds.hadley.nz/workflow-scripts.html) of R4DS.
+
+::: {.callout-tip collapse="false"}
+## Best coding practices
+
+- Start with a header: name, date, purpose
+- Use clear object names (e.g., `penguins_csv`, not `df1`)
+- Use paths relative to the working directory (e.g., `data/penguins.csv`), never `setwd()`
+- Comment *why* you did something (not just what)
+  - Comments can be added by using # before any text. R will ignore anything after #.
+- Use one tidyverse verb per line in pipelines for readability
+- Use spaces between either side of operators and after commas. For example, do this ```x <- 5 * y + mean(z, na.rm = TRUE)``` rather than this ```x<-5*y+mean(z,na.rm=TRUE)```
+
+Learn more about good coding practices in [Chapter 4](https://r4ds.hadley.nz/workflow-style.html) of R4DS.
+:::
+
+------------------------------------------------------------------------
+
+# Cheat sheets
+- Data import: <https://rstudio.github.io/cheatsheets/html/data-import.html>
+
+- Data transformation (dplyr): <https://rstudio.github.io/cheatsheets/html/data-transformation.html>
+
+- Data tidying (tidyr): <https://rstudio.github.io/cheatsheets/html/tidyr.html>
+
+- RStudio IDE: <https://rstudio.github.io/cheatsheets/html/rstudio-ide.htm>
+
+------------------------------------------------------------------------
+
+# Learn and Practice More (Optional)
+
+1. Log in to DataCamp with the email you used to join the course account (see instructions on Moodle).
+2. Complete 
+    
+    2.1. Chapters 2 and 3 of the course [**Introduction to Importing Data in R**](https://app.datacamp.com/learn/courses/introduction-to-importing-data-in-r)
+    
+    2.2.  Course [**Data Manipulation with dplyr**](https://app.datacamp.com/learn/courses/data-manipulation-with-dplyr)
+3.  Practice exercises on these courses
+  
+    3.1. Click on **Learn**.
+    
+    3.2. Click on **Practice** in the left side menu.
+    
+    3.3. Click on the **R** tag.
+    
+    3.4. Look for the practices of the same name as the courses above and press **Start**.
+
+

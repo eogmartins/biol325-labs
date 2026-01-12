@@ -1,0 +1,235 @@
+---
+title: "Lab 01 — Introduction to R"
+title-block-banner: false
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-title: "Contents"
+    toc-depth: 3
+    toc-float: true
+    number-sections: false
+    code-copy: true
+    code-link: true
+    link-external-newwindow: true
+execute:
+  echo: true
+  warning: false
+  message: true
+---
+
+The goals of this lab are to introduce you to the basics of using R on RStudio. By the end of this lab, you will be able to:
+
+-   Use R via RStudio on [Posit Cloud](https://posit.cloud/) or your own computer (optional)
+-   Create an RStudio project and install R packages
+-   Launch [swirl](https://swirlstats.com/), an interactive tool that teaches R inside R (and RStudio)
+-   Understand the basics of using R
+
+
+::: {.callout-note collapse="false"}
+## Before we can get going
+
+-   Login to a UNBC computer (or your own laptop if you prefer)
+-   Open a web browser (Chrome recommended)
+:::
+
+:::{.callout-important collapse="false"}
+## Posit Cloud vs RStudio on your personal computer
+
+**Use Posit Cloud if:**
+
+-   You want the *fastest* setup with minimal troubleshooting
+-   You are using a UNBC computer, which requires admin permissions for installing packages
+-   You want an identical setup to what we will demonstrate in class
+
+**Install R + RStudio on your computer if:**
+
+-   You want to work offline
+-   You expect to use R regularly beyond this course and will exceed Posit Cloud limit of 25 hours / month for free accounts
+-   You are comfortable installing software and resolving occasional OS-specific issues
+
+**Recommended setup**
+
+We strongly recommend you use **Posit Cloud** (or RStudio on the UNBC computers **when** instructed to do so) during labs so everyone has the same R and RStudio setup. Installing R and RStudio on your own personal computer is **optional**, but can be beneficial if you're comfortable installing software on your own computer. It's likely that you will be using R on RStudio throughout your career to analyse data, so eventually you will want to have both on your computer anyway. Installation instructions for R and RStudio are described in [Appendix A](#sec-apx-A) at the bottom of this page.
+:::
+
+# Setup instructions for Posit Cloud
+
+## Step 1 — Create a free Posit Cloud account
+
+1.  Click [here](https://posit.cloud/) to open **Posit Cloud** on your browser.
+2.  If you do **not** already have an account:
+    -   Click the **Get Started** button at the center of the main Posit Cloud page or **Sign Up** on the top right of the page (@fig-1).
+    -   On the next page, select a **Free** account (click on the button *Learn more* under the **Free** option, **NOT** Student account) (@fig-2).
+    -   Then, on the next page, click the big *Sign Up* button (if you selected the **Free** account option in the previous step you will see cost **\$0/forever** above the **Sign Up** button) (@fig-3).
+    -   On the next page, fill up the required information (username, password, first name, and last name), click **Sign up**, and follow the instructions to activate your account.
+
+ 
+
+![Main Posit Cloud page. Red arrows show where you can click to sign up for an account, whereas blue arrows show where to click to login once you have an acccount](../images/lab-01/fig-1-posit-signup-login.png){#fig-1}
+
+ 
+
+![Account options at Posit Cloud. Make sure to select the **Free** account by clicking at the **Learn more** button under Free as indicated by the red arrow.](../images/lab-01/fig-2-posit-account-options.png){#fig-2}
+
+ 
+
+![Sign up page for the **Free** account. After confirming that you picked the **Free** account by checking that cost is **\$0/forever** click **Sign Up** as indicated by the red arrow](../images/lab-01/fig-3-posit-signup-free.png){#fig-3}
+
+ 
+
+## Step 2 — Log in to Posit Cloud
+
+1.  Go to [Posit Cloud](https://posit.cloud/) in your web browser.
+2.  Click **Log In** (@fig-1).
+3.  Enter your credentials.
+
+## Step 3 — Create a new RStudio project
+
+1.  After logging in, you will see your workspace in Posit Cloud. On the far right of the page, click on **New Project** (@fig-4).
+2.  This will open a menu. Now, click on **New RStudio Project** (@fig-4).
+3.  Wait for the RStudio session to launch.
+4.  When you see RStudio, double click on Untitled Project (top left) and rename the project to **01 - Introduction to R** (@fig-5).
+
+You're now ready to start learning R in this lab!
+
+ 
+
+![View of the workspace in Posit Cloud. To start a new RStudio project, click on **New Project** (red arrow) and then on **New RStudio Project** (blue arrow)](../images/lab-01/fig-4-create-new-project.png){#fig-4}
+
+ 
+
+![View of an initial RStudio session on Posit Cloud. Make sure to rename the project we will use in this lab as **01 - Introduction to R** by double clicking on Untitled Project (red arrow)](../images/lab-01/fig-5-rename-project.png){#fig-5}
+
+::: {.callout-note collapse="false"}
+## Naming matters
+
+We will use consistent project names all term to keep your work organized.
+:::
+
+------------------------------------------------------------------------
+
+# Inside RStudio: install and start swirl {#sec-swirl}
+
+## Step 4 — Install the `swirl` package
+
+In the **Console**, run:
+
+``` r
+install.packages("swirl")
+```
+
+::: {.callout-note collapse="false"}
+## Package installation
+
+You only need to go through this package installation step **once** within an RStudio project in Posit Cloud. If you need the same package in another RStudio project in Posit cloud, it will need to be installed in that project. However, if you're using RStudio on your computer, you only need to install a package once and it will be available to be loaded in all projects you create.
+:::
+
+## Step 5 — Load the `swirl` package
+
+In the **Console**, run:
+
+``` r
+library(swirl)
+```
+
+::: {.callout-note collapse="false"}
+## Loading packages
+
+All R packages that you install, like `swirl`, have to be loaded with function `library()` every time you start a new RStudio session if you plan on using the package. There is a way to automatically load packages you use often whenever you start RStudio, but we will not show that in the course. Just keep in mind that if you're trying to use a function from a package that you're certain you have already installed, but get an error that the function doesn't exist, it's likely that you forgot to load the package...
+:::
+
+## Step 6 — Install the lab exercises
+
+In the **Console**, run:
+
+``` r
+install_course_github("eogmartins", "biol325-swirl-labs", multi = TRUE)
+```
+
+## Step 7 — Start swirl
+
+In the **Console**, run:
+
+``` r
+swirl()
+```
+
+::: {.callout-tip collapse="false"}
+## Interacting with `swirl`
+
+Every time you start `swirl`, it will ask your name. Be consistent and always use the same name (e.g., avoid sometimes using your full first name and your nickname at other times - pick one and stick to it) so swirl knows what lessons you already completed.
+:::
+
+You should now see an interactive prompt in the R console guiding you through the lab. Once `swirl` presents you with a list of courses, type the number of the course associated with **01 - Introduction to R** (should be 1) and press Enter/Return. You will then be presented with a list of lessons in the course that you must go through (select by typing the number of the lesson in the R console and pressing Enter/Return) in the following order:
+
+1.  Basic Building Blocks
+2.  Workspace and Files
+3.  Sequences of Numbers
+4.  Vectors
+5.  Missing Values
+6.  Subsetting Vectors
+7.  Matrices and Data Frames
+8.  Looking at Data
+9.  Base Graphics
+
+Once you finish a Lesson, swirl will once again show you a list of courses. Select **01 - Introduction to R** and then the next lesson in the list that appears. Then rinse and repeat until you complete all nine lessons in this lab.
+
+When you first run `swirl`, it presents you with a list of useful commands. You can always see that menu again during the lesson if you execute command `info()` when you're are at the prompt (you will know the prompt is waiting for a command if you see `>` on the far left side of the R console). Below is a screenshot of the list for your reference.
+
+![List of helpful `swirl`commands](../images/lab-01/fig-6-swirl-commands.png){#fig-6}
+
+------------------------------------------------------------------------
+
+# Cheatsheets
+
+- RStudio IDE: <https://rstudio.github.io/cheatsheets/html/rstudio-ide.html>
+
+------------------------------------------------------------------------
+
+# Learn and Practice More (Optional)
+
+1.  Log in to DataCamp with the email you used to join the course account (see instructions on Moodle).
+
+2.  Complete the course **Introduction to R**.
+    2.1. In the search bar, type "Introduction to R". Select the *Course* of same name or
+  2.2. Click [here](https://app.datacamp.com/learn/courses/free-introduction-to-r) after logging in.
+3.  Practice exercises about **Introduction to R**
+    2.1. Click on **Learn**.
+    2.2. Click on **Practice** in the left side menu.
+    2.3. Click on the **R** tag.
+    2.4. Look for the **Introduction to R** practice and press **Start**.
+
+------------------------------------------------------------------------
+
+# Appendix A — Installing R and RStudio on your own computer {#sec-apx-A}
+
+## Step A1 — Install R
+
+1.  Go to the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/).
+2.  Choose your operating system (Windows, macOS, or Linux).
+
+-   NOTE: If you have an older Mac running on Intel processors, you will need the legacy version of R (latest version is 4.2.3)
+
+3.  Download and install the latest version of R using the default settings.
+
+## Step A2 — Install RStudio
+
+1.  Go to the [RStudio Desktop](https://posit.co/download/rstudio-desktop/) download page.
+2.  Download the **free** version of RStudio Desktop compatible with your OS.
+3.  Install it using the default settings.
+
+## Step A3 — Create a project for this lab
+
+1.  Open **RStudio** on your computer.
+2.  Select *File → New Project*.
+3.  Choose *New Directory → New Project*.
+4.  Name the project: **01 - Introduction to R**
+5.  Choose a location on your computer where you will keep BIOL 325 course work.
+6.  Click *Create Project*.
+
+## Step A4 — Complete the same lab steps locally
+
+Follow the same instructions as described above in [Step 4 — Install the `swirl` package](#sec-swirl)
+
+At this point, everything should be identical to using Posit Cloud.
