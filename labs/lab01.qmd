@@ -233,3 +233,5 @@ When you first run `swirl`, it presents you with a list of useful commands. You 
 Follow the same instructions as described above in [Step 4 — Install the `swirl` package](#sec-swirl)
 
 At this point, everything should be identical to using Posit Cloud.
+
+------------------------------------------------------------------------
