@@ -5,29 +5,35 @@
 # Purpose: Show you can import, wrangle, and export tidy data using a 
 # reproducible R script.
 
-# ---- Packages ----
+# Setup ----
 # Install ONCE if needed (if you do, uncomment the line below and run it):
 # install.packages("tidyverse")
 
 library(tidyverse)
 
-# You will use a real data set from the US LTER Network - pie_crab: fiddler crab 
-# body size + temperature across salt marsh sites in the summer 2016. 
+# The command below willcfreate an outputs folder in your working directory 
+# if ti doesn't exist. This folder will be used to save the CSV file you will
+# create at the end of the assignment
+dir.create("outputs", showWarnings = FALSE, recursive = TRUE)
 
-# ==============================================================================
-# Good coding practices across the script (2 marks)
-# ==============================================================================
+# In this assignment, you will use a real data set from the US LTER Network 
+# pie_crab: fiddler crab body size + temperature across salt marsh sites in the 
+# summer 2016. 
 
-# ==============================================================================
-# Exercise 1 — Import the pie_crab CSV file (2 marks)
-# ==============================================================================
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Use good coding practices across the script (2 marks)
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Exercise 1 — Import the pie_crab CSV file (2 marks) ----
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # TASK: Write code to import data/crab.csv and assign it to crab_csv
 
 # TODO: REPLACE THIS LINE WITH YOUR CODE
 
-# ==============================================================================
-# Exercise 2 — Wrangle: filter + mutate + summarise (8 marks)
-# ==============================================================================
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Exercise 2 — Wrangle: filter + mutate + summarise (8 marks) ----
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # TASKS: Write code to 
 # TASK 3A (2 marks): Keep only rows where variable size is NOT missing (recall is.na() 
@@ -46,9 +52,9 @@ crab_summary <- crab_csv |>
   # TODO: REPLACE THIS LINE WITH YOUR CODE FOR group_by(...) 
   # TODO: REPLACE THIS LINE WITH YOUR CODE FOR summarise(...) 
 
-# ==============================================================================
-# Exercise 3 — Export your summary table (2 marks)
-# ==============================================================================
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Exercise 3 — Export your summary table (2 marks) ----
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # TASK: Write crab_summary to outputs/crab_summary_by_site.csv
 # HINT: look up the help file for write_csv()
 # 
