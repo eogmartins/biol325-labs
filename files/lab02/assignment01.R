@@ -12,7 +12,7 @@
 library(tidyverse)
 
 # The command below willcfreate an outputs folder in your working directory 
-# if ti doesn't exist. This folder will be used to save the CSV file you will
+# if it doesn't exist. This folder will be used to save the CSV file you will
 # create at the end of the assignment
 dir.create("outputs", showWarnings = FALSE, recursive = TRUE)
 
@@ -36,11 +36,11 @@ dir.create("outputs", showWarnings = FALSE, recursive = TRUE)
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # TASKS: Write code to 
-# TASK 3A (2 marks): Keep only rows where variable size is NOT missing (recall is.na() 
-# from first lab)
-# TASK 3B (2 marks): Create a new variable size_cm = size / 10
-# TASK 3C (4 marks): Create a summary table called crab_summary that contains these
-# two new summarized variables:
+# TASK 2A (2 marks): Keep only rows where variable size is NOT missing (recall 
+# is.na() from first lab)
+# TASK 2B (2 marks): Create a new variable size_cm = size / 10
+# TASK 2C (4 marks): Create a summary table called crab_summary that contains 
+# these two new summarized variables:
 #     - mean_size_cm (mean of size_cm)
 #     - n (sample size)
 #

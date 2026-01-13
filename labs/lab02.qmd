@@ -63,22 +63,22 @@ install.packages("remotes")
 remotes::install_github("rstudio/gradethis")
 ```
 
-4. Lastly, install the **biol325labs** package (it has learnr tutorials for our labs) by running the command below in the **Console**
+4. Lastly, install the **biol325learnr** package (it has learnr tutorials for our labs) by running the command below in the **Console**
 
 ```r
-remotes::install_github("eogmartins/biol325labs")
+remotes::install_github("eogmartins/biol325learnr")
 ```
 
-5. After installations are complete (it can take several minutes), load the **biol325labs** package by running the command below in the **Console**
+5. After installations are complete (it can take several minutes), load the **biol325learnr** package by running the command below in the **Console**
 
 ```r
-library(biol325labs)
+library(biol325learnr)
 ```
 
 6. Finally, start this lab tutorial by running the following command in the **Console**
 
 ```r
-learnr::run_tutorial("lab02", package = "biol325labs")
+learnr::run_tutorial("lab02", package = "biol325learnr")
 ```
 
 ::: {.callout-tip collapse="false"}
@@ -130,7 +130,7 @@ After you complete the tutorial, you will be required to submit an assignment th
 ```r
 install.packages("tidyverse")
 ```
-4. In the **Files** tab (located in the bottom right panel of RStudio), click on **Import** and then **Choose File**. Navigate to where the assignment file was downloaded to in your computer, select it, and click Open or OK.
+4. In the **Files** tab (located in the bottom right panel of RStudio), click on **Upload** and then **Choose File**. Navigate to where the assignment file was downloaded to in your computer, select it, and click Open or OK.
 
 5. After upload, click on the assignment file name in the **Files** tab. An R script file will open in the Sources panel of RStudio. Follow the instructions in the R script.
 
