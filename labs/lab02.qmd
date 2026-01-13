@@ -121,7 +121,8 @@ Horst/Hill/Gorman)
 
 # Assignment # 1
 
-After you complete the tutorial, you will be required to submit an assignment that demonstrates you understand how to use some of the functions that were covered in the tutorial. The assignment must be completed and submitted as an [R Script](#rscript) via Moodle (look for the assignment submission item under **Assignments**). 
+After you complete the tutorial, you will be required to submit an assignment that demonstrates you understand how to use some of the functions that were covered in the tutorial. The assignment must be completed and submitted as an [R Script](#rscript) via Moodle (look for the assignment submission item under **Assignments**).
+
 1. Download the template R script file for the assignment: <a href="../files/lab02/assignment01.R" download>assignment01.R</a>
 
 2. Download the CSV file with the data you will use in the assignment: <a href="../files/lab02/penguins.csv" download>penguins.csv</a>

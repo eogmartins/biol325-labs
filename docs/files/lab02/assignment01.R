@@ -18,7 +18,9 @@ dir.create("outputs", showWarnings = FALSE, recursive = TRUE)
 
 # In this assignment, you will use a real data set from the US LTER Network 
 # pie_crab: fiddler crab body size + temperature across salt marsh sites in the 
-# summer 2016. 
+# summer 2016. You should have the file downloaded and uploaded to your 
+# Assignments project in Posit Cloud. If not, go back to the lab instructions 
+# and review the steps under Assignment # 1.
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Use good coding practices across the script (2 marks)
