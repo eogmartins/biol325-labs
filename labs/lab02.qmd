@@ -121,18 +121,23 @@ Horst/Hill/Gorman)
 
 # Assignment # 1
 
-After you complete the tutorial, you will be required to submit an assignment that demonstrates you understand how to use some of the functions that were covered in the tutorial. The assignment must be completed and submitted as an [R Script](#rscript). The assignment must be submitted via Moodle. 
-
+After you complete the tutorial, you will be required to submit an assignment that demonstrates you understand how to use some of the functions that were covered in the tutorial. The assignment must be completed and submitted as an [R Script](#rscript) via Moodle (look for the assignment submission item under **Assignments**). 
 1. Download the template R script file for the assignment: <a href="../files/lab02/assignment01.R" download>assignment01.R</a>
-2. In Posit Cloud, create a new project and name it **Assignments**
-3. Install package **tidyverse** by running the command below in the **Console**
+
+2. Download the CSV file with the data you will use in the assignment: <a href="../files/lab02/penguins.csv" download>penguins.csv</a>
+
+3. In Posit Cloud, create a new project and name it **Assignments**
+
+4. Install package **tidyverse** by running the command below in the **Console**
 
 ```r
 install.packages("tidyverse")
 ```
 4. In the **Files** tab (located in the bottom right panel of RStudio), click on **Upload** and then **Choose File**. Navigate to where the assignment file was downloaded to in your computer, select it, and click Open or OK.
 
-5. After upload, click on the assignment file name in the **Files** tab. An R script file will open in the Sources panel of RStudio. Follow the instructions in the R script.
+5. Repeat step 4, but this time upload the CSV file you downloaded in step 2.
+ 
+6. After the uploads, click on the assignment file name in the **Files** tab. An R script file will open in the Sources panel of RStudio. Follow the instructions in the R script.
 
 ::: {.callout-note collapse="false"}
 ## Data dictonary for the assignment data set
