@@ -106,14 +106,13 @@ Horst/Hill/Gorman)
 
 **Variables:**
 
-- rowid: Row identifier (integer)
 - species: Penguin species (Adelie, Chinstrap, Gentoo) [subset contains Adelie]
 - island: Island in Palmer Archipelago where sampling occurred (Biscoe, Dream, Torgersen)
 - bill_length_mm: Bill length (mm)
 - bill_depth_mm: Bill depth (mm)
 - flipper_length_mm: Flipper length (mm)
 - body_mass_g: Body mass (g)
-- sex: Sex (male/female); missing values present
+- sex: Sex (male/female)
 - year: Sampling year
 :::
 
@@ -123,9 +122,9 @@ Horst/Hill/Gorman)
 
 After you complete the tutorial, you will be required to submit an assignment that demonstrates you understand how to use some of the functions that were covered in the tutorial. The assignment must be completed and submitted as an [R Script](#rscript) via Moodle (look for the assignment submission item under **Assignments**).
 
-1. Download the template R script file for the assignment: <a href="../files/lab02/assignment01.R" download>assignment01.R</a>
+1. Download the template R script file for the assignment: <a href="../assets/lab02/assignment01.R" download>assignment01.R</a>
 
-2. Download the CSV file with the data you will use in the assignment: <a href="../files/lab02/penguins.csv" download>penguins.csv</a>
+2. Download the CSV file with the data you will use in the assignment: <a href="../assets/lab02/pie_crab.csv" download>pie_crab.csv</a>
 
 3. In Posit Cloud, create a new project and name it **Assignments**
 
@@ -154,14 +153,17 @@ teaching via the lterdatasampler R package
 
 **Variables:**
 
-- site: Salt marsh sampling site identifier (character)
-- latitude: Latitude of the sampling site (decimal degrees)
-- longitude: Longitude of the sampling site (decimal degrees)
 - date: Date the individual crab was sampled (YYYY-MM-DD)
+- latitude: Latitude of the salt marsh sampling site (decimal degrees)
+- site: Salt marsh sampling site identifier (character)
+- size: Crab body size (carapace width, mm)
+- air_temp: Mean annual air temperature at the smapling site (°C)
+- air_temp_sd: Standard deviation of mean annual air temperature (°C)
+- longitude: Longitude of the sampling site (decimal degrees)
 - time: Time of sampling (local time; HH:MM)
-- air_temp: Air temperature at the time of sampling (°C)
-- water_temp: Water temperature at the time of sampling (°C)
-- size: Crab body size (carapace width, mm); missing values present
+- water_temp: Mean annual water surface (< 1m) temperature
+- water_temp_sd: Standard deviation of mean annual water surface (< 1m) temperature
+- name: full name of research site
 :::
 
 ------------------------------------------------------------------------
