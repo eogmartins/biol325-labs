@@ -66,15 +66,15 @@ We strongly recommend you use **Posit Cloud** (or RStudio on the UNBC computers 
 
  
 
-![Main Posit Cloud page. Red arrows show where you can click to sign up for an account, whereas blue arrows show where to click to login once you have an acccount](../images/lab-01/fig-1-posit-signup-login.png){#fig-1}
+![Main Posit Cloud page. Red arrows show where you can click to sign up for an account, whereas blue arrows show where to click to login once you have an acccount](../images/lab01/fig-1-posit-signup-login.png){#fig-1}
 
  
 
-![Account options at Posit Cloud. Make sure to select the **Free** account by clicking at the **Learn more** button under Free as indicated by the red arrow.](../images/lab-01/fig-2-posit-account-options.png){#fig-2}
+![Account options at Posit Cloud. Make sure to select the **Free** account by clicking at the **Learn more** button under Free as indicated by the red arrow.](../images/lab01/fig-2-posit-account-options.png){#fig-2}
 
  
 
-![Sign up page for the **Free** account. After confirming that you picked the **Free** account by checking that cost is **\$0/forever** click **Sign Up** as indicated by the red arrow](../images/lab-01/fig-3-posit-signup-free.png){#fig-3}
+![Sign up page for the **Free** account. After confirming that you picked the **Free** account by checking that cost is **\$0/forever** click **Sign Up** as indicated by the red arrow](../images/lab01/fig-3-posit-signup-free.png){#fig-3}
 
  
 
@@ -95,11 +95,11 @@ You're now ready to start learning R in this lab!
 
  
 
-![View of the workspace in Posit Cloud. To start a new RStudio project, click on **New Project** (red arrow) and then on **New RStudio Project** (blue arrow)](../images/lab-01/fig-4-create-new-project.png){#fig-4}
+![View of the workspace in Posit Cloud. To start a new RStudio project, click on **New Project** (red arrow) and then on **New RStudio Project** (blue arrow)](../images/lab01/fig-4-create-new-project.png){#fig-4}
 
  
 
-![View of an initial RStudio session on Posit Cloud. Make sure to rename the project we will use in this lab as **01 - Introduction to R** by double clicking on Untitled Project (red arrow)](../images/lab-01/fig-5-rename-project.png){#fig-5}
+![View of an initial RStudio session on Posit Cloud. Make sure to rename the project we will use in this lab as **01 - Introduction to R** by double clicking on Untitled Project (red arrow)](../images/lab01/fig-5-rename-project.png){#fig-5}
 
 ::: {.callout-note collapse="false"}
 ## Naming matters
@@ -177,7 +177,7 @@ Once you finish a Lesson, swirl will once again show you a list of courses. Sele
 
 When you first run `swirl`, it presents you with a list of useful commands. You can always see that menu again during the lesson if you execute command `info()` when you're are at the prompt (you will know the prompt is waiting for a command if you see `>` on the far left side of the R console). Below is a screenshot of the list for your reference.
 
-![List of helpful `swirl`commands](../images/lab-01/fig-6-swirl-commands.png){#fig-6}
+![List of helpful `swirl`commands](../images/lab01/fig-6-swirl-commands.png){#fig-6}
 
 ------------------------------------------------------------------------
 
