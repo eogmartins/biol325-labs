@@ -1,0 +1,162 @@
+/* webex-theme.css
+   Minimal theming:
+   - quiz box background: #D3DFDB
+   - green borders & buttons
+   - remove blue input borders/focus
+*/
+
+/* ----
+   Site accent
+---- */
+:root {
+  --webex-accent: var(--brand, #035642);
+  --webex-bg: #F3F6F5;
+}
+
+/* ----
+   OUTER quiz box only
+---- */
+.webex-box {
+  border: 2px solid var(--webex-accent) !important;
+  border-radius: 0.5rem;
+  background: var(--webex-bg) !important;
+}
+
+/* ----
+   Remove inner frames / nested boxes
+---- */
+.webex-box .webex-box,
+.webex-box .webex-question,
+.webex-box .webex-exercise,
+.webex-box .webex-widget,
+.webex-box .webex-inner {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* ----
+   Buttons: green outline + green icons
+---- */
+.webex-box button,
+.webex-box .webex-button,
+.webex-box .webex-check,
+.webex-box .webex-solution,
+.webex-box .webex-next,
+.webex-box .webex-help {
+  background: transparent !important;
+  color: var(--webex-accent) !important;
+  border: 2px solid var(--webex-accent) !important;
+}
+
+/* Ensure SVG icons inherit green */
+.webex-box button svg,
+.webex-box button svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* ----
+   INPUT FIELDS (string, numeric, cloze)
+   Remove default blue border + focus
+---- */
+.webex-box input[type="text"],
+.webex-box input[type="number"],
+.webex-box textarea,
+.webex-box select {
+  border: 2px solid var(--webex-accent) !important;
+  border-radius: 0.35rem;
+  background: #ffffff;
+  color: inherit;
+}
+
+/* Focus state (keyboard & mouse) */
+.webex-box input[type="text"]:focus,
+.webex-box input[type="number"]:focus,
+.webex-box textarea:focus,
+.webex-box select:focus {
+  outline: none !important;
+  border-color: var(--webex-accent) !important;
+  box-shadow: 0 0 0 0.2rem rgba(3, 86, 66, 0.25) !important;
+}
+
+/* ----
+   Feedback borders (keep subtle)
+---- */
+.webex-feedback,
+.webex-result,
+.webex-status {
+  border-left: 4px solid var(--webex-accent);
+  background: transparent;
+}
+
+/* =========================
+   WebEx answer inputs: force green border (covers WebEx-specific classes)
+   ========================= */
+
+/* Target the input itself (including WebEx classed inputs) */
+.webex-box input,
+.webex-box input[type="text"],
+.webex-box input[type="number"],
+.webex-box textarea,
+.webex-box input.webex-solveme,
+.webex-box input.webex-text,
+.webex-box input.webex-num,
+.webex-box .webex-solveme input,
+.webex-box .webex-solveme textarea {
+  border: 2px solid var(--webex-accent) !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background-image: none !important;
+}
+
+/* Focus/active states: replace any blue ring/shadow */
+.webex-box input:focus,
+.webex-box textarea:focus,
+.webex-box input.webex-solveme:focus,
+.webex-box input.webex-text:focus,
+.webex-box input.webex-num:focus {
+  border-color: var(--webex-accent) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(3, 86, 66, 0.25) !important;
+}
+
+/* If the blue border is on a wrapper (common), kill it here too */
+.webex-box .webex-solveme,
+.webex-box .webex-answer,
+.webex-box .webex-input,
+.webex-box .webex-response {
+  border-color: var(--webex-accent) !important;
+  box-shadow: none !important;
+}
+
+/* If wrapper uses focus-within to draw the border/ring */
+.webex-box .webex-solveme:focus-within,
+.webex-box .webex-answer:focus-within,
+.webex-box .webex-input:focus-within,
+.webex-box .webex-response:focus-within {
+  border-color: var(--webex-accent) !important;
+  box-shadow: 0 0 0 0.2rem rgba(3, 86, 66, 0.25) !important;
+}
+
+/* ============================================================
+   FIX: restore native checkbox/radio rendering (prevents "dot")
+   Place this LAST so it overrides the appearance:none above.
+   ============================================================ */
+.webex-box input[type="checkbox"],
+.webex-box input[type="radio"] {
+  -webkit-appearance: auto !important;
+  appearance: auto !important;
+  border: initial !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-image: none !important;
+}
+
+/* Optional: make checkboxes/radios use your green where supported */
+.webex-box input[type="checkbox"],
+.webex-box input[type="radio"] {
+  accent-color: var(--webex-accent);
+}

@@ -13,11 +13,32 @@ website:
   navbar:
     logo: images/unbc_logo.png
     left:
-      - href: index.qmd
-        text: Labs
+      - text: "Lab Instructions"
+        href: index.qmd
 
+      - text: "Lab Quizzes"
+        menu:
+          - text: "Introduction to R"
+            href: quizzes/lab01.qmd
+          # - text: "Lab 02 – Data Wrangling"
+          #   href: quizzes/lab02_quiz.qmd
+
+      - text: "Lecture Quizzes"
+        menu:
+          - text: "Probability"
+            href: quizzes/lec01.qmd
+          # - text: "Lecture 02 – Random Variables"
+          #   href: quizzes/lec02_quiz.qmd
+
+        
 format:
   html:
     theme: [journal, theme.scss]
-    css: styles.css
     toc: false
+    embed-resources: true
+    css: 
+      - styles.css
+      - webex.css
+      - webex-theme.css
+    include-after-body: webex.js
+    
