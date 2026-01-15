@@ -1,0 +1,15 @@
+{
+  "hash": "4ab1febea6433bbc1249e3ea5bbab65d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat does `seq(1, 9, by = 2)` produce?\n\nAnswerlist\n----------\n* 1 2 3 4 5 6 7 8 9\n* 1 3 5 7 9\n* 2 4 6 8\n* 1 4 7\n\nSolution\n========\n`seq(1, 9, by = 2)` starts at 1 and steps by 2 until it reaches 9: 1, 3, 5, 7, 9.\n\nMeta-information\n================\nexname: Lab01 (Medium) sequences\nextype: schoice\nexsolution: 0100\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

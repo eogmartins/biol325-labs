@@ -1,0 +1,15 @@
+{
+  "hash": "e53f291b32ce7f3764cae8b1d3c79370",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf A and B are independent and P(A) = 0.3, P(B) = 0.3, compute P(A ∩ B).\n\nSolution\n========\nUse product rule: 0.3 × 0.3 = 0.09.\n\nMeta-information\n================\nexname: Lec01 Medium num 10\nextype: num\nexsolution: 0.09\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

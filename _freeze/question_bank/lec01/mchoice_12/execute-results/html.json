@@ -1,0 +1,15 @@
+{
+  "hash": "aef6805e3b944149bc60d20733897957",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nSuppose P(A) = 0.6, P(B) = 0.5, P(A ∩ B) = 0.4. Which statements are true? Select all that apply.\n\nAnswerlist\n----------\n* P(A ∪ B) = 0.7\n* A and B are independent\n* A and B are not mutually exclusive\n* P(A | B) = 0.8\n\nSolution\n========\nCompute union: 0.6 + 0.5 − 0.4 = 0.7. Independence would require 0.6 × 0.5 = 0.3, not 0.4. Intersection is not 0, so not mutually exclusive. Conditional: P(A | B) = 0.4 / 0.5 = 0.8.\n\nMeta-information\n================\nexname: Lec01 Hard mchoice 13\nextype: mchoice\nexsolution: 1011\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

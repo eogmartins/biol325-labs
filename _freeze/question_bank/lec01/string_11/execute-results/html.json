@@ -1,0 +1,17 @@
+{
+  "hash": "01511ed44c51b2139d2e468ec3be6bd8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf P(A | B) ≠ P(A), what is the relationship between A and B?\n\nSolution\n========\nIf conditioning on B changes the probability of A, then A and B are **dependent** (associated).\n\nMeta-information\n================\nexname: Lec01 Hard string 12\nextype: string\nexsolution: ^\\\\s*[Dd]ependent\\\\s*$\n",
+    "supporting": [
+      "string_11_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "a72e49d416cf5bc32c3d2dc87dfd3594",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWrite the indexing expression to get the last element of a vector `x`.\n\nSolution\n========\nThe last element is at position `length(x)`, so `x[length(x)]` returns it.\n\nMeta-information\n================\nexname: Lab01 (Hard) last element\nextype: string\nexsolution: ^\\\\s*x\\\\[length\\\\(x\\\\)\\\\]\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

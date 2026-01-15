@@ -1,0 +1,17 @@
+{
+  "hash": "0efa3a4eb99100a4ea0a5875dffa24d3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn words, what does the symbol ∪ mean?\n\nSolution\n========\nA ∪ B is the **union**, that is outcomes where either A **or** B occurs.\n\nMeta-information\n================\nexname: Lec01 Hard string 11\nextype: string\nexsolution: ^\\\\s*[Uu]nion\\\\s*|\\\\s*[Oo]r\\\\s*$\n",
+    "supporting": [
+      "string_10_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "f905b28b2b5a4f2ccdd75dc868ae6362",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich of the following are examples of **missing values** in R? Select all that apply.\n\nAnswerlist\n----------\n* `NA`\n* `NaN`\n* `NULL`\n* `\"\"` (empty string)\n\nSolution\n========\n`NA` is the standard missing value in R. `NaN` can arise from undefined numeric operations (e.g., `0/0`). `NULL` means “no value” and `\"\"` is an empty string, not missing.\n\nMeta-information\n================\nexname: Lab01 (Easy) missingness\nextype: mchoice\nexsolution: 1100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "ef86573feaf41a27d1b60e5acf2c8371",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWrite a function that lists files in the current working directory in base R.\n\nSolution\n========\n`dir()` or `list.files()` returns a character vector of file and folder names in the current directory (or a specified path).\n\nMeta-information\n================\nexname: Lab01 (Easy) list.files()\nextype: string\nexsolution: ^\\\\s*(list\\\\.files(\\\\(\\\\))?|dir(\\\\(\\\\))?)\\\\s*$\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

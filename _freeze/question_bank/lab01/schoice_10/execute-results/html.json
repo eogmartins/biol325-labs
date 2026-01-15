@@ -1,0 +1,15 @@
+{
+  "hash": "3b1edf96042871749183e9fa8bb4e147",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn base R graphics, which function creates a scatterplot?\n\nAnswerlist\n----------\n* hist()\n* boxplot()\n* plot()\n* barplot()\n\nSolution\n========\n`plot(x, y)` is the standard base R scatterplot function when `x` and `y` are numeric vectors. `hist()` makes histograms, `boxplot()` boxplots, and `barplot()` bar charts.\n\nMeta-information\n================\nexname: Lab01 (Medium) base plot()\nextype: schoice\nexsolution: 0010\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

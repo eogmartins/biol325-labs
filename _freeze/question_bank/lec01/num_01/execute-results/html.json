@@ -1,0 +1,15 @@
+{
+  "hash": "fecf977b78bde3fc363a1eabca645ec8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nDuring a salmon count, 12 of 48 fish are Chinook salmon. Estimate P(Chinook) using relative frequency.\n\nSolution\n========\nRelative frequency estimate is count / total = 12 / 48 = 0.25. This is an empirical estimate that would stabilize with larger samples.\n\nMeta-information\n================\nexname: Lec01 Easy num 01\nextype: num\nexsolution: 0.25\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

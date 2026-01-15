@@ -1,0 +1,15 @@
+{
+  "hash": "cf7bdb90ed3f637fca33d2137419b5b7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn a landscape study 50% of sites are forested (event F, so P(F) = 0.5) and 75% of sites have a stream  (event S, so P(S) = 0.75). Among forested sites, 60% have a stream, so P(S | F) = 0.6. What is the probability that a site is forested given that it has a stream?\n\nAnswerlist\n----------\n* 0.1\n* 0.4\n* 0.5\n* 0.7\n\nSolution\n========\nYou are asked to find P(F | S). So, applying Bayes’ rule:\n\nP(F | S) = [P(S | F) × P(F)] / P(S)\n          = (0.6 × 0.5) / 0.75\n          = 0.4\n\nMeta-information\n================\nexname: Lec01 Bayes Easy schoice marginals\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

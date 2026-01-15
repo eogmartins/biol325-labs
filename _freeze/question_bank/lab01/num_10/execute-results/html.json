@@ -1,0 +1,15 @@
+{
+  "hash": "0e287418029a93e8dfc7a166e6f6ef09",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet `x <- c(10, 20, 30)`. What is `length(x[x > 15])`?\n\nSolution\n========\nValues greater than 15 are 20 and 30, giving a vector of length 2.\n\nMeta-information\n================\nexname: Lab01 (Hard) logical filter count\nextype: num\nexsolution: 2\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

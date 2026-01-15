@@ -1,0 +1,15 @@
+{
+  "hash": "927a9276dd03bd38771fa7cf5b52fbbe",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nSuppose P(A ∩ B) = P(A). What does this imply about the relationship between A and B?\n\nAnswerlist\n----------\n* A and B are independent\n* Whenever A happens, B also happens (A ⊆ B)\n* Whenever B happens, A also happens (B ⊆ A)\n* A and B cannot co-occur\n\nSolution\n========\nIf the intersection equals P(A), then **all of A is inside B** (i.e., A ⊆ B).  \nThat is, whenever A happens, B must also happen. This is a useful logical interpretation that can appear in ecological event definitions. For example, if A is \"juvenile of sockeye\" and B is \"sockeye\", then A is a subset of B. If you sample a fish and it is a sockeye juvenile, then it is also certainly (i.e., P(B) = 1) a sockeye. It follows that P(A ∩ B) = P(A)P(B) = P(A).\n\nMeta-information\n================\nexname: Lec01 Hard schoice 13\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

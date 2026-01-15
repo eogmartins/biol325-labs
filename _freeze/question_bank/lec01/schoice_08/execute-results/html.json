@@ -1,0 +1,15 @@
+{
+  "hash": "85236d812243ccc1495c866d0acfe43d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich statement is always true for any events A and B?\n\nAnswerlist\n----------\n* P(A ∩ B) ≥ P(A)\n* P(A ∩ B) ≤ P(A)\n* P(A ∪ B) = P(A) + P(B) always\n* P(A | B) > 1\n\nSolution\n========\nThe intersection (A∩B) is a subset of A, so it cannot be more probable than A: P(A ∩ B) ≤ P(A). The union equals the sum only when events are disjoint. Probabilities cannot exceed 1.\n\nMeta-information\n================\nexname: Lec01 Medium schoice 08\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

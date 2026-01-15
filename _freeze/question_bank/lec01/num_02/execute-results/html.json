@@ -1,0 +1,15 @@
+{
+  "hash": "a7a67299cd3e0a8e2b481bed5582bc72",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn a bird point-count, P(detect) = 0.65. Compute P(not detect).\n\nSolution\n========\nUse complement rule: 1 − 0.65 = 0.35.\n\nMeta-information\n================\nexname: Lec01 Easy num 02\nextype: num\nexsolution: 0.35\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

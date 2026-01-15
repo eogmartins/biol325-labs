@@ -1,0 +1,15 @@
+{
+  "hash": "77c172226ef25c2cd01c69b9642c540c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich functions are from **base R graphics**? Select all that apply.\n\nAnswerlist\n----------\n* `plot()`\n* `hist()`\n* `ggplot()`\n* `boxplot()`\n\nSolution\n========\n`plot()`, `hist()`, and `boxplot()` are base R graphics. `ggplot()` is from ggplot2.\n\nMeta-information\n================\nexname: Lab01 (Medium) base graphics\nextype: mchoice\nexsolution: 1101\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

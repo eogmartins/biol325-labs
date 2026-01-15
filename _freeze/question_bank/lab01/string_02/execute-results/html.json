@@ -1,0 +1,15 @@
+{
+  "hash": "cb7c7ae9620771e9452bf0f5d912b852",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWrite the function that changes the working directory.\n\nSolution\n========\n`setwd()` is the function that changes the working directory for the current R session.\n\nMeta-information\n================\nexname: Lab01 (Easy) setwd()\nextype: string\nexsolution: ^\\\\s*setwd(\\\\(\\\\))?\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

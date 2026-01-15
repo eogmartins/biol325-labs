@@ -1,0 +1,15 @@
+{
+  "hash": "15d0bd8fd5b7feaeaad5cda7b7329cd3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf P(A | B) = 0.6 and P(B) = 0.5, compute P(A ∩ B).\n\nSolution\n========\nMultiplication rule for dependent events: P(A ∩ B) = P(A | B)P(B) = 0.6 × 0.5 = 0.3.\n\nMeta-information\n================\nexname: Lec01 Hard num 12\nextype: num\nexsolution: 0.3\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

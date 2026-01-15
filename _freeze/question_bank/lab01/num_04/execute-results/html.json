@@ -1,0 +1,15 @@
+{
+  "hash": "50191d273408cfc7036145bab323158f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nHow many elements are in `matrix(1:12, nrow = 3)`?\n\nSolution\n========\n`1:12` has 12 values. The matrix reshapes them but does not change the total number of elements.\n\nMeta-information\n================\nexname: Lab01 (Medium) matrix element count\nextype: num\nexsolution: 12\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

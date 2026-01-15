@@ -1,0 +1,15 @@
+{
+  "hash": "39dafb6aaf1c62549df41a352c1b6b17",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nTwo events are independent if:\n\nAnswerlist\n----------\n* They cannot occur together\n* Knowing one occurred gives no information about the other\n* They have equal probability\n* Their probabilities sum to 1\n\nSolution\n========\nIndependence is about **no change in probability** when you learn information: P(A | B) = P(A). Independent events can co‑occur; it is mutually exclusive events that cannot. Equal probabilities or summing to 1 are not definitions of independence.\n\nMeta-information\n================\nexname: Lec01 Easy schoice 05\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

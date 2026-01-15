@@ -1,0 +1,15 @@
+{
+  "hash": "0ac4081ed6e2bed092af38e883ee5987",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich of these are valid ways to create a numeric vector? Select all that apply.\n\nAnswerlist\n----------\n* `c(1, 2, 3)`\n* `seq(1, 3)`\n* `matrix(1:3, nrow = 1)`\n* `list(1, 2, 3)`\n\nSolution\n========\nBoth `c()` and `seq()` create vectors. `matrix()` creates a matrix (even if 1-row). A list is not an atomic numeric vector.\n\nMeta-information\n================\nexname: Lab01 (Medium) vector creation variant 11\nextype: mchoice\nexsolution: 1100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

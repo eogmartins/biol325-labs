@@ -1,0 +1,15 @@
+{
+  "hash": "6e9fdc171dacc0640676e806d1688ce2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich statement about the R **workspace** is true?\n\nAnswerlist\n----------\n* The workspace is a folder on disk that always matches your working directory.\n* The workspace is the set of objects currently in memory (Environment).\n* The workspace is the same thing as your script file.\n* The workspace is the same thing as the Console.\n\nSolution\n========\nIn R, the workspace refers to objects currently in memory (e.g., vectors, data frames) shown in the Environment tab of RStudio. Files live on disk; scripts are text files; the Console is where commands run.\n\nMeta-information\n================\nexname: Lab01 (Easy) Workspace concept\nextype: schoice\nexsolution: 0100\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

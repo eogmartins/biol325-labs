@@ -1,0 +1,17 @@
+{
+  "hash": "2bc6a110dd4da64b7839d8a51a6bdd61",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat is the name of the rule P(Aᶜ) = 1 − P(A)?\n\nSolution\n========\n**Complement** rule.\n\nMeta-information\n================\nexname: Lec01 Medium string 07\nextype: string\nexsolution: ^\\\\s*[Cc]omplement\\\\s*[Rr]ule\\\\s*|\\\\s*[Cc]omplement\\\\s*$\n",
+    "supporting": [
+      "string_06_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

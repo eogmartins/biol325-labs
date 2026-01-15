@@ -1,0 +1,15 @@
+{
+  "hash": "e3870d709d8ae66c495289f3ef7f0f67",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nYou have an RStudio Project with a `data/` folder. Which path is **portable** across computers if you share your RStudio project with a colleague?\n\nAnswerlist\n----------\n* C:/Users/Eduardo/Desktop/course/data/penguins.csv\n* /Users/eduardo/Desktop/course/data/penguins.csv\n* data/penguins.csv\n* penguins.csv\n\nSolution\n========\n`data/penguins.csv` is a relative path within the project, so it works as long as the same project structure exists in different computers. Absolute paths (starting with a drive letter or `/Users/...`) typically break on other computers.\n\nMeta-information\n================\nexname: Lab01 (Easy) Relative path\nextype: schoice\nexsolution: 0010\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "5946295b378f9c3aaf21406a4a714cab",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf P(A) = 0.2 and P(B) = 0.3 and A and B are mutually exclusive, compute P(A ∪ B).\n\nSolution\n========\nFor disjoint events, union is additive: 0.2 + 0.3 = 0.5.\n\nMeta-information\n================\nexname: Lec01 Easy num 03\nextype: num\nexsolution: 0.5\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "84f50d647f02a00df137b462ef61036a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich approach is most reproducible when reading data in a project?\n\nAnswerlist\n----------\n* Clicking Import Dataset in RStudio every time\n* Storing files in random locations and using absolute paths\n* Putting data in a folder named `data/` and using relative paths in code\n* Renaming files each time you run the analysis\n\nSolution\n========\nPutting data inside a data folder (e.g., `data/`) nested in the project folder and using relative paths means your analysis can be re-run reliably, shared, and version controlled.\n\nMeta-information\n================\nexname: Lab01 (Hard) reproducible file I/O\nextype: schoice\nexsolution: 0010\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

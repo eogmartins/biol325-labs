@@ -1,0 +1,15 @@
+{
+  "hash": "4e9fb377521ad1f8efeb25f83e48ec78",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nFor `m <- matrix(1:6, nrow = 2)`, what does `m[2, 3]` return?\n\nAnswerlist\n----------\n* 2\n* 4\n* 6\n* 5\n\nSolution\n========\nThe matrix is filled by column: columns are (1,2), (3,4), (5,6). Row 2, column 3 is 6.\n\nMeta-information\n================\nexname: Lab01 (Hard) matrix subsetting\nextype: schoice\nexsolution: 0010\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "cdced8731675d034843a05eddd69cf07",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich statements correctly describe complements? Select all that apply.\n\nAnswerlist\n----------\n* A and Aᶜ cannot occur together\n* A ∪ Aᶜ equals the sample space\n* P(Aᶜ) = 1 − P(A)\n* A and Aᶜ are independent\n\nSolution\n========\nComplements are mutually exclusive (can't happen together) and exhaustive (one must happen), so their probabilities sum to 1. They are not independent unless P(A) = 0 or P(A) = 1, because knowing A occurred tells you Aᶜ did not occur.\n\nMeta-information\n================\nexname: Lec01 Easy mchoice 04\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "ed1104d6614b017c9e96b1243616a906",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet `x <- c(3, NA, 7)`. What is `sum(x, na.rm = TRUE)`?\n\nSolution\n========\n`na.rm = TRUE` removes missing values before summing: 3 + 7 = 10.\n\nMeta-information\n================\nexname: Lab01 (Medium) sum with NA removed\nextype: num\nexsolution: 10\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

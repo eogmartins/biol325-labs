@@ -1,0 +1,15 @@
+{
+  "hash": "6274dd0aca21844fb07e2d08973e4863",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhy is assuming independence often risky in ecology?\n\nAnswerlist\n----------\n* Because probabilities cannot be estimated in ecology\n* Because ecological processes are often linked by mechanisms\n* Because independence always reduces probabilities\n* Because independence violates axioms\n\nSolution\n========\nEcological variables are frequently connected by causal pathways (temperature ↔ DO, habitat ↔ survival, predators ↔ prey). Independence is a strong simplifying assumption. When it fails, calculations like P(A ∩ B) = P(A)P(B) can be seriously misleading.\n\nMeta-information\n================\nexname: Lec01 Hard schoice 14\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

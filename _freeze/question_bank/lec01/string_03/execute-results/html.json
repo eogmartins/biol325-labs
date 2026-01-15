@@ -1,0 +1,15 @@
+{
+  "hash": "95b8c57575443b13c1fb1af486a0bd0d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat is the term for two events that cannot occur together?\n\nSolution\n========\nMutually exclusive or disjoint events have no overlap: P(A ∩ B) = 0.\n \nMeta-information\n================\nexname: Lec01 Easy string 04\nextype: string\nexsolution: ^\\\\s*[Mm]utually\\\\s*[Ee]xclusive\\\\s*|\\\\s*[Dd]isjoint\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "de28985138f8c17c8f8c5aff1c0bb6d2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn a habitat survey, A = “site is in forest”, B = “site has moss present”. Which statements are plausible? Select all that apply.\n\nAnswerlist\n----------\n* A and B could be dependent because forest microclimate supports moss\n* A and B must be independent because they are different attributes\n* P(A ∩ B) can be greater than P(A)\n* P(A ∩ B) ≤ P(A)\n\nSolution\n========\nDependence is plausible via dependence of moss on cool and humid microclimates, which can be provided by forests. The intersection cannot exceed either event, so P(A ∩ B) ≤ P(A).\n\nMeta-information\n================\nexname: Lec01 Hard mchoice 15\nextype: mchoice\nexsolution: 1001\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

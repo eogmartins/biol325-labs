@@ -1,0 +1,15 @@
+{
+  "hash": "55542a323b155bd1d7950e68f137ea19",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nFor `x <- c(10, 20, 30)`, which expressions return **20**? (Select all that apply)\n\nAnswerlist\n----------\n* `x[2]`\n* `x[x == 20]`\n* `x[1]`\n* `x[3]`\n\nSolution\n========\nIndex 2 is 20, and logical subsetting `x == 20` returns 20. Indices 1 and 3 return 10 and 30.\n\nMeta-information\n================\nexname: Lab01 (Medium) subsetting variants\nextype: mchoice\nexsolution: 1100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

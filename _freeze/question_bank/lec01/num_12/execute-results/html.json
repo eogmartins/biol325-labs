@@ -1,0 +1,15 @@
+{
+  "hash": "d5af5bc9a3e614f2a3ba3134eb528009",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf P(A) = 1, compute P(Aᶜ).\n\nSolution\n========\nA is a certain event, so complement impossible: P(Aᶜ) = 1 − P(A) = 1 - 1 = 0.\n\nMeta-information\n================\nexname: Lec01 Hard num 13\nextype: num\nexsolution: 0\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "41ef5bfc2a2689ef2e6cea7ed913f75e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich statements about matrices in R are true? Select all that apply.\n\nAnswerlist\n----------\n* Matrices are have a `dim` attribute.\n* Matrices can be indexed with `[row, col]`.\n* `length(m)` gives the number of elements in the matrix.\n* Matrices can contain multiple data types in different columns like a data frame.\n\nSolution\n========\nA matrix has two dimensions. You can index it with `[row, col]`, whereas `length()` counts all of its elements. Mixed types per column are not allowed in matrices, only in data frames.\n\nMeta-information\n================\nexname: Lab01 (Hard) matrix properties\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

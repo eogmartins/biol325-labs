@@ -1,0 +1,15 @@
+{
+  "hash": "6fa7e8928853c2d31dcb5a639bc849e1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat does `x[2]` return for `x <- c(10, 20, 30)`?\n\nAnswerlist\n----------\n* 10\n* 20\n* 30\n* `c(20, 30)`\n\nSolution\n========\nThe command indicates you want teh second element of `c(10, 20, 30)`, so 20 would be returned.\n\nMeta-information\n================\nexname: Lab01 (Medium) Vector indexing\nextype: schoice\nexsolution: 0100\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

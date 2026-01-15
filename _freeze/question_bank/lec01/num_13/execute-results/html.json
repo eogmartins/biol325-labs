@@ -1,0 +1,15 @@
+{
+  "hash": "87996306feeb55504455497d0162e783",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf P(A ∪ B) = 1, compute P((A ∪ B)ᶜ).\n\nSolution\n========\nIf union covers the whole sample space (i.e., P(A ∪ B) = 1), its complement is impossible, so P((A ∪ B)ᶜ) = 0.\n\nMeta-information\n================\nexname: Lec01 Hard num 14\nextype: num\nexsolution: 0\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

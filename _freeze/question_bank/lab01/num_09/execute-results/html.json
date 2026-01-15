@@ -1,0 +1,15 @@
+{
+  "hash": "0383c93b95da1718e6694a74507e664e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nFor `m <- matrix(1:6, nrow = 2)`, what is `m[2,2]`?\n\nSolution\n========\nFilled by column, the matrix columns are (1,2), (3,4), (5,6). Row 2, column 2 is 4.\n\nMeta-information\n================\nexname: Lab01 (Hard) matrix index numeric\nextype: num\nexsolution: 4\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

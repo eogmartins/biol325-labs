@@ -1,0 +1,17 @@
+{
+  "hash": "6fec1e253fb2eea88246b28bb83ccd83",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat word indicates conditioning in a probability statement?\n\nSolution\n========\nThe word **given** signals conditional probability, like P(A | B) = probability of A given B.\n\nMeta-information\n================\nexname: Lec01 Medium string 06\nextype: string\nexsolution: ^\\\\s*[Gg]iven\\\\s*$\n",
+    "supporting": [
+      "string_05_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

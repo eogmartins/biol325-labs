@@ -1,0 +1,15 @@
+{
+  "hash": "562589f4adc610abf0d3a5b9a2c75525",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet `x <- c(1, 2, 3)`. What is `mean(x)`?\n\nSolution\n========\nThe mean is (1 + 2 + 3) / 3 = 2.\n\nMeta-information\n================\nexname: Lab01 (Easy) mean\nextype: num\nexsolution: 2\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

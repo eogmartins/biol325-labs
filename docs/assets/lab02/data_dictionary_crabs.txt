@@ -1,0 +1,54 @@
+Dataset: Pie Crab (Fiddler crab morphology and environment)
+
+Source: U.S. Long Term Ecological Research (LTER) Network; distributed for 
+teaching via the lterdatasampler R package
+
+Study system:
+Fiddler crabs sampled at salt marsh sites associated with the Plum Island 
+Ecosystems (PIE) LTER, USA.
+
+Study focus:
+Variation in crab body size in relation to environmental conditions across marsh
+sites during summer 2016.
+
+Variables:
+- date: Date the individual crab was sampled (YYYY-MM-DD)
+- latitude: Latitude of the salt marsh sampling site (decimal degrees)
+- site: Salt marsh sampling site identifier (character)
+- size: Crab body size (carapace width, mm)
+- air_temp: Mean annual air temperature at the smapling site (°C)
+- air_temp_sd: Standard deviation of mean annual air temperature (°C)
+- longitude: Longitude of the sampling site (decimal degrees)
+- time: Time of sampling (local time; HH:MM)
+- water_temp: Mean annual water surface (< 1m) temperature
+- water_temp_sd: Standard deviation of mean annual water surface (< 1m) temperature
+- name: full name of research site
+
+
+
+date
+a date denoting the date crabs were collected
+
+latitude
+a number denoting the latitude of salt marsh (degree)
+
+site
+a character denoting the location where crabs were collected (abbreviation of site name); GTM=Guana Tolomoto Matanzas NERR | SI=Sapelo Island NERR |NIB=North Inlet Winyah Bay NERR | ZI=Zeke's Island NERR | RC=Rachel Carson NERR | VCR=Virginia Coastal Reserve LTER | DB=Delaware Bay NERR |JC=Jacques Cousteau NERR | CT=Sixpenny Island - Connecticut |NB=Narragansett Bay NERR | CC=Cape Cod | BC=Bare Cove Park | PIE=Plum Island Estuary - West Creek
+
+size
+a number denoting carapace width of a crab (millimeter)
+
+air_temp
+a number denoting mean annual air temperature (Celsius)
+
+air_temp_sd
+a number denoting the standard deviation of mean annual air temperature (Celsius)
+
+water_temp
+a number denoting mean annual water temperature (Celcius), which is surface temperature (< 1m)
+
+water_temp_sd
+a number denoting the standard deviation of mean annual water temperature (Celsius)
+
+name
+full name of research site; LTER, Long-Term Ecological Research site; NERR, National Estuarine Research Reserve

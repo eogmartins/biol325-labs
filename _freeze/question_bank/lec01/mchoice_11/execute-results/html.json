@@ -1,0 +1,15 @@
+{
+  "hash": "d0b5d65b8497ffa4beb520e69358defa",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich are good practice habits when using probability in ecology? Select all that apply.\n\nAnswerlist\n----------\n* Define events clearly before calculating probabilities\n* Avoid assuming independence without justification\n* Use complements/unions to avoid double-counting\n* Assume everything is independent to simplify\n\nSolution\n========\nGood practice is conceptual: define events, choose the correct rule, and justify assumptions. Unjustified independence can badly mislead inference.\n\nMeta-information\n================\nexname: Lec01 Hard mchoice 12\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

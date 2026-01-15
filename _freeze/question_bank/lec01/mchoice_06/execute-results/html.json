@@ -1,0 +1,15 @@
+{
+  "hash": "5b2f1bcd6dc45497f3977001d0364f45",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn a bird point-count, wind reduces detectability. Let A = “species detected”, B = “windy”. Which statements are plausible? Select all that apply.\n\nAnswerlist\n----------\n* P(A | B) < P(A)\n* A and B may be dependent\n* P(A | B) must equal P(A)\n* This automatically proves the species is absent when windy\n\nSolution\n========\nWind can make birds harder to hear/see, reducing detection probability. That means P(detect | windy) can be lower than overall P(detect), indicating dependence. But lower detection does not prove absence. Instead, it reflects the observation process.\n\nMeta-information\n================\nexname: Lec01 Medium mchoice 06\nextype: mchoice\nexsolution: 1100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

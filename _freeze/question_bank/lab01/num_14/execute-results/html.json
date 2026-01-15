@@ -1,0 +1,15 @@
+{
+  "hash": "cf9aea61432f8e2f4d92aa7bc5ce8657",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf `m <- matrix(1:9, nrow = 3)`, what is `ncol(m)`?\n\nSolution\n========\nThe command specifies a matrix with three rows. Since you have nine values to populate a 3-row matrix, it follows that the matrix must have three columns.\n\nMeta-information\n================\nexname: Lab01 (Medium) ncol\nextype: num\nexsolution: 3\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

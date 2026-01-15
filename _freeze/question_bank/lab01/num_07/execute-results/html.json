@@ -1,0 +1,15 @@
+{
+  "hash": "60155693216ecde9c29958c7eecaad6b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet `x <- 1:10`. What is `sum(x)`?\n\nSolution\n========\nThe sum 1+2+...+10 equals 55.\n\nMeta-information\n================\nexname: Lab01 (Hard) sum of sequence\nextype: num\nexsolution: 55\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

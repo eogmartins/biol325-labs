@@ -1,0 +1,15 @@
+{
+  "hash": "e3781eff8b11f471106fe43dfe00869b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich function returns the current working directory?\n\nAnswerlist\n----------\n* setwd()\n* getwd()\n* list.files()\n* dir.create()\n\nSolution\n========\n`getwd()` returns the current working directory as a character string. `setwd()` changes it; `list.files()` lists contents; `dir.create()` creates a folder.\n\nMeta-information\n================\nexname: Lab01 (Easy) getwd()\nextype: schoice\nexsolution: 0100\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

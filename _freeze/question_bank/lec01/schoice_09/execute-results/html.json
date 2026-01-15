@@ -1,0 +1,15 @@
+{
+  "hash": "2026139103eab7e61ba26c259020bb71",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nA snorkel survey defines A = “juvenile salmon observed” and B = “water temperature > 20°C at survey time.” Which interpretation is correct?\n\nAnswerlist\n----------\n* P(B | A) is the probability juveniles are observed given T > 20°C\n* P(A | B) is the probability juveniles are observed given T > 20°C\n* P(A ∪ B) is the probability juveniles are observed and T > 20°C\n* P(A ∩ B) is the probability juveniles are observed or T > 20°C\n\nSolution\n========\nP(A | B) reads “A given B.” Here: probability of observing juveniles **given** temperature exceeds 20°C. Be careful with symbols: ∩ means AND, ∪ means OR (inclusive). This is a common source of mistakes.\n\nMeta-information\n================\nexname: Lec01 Medium schoice 09\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

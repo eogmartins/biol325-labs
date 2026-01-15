@@ -1,0 +1,15 @@
+{
+  "hash": "589308a98adfb9631198c327dc0e72b4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn an ecological sampling scenario, P(A) = P(detect sample 1) = 0.4 and P(B) = P(detect sample 2) = 0.4. Assuming independence, compute P(detect in both samples).\n\nSolution\n========\nUnder independence: P(A ∩ B) = 0.4 × 0.4 = 0.16. In practice, subsequent sampling events may be dependent, but the arithmetic illustrates the product rule.\n\nMeta-information\n================\nexname: Lec01 Easy num 04\nextype: num\nexsolution: 0.16\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "4553b2eab509edaa3eca403fdd4f93fd",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet P(A) = 0.2 and P(B) = 0.5. Without knowing whether the events overlap or not, what is the largest possible P(A ∪ B)?\n\nSolution\n========\nLargest union occurs when there is no overlap (disjoint events): 0.2 + 0.5 = 0.7.\n\nMeta-information\n================\nexname: Lec01 Hard num 15\nextype: num\nexsolution: 0.7\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

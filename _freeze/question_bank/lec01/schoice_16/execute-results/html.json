@@ -1,0 +1,15 @@
+{
+  "hash": "71175b9fb0504527b96b72a0dd8bd06a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nAn ecologist says: \n\n“Before I collect new data, I can still assign a probability that a stream reach is occupied by bull trout based on prior surveys and expert knowledge.” \n\nThis statement aligns most closely with which definition of probability?\n\nAnswerlist\n----------\n* Frequentist: probability is the long-run relative frequency of outcomes in repeated trials\n* Bayesian: probability represents a degree of belief given current information\n* Frequentist: probability must be 0 or 1 before data are collected\n* Bayesian: probability cannot be updated with data\n\nSolution\n========\nThe statement is explicitly about assigning probability **before** collecting new data using existing information and expert knowledge. That is the Bayesian interpretation: probability is a **degree of belief** conditional on what you currently know.  \n\nA frequentist interpretation typically treats probability as a long‑run frequency under repeated identical trials. It does not assign probabilities to fixed but unknown hypotheses (like “this reach is occupied”) in the same way Bayesians do.\n\nMeta-information\n================\nexname: Lec01 Bayes schoice 16\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

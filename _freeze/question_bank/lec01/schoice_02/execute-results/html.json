@@ -1,0 +1,15 @@
+{
+  "hash": "7b89b6a253a1f9839c5167dc528f296f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn a nest monitoring project, event A = “the nest is predated this season.” If P(A) = 0.30, what does the complement event Aᶜ represent?\n\nAnswerlist\n----------\n* The nest is present\n* The nest is *not* predated this season\n* The nest is successful\n* The predator is absent from the region\n\nSolution\n========\nAᶜ is “not A.” So Aᶜ means **no predation** in that season.  \nNOTE: “not predated” is not automatically the same as “successful” unless you define success as “not predated” (you might also have abandonment, wildfires, etc.). Clear event definitions matter.\n\nMeta-information\n================\nexname: Lec01 Easy schoice 02\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

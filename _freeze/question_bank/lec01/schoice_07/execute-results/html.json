@@ -1,0 +1,15 @@
+{
+  "hash": "d32072af3cc90e196018791a2a48f729",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf events A and B are mutually exclusive, which statement is true?\n\nAnswerlist\n----------\n* P(A ∩ B) = 0\n* P(A | B) = P(A)\n* A and B must be independent\n* P(A) = P(B)\n\nSolution\n========\nMutually exclusive means **cannot happen together**, so the overlap is zero: P(A ∩ B) = 0. They are **not independent** unless one event has probability 0.\n\nMeta-information\n================\nexname: Lec01 Medium schoice 07\nextype: schoice\nexsolution: 1000\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

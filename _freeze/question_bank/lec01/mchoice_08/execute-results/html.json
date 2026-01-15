@@ -1,0 +1,15 @@
+{
+  "hash": "28ccfdf60cf64a77564b76c4693a11a5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nA researcher studying amphibian occurrence samples a wetland in two consecutive days. The probability that amphibians are detected on a daily sample depends on the weather. Which statements could be true? Select all that apply.\n\nAnswerlist\n----------\n* Detecting amphibians in the two sampling days may be dependent because of weather effects\n* Sampling in different days guarantees independence\n* If weather conditions persist, P(detect sample 2 | detect sample 1 ) could be higher than P(detect sample 2)\n* Mutual exclusivity implies you cannot detect amphibians on both sampling days\n\nSolution\n========\nShared drivers (i.e., weather in this case) can create dependence across sampling days. Detecting amphibians on the first sampling day due good weather can indicate a high probability of detection on the second sampling day if weather conditions persist. Mutual exclusivity is not appropriate here because detecting in two consecutive days is possible.\n\nMeta-information\n================\nexname: Lec01 Medium mchoice 08\nextype: mchoice\nexsolution: 1010\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "1b5d228c62f2586bfe88d77ca91d36ec",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf P(A) = 0.7, what is the minimum possible value of P(A ∪ B)? HINT: it helps to draw Venn diagrams to come up with solution.\n\nSolution\n========\nUnion contains A, so it cannot be smaller than P(A). Minimum occurs when B is a subset of A.\n\nMeta-information\n================\nexname: Lec01 Medium num 09\nextype: num\nexsolution: 0.7\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

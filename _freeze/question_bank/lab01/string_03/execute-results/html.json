@@ -1,0 +1,15 @@
+{
+  "hash": "716684fcf971376d1ddecf0fc49eed5a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWrite a base R expression that creates the integer sequence from 1 to 10 using a `:`.\n\nSolution\n========\n`1:10` uses the colon operator to create an integer sequence from 1 to 10.\n\nMeta-information\n================\nexname: Lab01 (Easy) colon operator\nextype: string\nexsolution: 1:10\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "d23a8d181d8a0943f5440582c65041d9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn a fish survey, event A = “a randomly selected captured fish is female.” If P(A) = 0.40, what is P(Aᶜ)?\n\nAnswerlist\n----------\n* 0.40\n* 0.60\n* 1.40\n* 0.00\n\nSolution\n========\nUse the complement rule: P(Aᶜ) = 1 − P(A) = 1 − 0.40 = 0.60.  \nInterpretation: in the long run, about 60% of captured fish would be non‑female under the same sampling process (not necessarily in every sample).\n\nMeta-information\n================\nexname: Lec01 Easy schoice 04\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "f91edb2e5df6aaa9bf6220d67d3c706e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich conditions imply independence? Select all that apply.\n\nAnswerlist\n----------\n* P(A | B) = P(A)\n* P(A ∩ B) = P(A)P(B)\n* P(B | A) = P(B)\n* P(A ∩ B) = 0\n\nSolution\n========\nThe first three are equivalent characterizations of independence (when defined).\nP(A ∩ B) = 0 is mutual exclusivity, not independence unless one event has probability 0.\n\nMeta-information\n================\nexname: Lec01 Easy mchoice 05\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

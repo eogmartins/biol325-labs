@@ -1,0 +1,15 @@
+{
+  "hash": "b8416f5ae6179e27aa1f41ccef8af697",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich statements are consistent with probability axioms (foundational statements) and rules (derivations fom axioms)? Select all that apply.\n\nAnswerlist\n----------\n* Probabilities are non-negative\n* P(S) = 1 for sample space S (i.e., normalization)\n* P(A) + P(Aᶜ) = 1\n* P(A) can exceed 1 if A is common\n\nSolution\n========\nNon‑negativity and normalization are axioms. The complement rule gives P(A) + P(Aᶜ) = 1. Probabilities never exceed 1.\n\nMeta-information\n================\nexname: Lec01 Easy mchoice 02\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "1e0dd440c2f8910b648a53fd9134369a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf P(A) = 0.4, compute P(Aᶜ).\n\nSolution\n========\nComplement rule: 1 − 0.4 = 0.6.\n\nMeta-information\n================\nexname: Lec01 Easy num 05\nextype: num\nexsolution: 0.6\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

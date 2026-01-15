@@ -1,0 +1,15 @@
+{
+  "hash": "e72dc9272da36f2de2de6584bb19baab",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich statements about conditional probability are correct? Select all that apply.\n\nAnswerlist\n----------\n* It can be larger or smaller than the marginal probability\n* It always increases probability\n* It uses information after the word 'given'\n* If independent, P(A | B) = P(A)\n\nSolution\n========\nConditioning can increase or decrease probability depending on association. Independence means that conditioning does not change probabilities.\n\nMeta-information\n================\nexname: Lec01 Hard mchoice 11\nextype: mchoice\nexsolution: 1011\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

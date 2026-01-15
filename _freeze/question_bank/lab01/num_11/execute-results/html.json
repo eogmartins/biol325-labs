@@ -1,0 +1,15 @@
+{
+  "hash": "eff81c64a3f32911bf4f4f6f7752b4aa",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet `x <- rep(5, times = 6)`. What is `length(x)`?\n\nSolution\n========\n`rep(5, times = 6)` repeats 5 six times.\n\nMeta-information\n================\nexname: Lab01 (Easy) rep length\nextype: num\nexsolution: 6\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

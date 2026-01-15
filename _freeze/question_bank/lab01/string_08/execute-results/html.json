@@ -1,0 +1,15 @@
+{
+  "hash": "2db949140bd93f2dc0451533d430e7db",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWrite the base R function that returns the current working directory.\n\nSolution\n========\n`getwd()` is the function returns the current working directory.\n\nMeta-information\n================\nexname: Lab01 (Easy) getwd()\nextype: string\nexsolution: ^\\\\s*getwd(\\\\(\\\\))?\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

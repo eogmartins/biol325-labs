@@ -1,0 +1,17 @@
+{
+  "hash": "f2a6bd677396da30be057a5cd1e3edff",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat is the term for 'not A'?\n\nSolution\n========\nThe **complement** of A (or Aᶜ), is the event that A does not occur.\n\nMeta-information\n================\nexname: Lec01 Easy string 03\nextype: string\nexsolution: ^\\\\s*[Cc]omplement\\\\s*$\n",
+    "supporting": [
+      "string_02_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

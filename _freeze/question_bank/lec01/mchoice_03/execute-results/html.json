@@ -1,0 +1,15 @@
+{
+  "hash": "a8c53a1641bf5c1f5a2e76f5fe5c581a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich are always true for any events A and B? Select all that apply.\n\nAnswerlist\n----------\n* P(A ∩ B) ≤ P(A)\n* P(A ∩ B) ≤ P(B)\n* P(A ∪ B) ≥ P(A)\n* P(A ∪ B) = P(A) + P(B) always\n\nSolution\n========\nIntersection is a subset of each event, so it cannot be larger than either P(A) or P(B). Union contains A, so it cannot be smaller than A. Union equals sum only when A and B are disjoint / mutually exclusive (i.e., no overlap).\n\nMeta-information\n================\nexname: Lec01 Easy mchoice 03\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "4775b23475428d3d1a2a889e67f7bee8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat is the name of the rule P(A ∩ B) = P(A | B)P(B)?\n\nSolution\n========\n**Multiplication** rule.\n\nMeta-information\n================\nexname: Lec01 Medium string 08\nextype: string\nexsolution: ^\\\\s*[Mm]ultiplication\\\\s*[Rr]ule\\\\s*|\\\\s*[Mm]ultiplication\\\\s*$\n",
+    "supporting": [
+      "string_07_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

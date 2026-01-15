@@ -1,0 +1,15 @@
+{
+  "hash": "dbd8b4d04a66e023d5e1533a4af67e59",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWrite the base R function that creates a sequence with a chosen step size (e.g., by = 0.5).\n\nSolution\n========\n`seq()` is the function that you can use to create sequences with flexible start/end/step values.\n\nMeta-information\n================\nexname: Lab01 (Hard) seq()\nextype: string\nexsolution: ^\\\\s*seq(\\\\(\\\\))?\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

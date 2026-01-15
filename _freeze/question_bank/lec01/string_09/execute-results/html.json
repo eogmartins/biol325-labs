@@ -1,0 +1,17 @@
+{
+  "hash": "d9932a8e46335757e4940ebdf108bdf5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn words, what does the symbol ∩ mean?\n\nSolution\n========\nA ∩ B is the **intersection**, that is outcomes where both A **and** B occur.\n\nMeta-information\n================\nexname: Lec01 Medium string 10\nextype: string\nexsolution: ^\\\\s*[Ii]ntersection\\\\s*|\\\\s*[Aa]nd\\\\s*$\n",
+    "supporting": [
+      "string_09_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

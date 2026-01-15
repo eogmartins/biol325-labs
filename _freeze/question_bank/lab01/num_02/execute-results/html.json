@@ -1,0 +1,15 @@
+{
+  "hash": "12e776dcd1d19235a55bd4e829d126cf",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet `x <- c(3, 5, 7, 9)`. What is `x[3]`?\n\nSolution\n========\nIndexing with `[3]` returns the third element of the vector, which is 7.\n\nMeta-information\n================\nexname: Lab01 (Easy) indexing returns value\nextype: num\nexsolution: 7\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

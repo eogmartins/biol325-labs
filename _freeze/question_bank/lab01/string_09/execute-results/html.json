@@ -1,0 +1,15 @@
+{
+  "hash": "16bd40340d7017b40f859c48e5e93809",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWrite the base R plotting function used for a box plot.\n\nSolution\n========\n`boxplot()` is teh function that produces a box plot in base R when given a numeric and a categorical vector.\n\nMeta-information\n================\nexname: Lab01 (Easy) plot()\nextype: string\nexsolution: ^\\\\s*boxplot(\\\\(\\\\))?\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

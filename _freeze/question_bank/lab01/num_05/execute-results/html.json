@@ -1,0 +1,15 @@
+{
+  "hash": "63c186516d4e5a3daeee3e0b76251a16",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat is the last number produced by `seq(2, 20, by = 3)`?\n\nSolution\n========\nThe sequence is 2, 5, 8, 11, 14, 17, 20. Because 20 is exactly reached, it is included.\n\nMeta-information\n================\nexname: Lab01 (Medium) sequence endpoint\nextype: num\nexsolution: 20\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "7b65cffa62f75bd5288c291dfd6cc45b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet `x <- c(1, NA, 3)`. What is `mean(x, na.rm=TRUE)`?\n\nSolution\n========\nRemoving `NA` leaves 1 and 3. Mean is (1 + 3) / 2 = 2.\n\nMeta-information\n================\nexname: Lab01 (Medium) mean with NA\nextype: num\nexsolution: 2\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

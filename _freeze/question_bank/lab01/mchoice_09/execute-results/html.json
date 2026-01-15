@@ -1,0 +1,15 @@
+{
+  "hash": "54671002f20ba8fe1a156b6107c5bb88",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich are good ways to create a project-relative path to a file such as `data/penguins.csv`? Select all that apply.\n\nAnswerlist\n----------\n* `\"data/penguins.csv\"`\n* `file.path(\"data\", \"penguins.csv\")`\n* `\"C:/Users/name/course/data/penguins.csv\"`\n* `paste(\"data/\", \"penguins.csv\", sep = \"\")`\n\nSolution\n========\nRelative paths and `file.path()` are portable. `paste()` works but can be less robust across OS separators; `file.path()` is best practice. Absolute paths are not portable.\n\nMeta-information\n================\nexname: Lab01 (Hard) robust paths\nextype: mchoice\nexsolution: 1101\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

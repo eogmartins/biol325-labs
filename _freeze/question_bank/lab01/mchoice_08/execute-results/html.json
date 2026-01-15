@@ -1,0 +1,15 @@
+{
+  "hash": "3ce9fcf9b5a222eef168ab05f4a14f5d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich calls will return `NA` without additional arguments? (Select all that apply)\n\nAnswerlist\n----------\n* `mean(c(1, NA, 3))`\n* `sum(c(1, NA, 3))`\n* `sum(c(1, 2, 3))`\n* `length(c(1, NA, 3))`\n\nSolution\n========\nSummaries often return `NA` if `NA` is present unless `na.rm = TRUE`. `length()` counts entries including `NA`, so it returns 3 (not `NA`).\n\nMeta-information\n================\nexname: Lab01 (Hard) NA in summaries\nextype: mchoice\nexsolution: 1100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

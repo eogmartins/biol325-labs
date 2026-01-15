@@ -1,0 +1,15 @@
+{
+  "hash": "6c65b16a7d0090b171c69ca4373ad071",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich base R function makes a histogram?\n\nSolution\n========\n`hist()` is the function that draws a histogram using base R graphics.\n\nMeta-information\n================\nexname: Lab01 (Medium) hist()\nextype: string\nexsolution: ^\\\\s*hist(\\\\(\\\\))?\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "7859b92cff542108ece8f0df65f5dfa7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat is the name of the rule P(A ∪ B) = P(A) + P(B) − P(A∩B)?\n\nSolution\n========\n**Addition** rule.\n\nMeta-information\n================\nexname: Lec01 Medium string 09\nextype: string\nexsolution: ^\\\\s*[Aa]ddition\\\\s*[Rr]ule\\\\s*|\\\\s*[Aa]ddition\\\\s*$\n",
+    "supporting": [
+      "string_08_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

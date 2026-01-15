@@ -1,0 +1,15 @@
+{
+  "hash": "7060d858e6c95aa15845c86cf16bacfe",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn base R, if you call `plot(1:5, 1:5)`, how many points are plotted?\n\nSolution\n========\nBoth x and y have length = 5, so five points are plotted.\n\nMeta-information\n================\nexname: Lab01 (Medium) plot point count\nextype: num\nexsolution: 5\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

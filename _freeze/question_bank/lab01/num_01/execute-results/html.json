@@ -1,0 +1,15 @@
+{
+  "hash": "42d1189275d842bc99978ff0057d2686",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nLet `x <- c(3, 5, 7, 9)`. What is `length(x)`?\n\nSolution\n========\nA vector with four entries has length 4. `length()` counts elements, not values.\n\nMeta-information\n================\nexname: Lab01 (Easy) length of vector\nextype: num\nexsolution: 4\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

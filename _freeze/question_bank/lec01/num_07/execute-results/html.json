@@ -1,0 +1,15 @@
+{
+  "hash": "ab0ff2f42a76dda6c47febf4d3e6239a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nGiven P(A ∩ B) = 0.12 and P(B) = 0.30, compute P(A | B).\n\nSolution\n========\nComputation: P(A | B) = P(A ∩ B) / P(B) = 0.12 / 0.30 = 0.4.\n\nMeta-information\n================\nexname: Lec01 Medium num 07\nextype: num\nexsolution: 0.4\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

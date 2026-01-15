@@ -1,0 +1,15 @@
+{
+  "hash": "4b3827acdff5511897db471cda8a68f6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich base R function returns the number of rows of a matrix `m`?\n\nSolution\n========\n`nrow()` is the function that returns the number of rows in matrix (also works for data frames).\n\nMeta-information\n================\nexname: Lab01 (Medium) nrow()\nextype: string\nexsolution: ^\\\\s*nrow(\\\\(\\\\))?\\\\s*$\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

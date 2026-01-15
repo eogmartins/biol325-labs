@@ -1,0 +1,15 @@
+{
+  "hash": "81a8b2894cf69824625b0b9a67456b43",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich objects are **vectors** in base R? Select all that apply.\n\nAnswerlist\n----------\n* `c(1, 2, 3)`\n* `1:10`\n* `matrix(1:6, nrow = 2)`\n* `c(\"a\", \"b\")`\n\nSolution\n========\nVectors include numeric/integer/character vectors (e.g., `c(1,2,3)`, `1:10`, `c(\"a\",\"b\")`). A matrix is a different class with two dimensions.\n\nMeta-information\n================\nexname: Lab01 (Easy) identify vectors\nextype: mchoice\nexsolution: 1101\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

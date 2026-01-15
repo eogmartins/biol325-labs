@@ -1,0 +1,15 @@
+{
+  "hash": "c18fd5635a2d67def67d6994aed185c2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nA stream dries during summer (event A) and juvenile salmon experience mortality (event B). Which statements are reasonable? Select all that apply.\n\nAnswerlist\n----------\n* A and B are likely dependent\n* A and B are certainly independent\n* If A occurs, B may become more likely\n* Knowing B occurred could provide information about whether A occurred\n\nSolution\n========\nDrying reduces habitat and can increase stress, crowding, and predation risk, so mortality may become more likely. That is **dependence**: learning A changes beliefs about B and vice‑versa. Independence is not automatic and it must be justified.\n\nMeta-information\n================\nexname: Lec01 Easy mchoice 01\nextype: mchoice\nexsolution: 1011\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

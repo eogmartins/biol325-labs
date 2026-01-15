@@ -1,0 +1,15 @@
+{
+  "hash": "11859bcdc75a4c9488e1b0f05a6f1106",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn a salmon smolt study, you estimate P(survive | low flow) = 0.30 and P(survive) = 0.45. Which conclusion is most appropriate?\n\nAnswerlist\n----------\n* Low flow increases survival\n* Survival is lower under low flow than overall\n* Survival and flow are independent\n* This proves low flow causes mortality\n\nSolution\n========\nCompare conditional to marginal probability: 0.30 < 0.45, so survival appears less likely under low flow than overall. That implies association (dependence).  However, it does not prove causation, as high flow could be correlated with other factors (timing, predators, turbidity). Probability comparisons identify patterns, whereas causal claims require mechanistic understanding and stronger design/analysis.\n\nMeta-information\n================\nexname: Lec01 Hard schoice 11\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

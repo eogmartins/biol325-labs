@@ -1,0 +1,15 @@
+{
+  "hash": "d38f1d65c75ab9e69226b9baf9c46a7d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf A and B are mutually exclusive and both have positive probability, which are true? Select all that apply.\n\nAnswerlist\n----------\n* P(A ∩ B) = 0\n* P(A ∪ B) = P(A) + P(B)\n* A and B cannot be independent\n* P(A | B) = P(A)\n\nSolution\n========\nDisjoint events have zero overlap and additive union. With positive probabilities, independence would require P(A ∩ B) = P(A)P(B) > 0, which contradicts the fact that disjoint events have no overlap; so they cannot be independent. P(A | B) must be 0 if B occurs because A and B are disjoint.\n\nMeta-information\n================\nexname: Lec01 Medium mchoice 10\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

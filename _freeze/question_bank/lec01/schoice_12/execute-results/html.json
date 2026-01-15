@@ -1,0 +1,15 @@
+{
+  "hash": "871fe755ce0b56301066f997bc49cf5b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf P(A | B) > P(A), what does that suggest?\n\nAnswerlist\n----------\n* B makes A less likely\n* B provides information that increases the probability of A\n* A and B must be mutually exclusive\n* A and B must be independent\n\nSolution\n========\nKnowing B increases the probability that A happens. It does not imply mutual exclusivity, and it contradicts independence.\n\nMeta-information\n================\nexname: Lec01 Hard schoice 12\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

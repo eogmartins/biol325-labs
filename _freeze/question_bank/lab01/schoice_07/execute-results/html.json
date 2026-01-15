@@ -1,0 +1,15 @@
+{
+  "hash": "ede9c86341834e5dffb96cc6659cb734",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nFor `x <- c(5, NA, 9)`, what is `sum(x)` by default?\n\nAnswerlist\n----------\n* 14\n* NA\n* 9\n* 5\n\nSolution\n========\nBy default, arithmetic with missing values returns `NA` because the sum is unknown unless you explicitly remove missing values using `na.rm = TRUE`.\n\nMeta-information\n================\nexname: Lab01 (Medium) NA propagation\nextype: schoice\nexsolution: 0100\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

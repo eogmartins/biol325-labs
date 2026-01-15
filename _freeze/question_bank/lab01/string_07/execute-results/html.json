@@ -1,0 +1,15 @@
+{
+  "hash": "1fc388c15d87eef46d16a4743040e045",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWrite the base R command that reports how many elements a vector `x ` has.\n\nSolution\n========\n`length(x)` returns the number of elements in `x`.\n\nMeta-information\n================\nexname: Lab01 (Easy) length()\nextype: string\nexsolution: ^\\\\s*length\\\\(x\\\\)\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

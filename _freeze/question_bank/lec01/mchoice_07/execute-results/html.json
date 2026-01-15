@@ -1,0 +1,15 @@
+{
+  "hash": "cbfab2e971a525a66da2024f04658fb5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich are valid ways to compute P(A ∪ B)? Select all that apply.\n\nAnswerlist\n----------\n* P(A) + P(B) − P(A ∩ B)\n* P(A) + P(B) if A and B are mutually exclusive\n* 1 − P((A ∪ B)ᶜ)\n* P(A P(B)\n\nSolution\n========\nGeneral addition rule subtracts overlap. If disjoint, overlap is 0 so it simplifies. You can also use the complement of the union. The product rule is for intersections under independence, not unions.\n\nMeta-information\n================\nexname: Lec01 Medium mchoice 07\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

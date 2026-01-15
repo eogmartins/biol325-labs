@@ -1,0 +1,15 @@
+{
+  "hash": "cfade61a06c70cbfcf23daf6aacd8ac8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf `list.files()` prints 0 filenames, how many files matched your criteria?\n\nSolution\n========\nAn empty result means zero files matched your criteria (or the directory is empty).\n\nMeta-information\n================\nexname: Lab01 (Easy) list.files count\nextype: num\nexsolution: 0\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

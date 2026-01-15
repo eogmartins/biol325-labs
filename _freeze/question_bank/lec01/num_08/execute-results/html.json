@@ -1,0 +1,15 @@
+{
+  "hash": "cfa5e0ffed563cdda9de91aca9d908d1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nGiven P(A) = 0.6, P(B) = 0.5, P(A ∩ B) = 0.4, compute P(A ∪ B).\n\nSolution\n========\nUse addition rule for overlapping events: P(A ∪ B) = 0.6 + 0.5 − 0.4 = 0.7 (subtract overlap once to avoid double-counting).\n\nMeta-information\n================\nexname: Lec01 Medium num 08\nextype: num\nexsolution: 0.7\nextol: 0\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

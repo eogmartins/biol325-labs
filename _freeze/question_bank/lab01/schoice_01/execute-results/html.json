@@ -1,0 +1,15 @@
+{
+  "hash": "6000173318bd4600ccbc5f14448d1367",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIn R, the **working directory** is best described as\n\nAnswerlist\n----------\n* the folder where R is installed\n* the default folder R uses to read/write files unless you it give a path\n* the folder where your Quarto file is saved\n* the folder where RStudio stores its settings\n\nSolution\n========\nThe working directory is the default location for file input/output when you use relative paths (e.g., `read.csv(\"data/file.csv\")`).\n\nMeta-information\n================\nexname: Lab01 (Easy) Working directory meaning\nextype: schoice\nexsolution: 0100\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

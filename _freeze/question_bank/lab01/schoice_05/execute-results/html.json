@@ -1,0 +1,15 @@
+{
+  "hash": "6324afb6aaa0606b3b7548a88e2f09cb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nIf you run `x <- c(2, 4, 6)`, what type of object is `x`?\n\nAnswerlist\n----------\n* a matrix\n* a vector\n* a list\n* a data frame\n\nSolution\n========\n`c()` combines values into a vector, s x is a vector.\n\nMeta-information\n================\nexname: Lab01 (Easy) Vector creation\nextype: schoice\nexsolution: 0100\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

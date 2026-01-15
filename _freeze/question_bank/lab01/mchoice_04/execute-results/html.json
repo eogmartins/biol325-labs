@@ -1,0 +1,15 @@
+{
+  "hash": "daf23c4bae71935ad33869f7283e29b4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich expressions create sequences of values? Select all that apply.\n\nAnswerlist\n----------\n* `1:5`\n* `seq(1, 5)`\n* `seq(1, 9, by = 2)`\n* `rep(1, 5)`\n\nSolution\n========\n`1:5` and `seq()` create sequences. `rep()` repeats values rather than stepping through a range.\n\nMeta-information\n================\nexname: Lab01 (Medium) sequences vs repeats\nextype: mchoice\nexsolution: 1110\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

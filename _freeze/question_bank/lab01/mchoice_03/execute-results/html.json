@@ -1,0 +1,15 @@
+{
+  "hash": "dcc07da37b9d39b5915311f5152bac2e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhich practices help keep your analysis reproducible? Select all that apply.\n\nAnswerlist\n----------\n* Using an RStudio Project\n* Using relative paths like `data/file.csv`\n* Hard-coding the working directory as`setwd(\"C:/Users/.../\")` in scripts\n* Keeping raw data files in a stable folder within the project\n\nSolution\n========\nProjects, relative paths, and stable data locations make it easy to re-run your analyses. Hard-coded paths defined by `setwd()`are typically not portable between computers.\n\nMeta-information\n================\nexname: Lab01 (Easy) reproducibility practices\nextype: mchoice\nexsolution: 1101\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

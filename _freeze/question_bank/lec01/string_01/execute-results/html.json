@@ -1,0 +1,15 @@
+{
+  "hash": "e248e03908f659ceb89214fc30e46553",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat do we call the set of all possible outcomes?\n\nSolution\n========\nThe **sample space** contains all possible outcomes for the process you are modeling (e.g., {detected, not detected} for one sample).\n\nMeta-information\n================\nexname: Lec01 Easy string 01\nextype: string\nexsolution: ^\\\\s*[Ss]ample\\\\s*[Ss]pace\\\\s*$\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

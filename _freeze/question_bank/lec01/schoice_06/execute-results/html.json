@@ -1,0 +1,15 @@
+{
+  "hash": "3c0228f0d4e8268518b9d7db589ba743",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nA researcher surveying pileated woodpeckers visits the same forest twice. Let A = “woodpecker detected on visit 2” and B = “woodpecker detected on visit 1.” Which statement best describes P(A | B)?\n\nAnswerlist\n----------\n* Probability of B given A\n* Probability of A given B\n* Probability that both occur\n* Probability that neither occurs\n\nSolution\n========\nP(A | B) is the probability of **A given B** occurred.\n\nMeta-information\n================\nexname: Lec01 Medium schoice 06\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

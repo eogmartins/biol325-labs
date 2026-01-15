@@ -1,0 +1,15 @@
+{
+  "hash": "87871e605b34ced50e02ff1199486eb8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nSuppose `x <- c(\"a\", \"b\", \"c\")`. What does `x[c(TRUE, FALSE, TRUE)]` return?\n\nAnswerlist\n----------\n* \"a\" \"c\"\n* \"b\"\n* \"a\" \"b\" \"c\"\n* TRUE FALSE TRUE\n\nSolution\n========\nLogical indexing keeps elements where the logical vector is TRUE. Here, it keeps elements 1 and 3, returning `c(\"a\", \"c\")`.\n\nMeta-information\n================\nexname: Lab01 (Hard) logical subsetting\nextype: schoice\nexsolution: 1000\nexshuffle: 4\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

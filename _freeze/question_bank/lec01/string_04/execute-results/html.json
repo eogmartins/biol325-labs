@@ -1,0 +1,17 @@
+{
+  "hash": "2c907d2f73737ae2309bebb17c2d9416",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nWhat is the term for events where knowing one occurred does not change the probability of the other?\n\nSolution\n========\n*Independent* events means P(A | B) = P(A), equivalently P(A ∩ B) = P(A)P(B).\n\nMeta-information\n================\nexname: Lec01 Easy string 05\nextype: string\nexsolution: ^\\\\s*[Ii]ndependent\\\\s*$\n",
+    "supporting": [
+      "string_04_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

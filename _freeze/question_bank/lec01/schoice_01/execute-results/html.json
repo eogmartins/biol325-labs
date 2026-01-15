@@ -1,0 +1,15 @@
+{
+  "hash": "96f3f64cea1295884c8fda67a9542ce1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "Question\n========\nYou survey a wetland and estimate that the probability a randomly chosen quadrat contains cattails is 0.65. Which interpretation is most appropriate under the frequentist definition of probability?\n\nAnswerlist\n----------\n* Exactly 65% of all quadrats always contain cattails\n* In the long run, about 65% of randomly sampled quadrats would contain cattails\n* There are exactly 65 cattails per quadrat\n* Cattails are guaranteed to be present in every wetland\n\nSolution\n========\nA probability like 0.65 describes **uncertainty** and is often interpreted as a long‑run frequency by frequentists. That is, if you repeatedly sample many quadrats under similar conditions, you would expect cattails in about 65% of them **on average**. It does **not** mean you will get exactly 65% in every small sample, it does not describe abundance (how many cattails), and it does not guarantee they will be present in every wetland.\n\nMeta-information\n================\nexname: Lec01 Easy schoice 01\nextype: schoice\nexsolution: 0100\nexshuffle: TRUE\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
