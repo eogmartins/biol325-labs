@@ -1,0 +1,21 @@
+Question
+========
+Suppose `x <- c("a", "b", "c")`. What does `x[c(TRUE, FALSE, TRUE)]` return?
+
+Answerlist
+----------
+* "a" "c"
+* "b"
+* "a" "b" "c"
+* TRUE FALSE TRUE
+
+Solution
+========
+Logical indexing keeps elements where the logical vector is TRUE. Here, it keeps elements 1 and 3, returning `c("a", "c")`.
+
+Meta-information
+================
+exname: Lab01 (Hard) logical subsetting
+extype: schoice
+exsolution: 1000
+exshuffle: 4

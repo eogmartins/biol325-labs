@@ -1,0 +1,14 @@
+Question
+========
+Let P(A) = 0.2 and P(B) = 0.5. Without knowing whether the events overlap or not, what is the largest possible P(A ∪ B)?
+
+Solution
+========
+Largest union occurs when there is no overlap (disjoint events): 0.2 + 0.5 = 0.7.
+
+Meta-information
+================
+exname: Lec01 Hard num 15
+extype: num
+exsolution: 0.7
+extol: 0

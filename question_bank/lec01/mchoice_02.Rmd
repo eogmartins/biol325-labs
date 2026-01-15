@@ -1,0 +1,21 @@
+Question
+========
+Which statements are consistent with probability axioms (foundational statements) and rules (derivations fom axioms)? Select all that apply.
+
+Answerlist
+----------
+* Probabilities are non-negative
+* P(S) = 1 for sample space S (i.e., normalization)
+* P(A) + P(Aᶜ) = 1
+* P(A) can exceed 1 if A is common
+
+Solution
+========
+Non‑negativity and normalization are axioms. The complement rule gives P(A) + P(Aᶜ) = 1. Probabilities never exceed 1.
+
+Meta-information
+================
+exname: Lec01 Easy mchoice 02
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

@@ -1,0 +1,14 @@
+Question
+========
+If P(A) = 0.4, compute P(Aᶜ).
+
+Solution
+========
+Complement rule: 1 − 0.4 = 0.6.
+
+Meta-information
+================
+exname: Lec01 Easy num 05
+extype: num
+exsolution: 0.6
+extol: 0

@@ -1,0 +1,21 @@
+Question
+========
+Why is assuming independence often risky in ecology?
+
+Answerlist
+----------
+* Because probabilities cannot be estimated in ecology
+* Because ecological processes are often linked by mechanisms
+* Because independence always reduces probabilities
+* Because independence violates axioms
+
+Solution
+========
+Ecological variables are frequently connected by causal pathways (temperature ↔ DO, habitat ↔ survival, predators ↔ prey). Independence is a strong simplifying assumption. When it fails, calculations like P(A ∩ B) = P(A)P(B) can be seriously misleading.
+
+Meta-information
+================
+exname: Lec01 Hard schoice 14
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

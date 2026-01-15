@@ -1,0 +1,13 @@
+Question
+========
+Write the base R function that returns the current working directory.
+
+Solution
+========
+`getwd()` is the function returns the current working directory.
+
+Meta-information
+================
+exname: Lab01 (Easy) getwd()
+extype: string
+exsolution: ^\\s*getwd(\\(\\))?\\s*$

@@ -1,0 +1,22 @@
+Question
+========
+In a nest monitoring project, event A = “the nest is predated this season.” If P(A) = 0.30, what does the complement event Aᶜ represent?
+
+Answerlist
+----------
+* The nest is present
+* The nest is *not* predated this season
+* The nest is successful
+* The predator is absent from the region
+
+Solution
+========
+Aᶜ is “not A.” So Aᶜ means **no predation** in that season.  
+NOTE: “not predated” is not automatically the same as “successful” unless you define success as “not predated” (you might also have abandonment, wildfires, etc.). Clear event definitions matter.
+
+Meta-information
+================
+exname: Lec01 Easy schoice 02
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

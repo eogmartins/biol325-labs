@@ -1,0 +1,13 @@
+Question
+========
+Write the indexing expression to get the last element of a vector `x`.
+
+Solution
+========
+The last element is at position `length(x)`, so `x[length(x)]` returns it.
+
+Meta-information
+================
+exname: Lab01 (Hard) last element
+extype: string
+exsolution: ^\\s*x\\[length\\(x\\)\\]\\s*$

@@ -1,0 +1,21 @@
+Question
+========
+A snorkel survey defines A = “juvenile salmon observed” and B = “water temperature > 20°C at survey time.” Which interpretation is correct?
+
+Answerlist
+----------
+* P(B | A) is the probability juveniles are observed given T > 20°C
+* P(A | B) is the probability juveniles are observed given T > 20°C
+* P(A ∪ B) is the probability juveniles are observed and T > 20°C
+* P(A ∩ B) is the probability juveniles are observed or T > 20°C
+
+Solution
+========
+P(A | B) reads “A given B.” Here: probability of observing juveniles **given** temperature exceeds 20°C. Be careful with symbols: ∩ means AND, ∪ means OR (inclusive). This is a common source of mistakes.
+
+Meta-information
+================
+exname: Lec01 Medium schoice 09
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,14 @@
+Question
+========
+How many elements are in `matrix(1:12, nrow = 3)`?
+
+Solution
+========
+`1:12` has 12 values. The matrix reshapes them but does not change the total number of elements.
+
+Meta-information
+================
+exname: Lab01 (Medium) matrix element count
+extype: num
+exsolution: 12
+extol: 0

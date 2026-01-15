@@ -1,0 +1,13 @@
+Question
+========
+What is the term for two events that cannot occur together?
+
+Solution
+========
+Mutually exclusive or disjoint events have no overlap: P(A ∩ B) = 0.
+ 
+Meta-information
+================
+exname: Lec01 Easy string 04
+extype: string
+exsolution: ^\\s*[Mm]utually\\s*[Ee]xclusive\\s*|\\s*[Dd]isjoint\\s*$

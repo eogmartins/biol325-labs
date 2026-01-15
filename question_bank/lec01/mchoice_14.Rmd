@@ -1,0 +1,21 @@
+Question
+========
+In a habitat survey, A = “site is in forest”, B = “site has moss present”. Which statements are plausible? Select all that apply.
+
+Answerlist
+----------
+* A and B could be dependent because forest microclimate supports moss
+* A and B must be independent because they are different attributes
+* P(A ∩ B) can be greater than P(A)
+* P(A ∩ B) ≤ P(A)
+
+Solution
+========
+Dependence is plausible via dependence of moss on cool and humid microclimates, which can be provided by forests. The intersection cannot exceed either event, so P(A ∩ B) ≤ P(A).
+
+Meta-information
+================
+exname: Lec01 Hard mchoice 15
+extype: mchoice
+exsolution: 1001
+exshuffle: TRUE

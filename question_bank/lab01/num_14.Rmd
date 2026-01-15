@@ -1,0 +1,14 @@
+Question
+========
+If `m <- matrix(1:9, nrow = 3)`, what is `ncol(m)`?
+
+Solution
+========
+The command specifies a matrix with three rows. Since you have nine values to populate a 3-row matrix, it follows that the matrix must have three columns.
+
+Meta-information
+================
+exname: Lab01 (Medium) ncol
+extype: num
+exsolution: 3
+extol: 0

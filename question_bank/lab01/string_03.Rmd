@@ -1,0 +1,13 @@
+Question
+========
+Write a base R expression that creates the integer sequence from 1 to 10 using a `:`.
+
+Solution
+========
+`1:10` uses the colon operator to create an integer sequence from 1 to 10.
+
+Meta-information
+================
+exname: Lab01 (Easy) colon operator
+extype: string
+exsolution: 1:10

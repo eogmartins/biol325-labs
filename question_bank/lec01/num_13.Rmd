@@ -1,0 +1,14 @@
+Question
+========
+If P(A ∪ B) = 1, compute P((A ∪ B)ᶜ).
+
+Solution
+========
+If union covers the whole sample space (i.e., P(A ∪ B) = 1), its complement is impossible, so P((A ∪ B)ᶜ) = 0.
+
+Meta-information
+================
+exname: Lec01 Hard num 14
+extype: num
+exsolution: 0
+extol: 0

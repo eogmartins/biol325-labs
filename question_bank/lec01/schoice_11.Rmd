@@ -1,0 +1,21 @@
+Question
+========
+In a salmon smolt study, you estimate P(survive | low flow) = 0.30 and P(survive) = 0.45. Which conclusion is most appropriate?
+
+Answerlist
+----------
+* Low flow increases survival
+* Survival is lower under low flow than overall
+* Survival and flow are independent
+* This proves low flow causes mortality
+
+Solution
+========
+Compare conditional to marginal probability: 0.30 < 0.45, so survival appears less likely under low flow than overall. That implies association (dependence).  However, it does not prove causation, as high flow could be correlated with other factors (timing, predators, turbidity). Probability comparisons identify patterns, whereas causal claims require mechanistic understanding and stronger design/analysis.
+
+Meta-information
+================
+exname: Lec01 Hard schoice 11
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

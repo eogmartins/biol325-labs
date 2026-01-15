@@ -1,0 +1,13 @@
+Question
+========
+Write the base R plotting function used for a box plot.
+
+Solution
+========
+`boxplot()` is teh function that produces a box plot in base R when given a numeric and a categorical vector.
+
+Meta-information
+================
+exname: Lab01 (Easy) plot()
+extype: string
+exsolution: ^\\s*boxplot(\\(\\))?\\s*$

@@ -1,0 +1,14 @@
+Question
+========
+Let `x <- c(1, 2, 3)`. What is `mean(x)`?
+
+Solution
+========
+The mean is (1 + 2 + 3) / 3 = 2.
+
+Meta-information
+================
+exname: Lab01 (Easy) mean
+extype: num
+exsolution: 2
+extol: 0

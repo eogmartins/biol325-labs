@@ -1,0 +1,13 @@
+Question
+========
+What word indicates conditioning in a probability statement?
+
+Solution
+========
+The word **given** signals conditional probability, like P(A | B) = probability of A given B.
+
+Meta-information
+================
+exname: Lec01 Medium string 06
+extype: string
+exsolution: ^\\s*[Gg]iven\\s*$

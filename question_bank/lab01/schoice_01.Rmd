@@ -1,0 +1,21 @@
+Question
+========
+In R, the **working directory** is best described as
+
+Answerlist
+----------
+* the folder where R is installed
+* the default folder R uses to read/write files unless you it give a path
+* the folder where your Quarto file is saved
+* the folder where RStudio stores its settings
+
+Solution
+========
+The working directory is the default location for file input/output when you use relative paths (e.g., `read.csv("data/file.csv")`).
+
+Meta-information
+================
+exname: Lab01 (Easy) Working directory meaning
+extype: schoice
+exsolution: 0100
+exshuffle: 4

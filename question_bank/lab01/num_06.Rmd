@@ -1,0 +1,14 @@
+Question
+========
+If `list.files()` prints 0 filenames, how many files matched your criteria?
+
+Solution
+========
+An empty result means zero files matched your criteria (or the directory is empty).
+
+Meta-information
+================
+exname: Lab01 (Easy) list.files count
+extype: num
+exsolution: 0
+extol: 0

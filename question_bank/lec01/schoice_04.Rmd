@@ -1,0 +1,22 @@
+Question
+========
+In a fish survey, event A = “a randomly selected captured fish is female.” If P(A) = 0.40, what is P(Aᶜ)?
+
+Answerlist
+----------
+* 0.40
+* 0.60
+* 1.40
+* 0.00
+
+Solution
+========
+Use the complement rule: P(Aᶜ) = 1 − P(A) = 1 − 0.40 = 0.60.  
+Interpretation: in the long run, about 60% of captured fish would be non‑female under the same sampling process (not necessarily in every sample).
+
+Meta-information
+================
+exname: Lec01 Easy schoice 04
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

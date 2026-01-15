@@ -1,0 +1,21 @@
+Question
+========
+Which of these are valid ways to create a numeric vector? Select all that apply.
+
+Answerlist
+----------
+* `c(1, 2, 3)`
+* `seq(1, 3)`
+* `matrix(1:3, nrow = 1)`
+* `list(1, 2, 3)`
+
+Solution
+========
+Both `c()` and `seq()` create vectors. `matrix()` creates a matrix (even if 1-row). A list is not an atomic numeric vector.
+
+Meta-information
+================
+exname: Lab01 (Medium) vector creation variant 11
+extype: mchoice
+exsolution: 1100
+exshuffle: TRUE

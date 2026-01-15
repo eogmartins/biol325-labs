@@ -1,0 +1,14 @@
+Question
+========
+Let `x <- c(3, 5, 7, 9)`. What is `length(x)`?
+
+Solution
+========
+A vector with four entries has length 4. `length()` counts elements, not values.
+
+Meta-information
+================
+exname: Lab01 (Easy) length of vector
+extype: num
+exsolution: 4
+extol: 0

@@ -1,0 +1,21 @@
+Question
+========
+If A and B are mutually exclusive and both have positive probability, which are true? Select all that apply.
+
+Answerlist
+----------
+* P(A ∩ B) = 0
+* P(A ∪ B) = P(A) + P(B)
+* A and B cannot be independent
+* P(A | B) = P(A)
+
+Solution
+========
+Disjoint events have zero overlap and additive union. With positive probabilities, independence would require P(A ∩ B) = P(A)P(B) > 0, which contradicts the fact that disjoint events have no overlap; so they cannot be independent. P(A | B) must be 0 if B occurs because A and B are disjoint.
+
+Meta-information
+================
+exname: Lec01 Medium mchoice 10
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

@@ -1,0 +1,13 @@
+Question
+========
+Write the base R function that creates a sequence with a chosen step size (e.g., by = 0.5).
+
+Solution
+========
+`seq()` is the function that you can use to create sequences with flexible start/end/step values.
+
+Meta-information
+================
+exname: Lab01 (Hard) seq()
+extype: string
+exsolution: ^\\s*seq(\\(\\))?\\s*$

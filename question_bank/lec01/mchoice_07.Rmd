@@ -1,0 +1,21 @@
+Question
+========
+Which are valid ways to compute P(A ∪ B)? Select all that apply.
+
+Answerlist
+----------
+* P(A) + P(B) − P(A ∩ B)
+* P(A) + P(B) if A and B are mutually exclusive
+* 1 − P((A ∪ B)ᶜ)
+* P(A P(B)
+
+Solution
+========
+General addition rule subtracts overlap. If disjoint, overlap is 0 so it simplifies. You can also use the complement of the union. The product rule is for intersections under independence, not unions.
+
+Meta-information
+================
+exname: Lec01 Medium mchoice 07
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

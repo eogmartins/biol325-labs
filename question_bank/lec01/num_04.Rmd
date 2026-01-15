@@ -1,0 +1,14 @@
+Question
+========
+In an ecological sampling scenario, P(A) = P(detect sample 1) = 0.4 and P(B) = P(detect sample 2) = 0.4. Assuming independence, compute P(detect in both samples).
+
+Solution
+========
+Under independence: P(A ∩ B) = 0.4 × 0.4 = 0.16. In practice, subsequent sampling events may be dependent, but the arithmetic illustrates the product rule.
+
+Meta-information
+================
+exname: Lec01 Easy num 04
+extype: num
+exsolution: 0.16
+extol: 0

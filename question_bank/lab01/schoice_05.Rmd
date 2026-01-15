@@ -1,0 +1,21 @@
+Question
+========
+If you run `x <- c(2, 4, 6)`, what type of object is `x`?
+
+Answerlist
+----------
+* a matrix
+* a vector
+* a list
+* a data frame
+
+Solution
+========
+`c()` combines values into a vector, s x is a vector.
+
+Meta-information
+================
+exname: Lab01 (Easy) Vector creation
+extype: schoice
+exsolution: 0100
+exshuffle: 4

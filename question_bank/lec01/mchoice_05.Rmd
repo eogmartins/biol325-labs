@@ -1,0 +1,22 @@
+Question
+========
+Which conditions imply independence? Select all that apply.
+
+Answerlist
+----------
+* P(A | B) = P(A)
+* P(A ∩ B) = P(A)P(B)
+* P(B | A) = P(B)
+* P(A ∩ B) = 0
+
+Solution
+========
+The first three are equivalent characterizations of independence (when defined).
+P(A ∩ B) = 0 is mutual exclusivity, not independence unless one event has probability 0.
+
+Meta-information
+================
+exname: Lec01 Easy mchoice 05
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

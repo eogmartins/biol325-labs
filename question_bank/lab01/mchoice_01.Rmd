@@ -1,0 +1,21 @@
+Question
+========
+Which objects are **vectors** in base R? Select all that apply.
+
+Answerlist
+----------
+* `c(1, 2, 3)`
+* `1:10`
+* `matrix(1:6, nrow = 2)`
+* `c("a", "b")`
+
+Solution
+========
+Vectors include numeric/integer/character vectors (e.g., `c(1,2,3)`, `1:10`, `c("a","b")`). A matrix is a different class with two dimensions.
+
+Meta-information
+================
+exname: Lab01 (Easy) identify vectors
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

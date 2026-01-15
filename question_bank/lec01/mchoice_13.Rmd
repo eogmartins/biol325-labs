@@ -1,0 +1,21 @@
+Question
+========
+Which statements about “AND” vs “OR” are correct? Select all that apply.
+
+Answerlist
+----------
+* A ∩ B means A AND B
+* A ∪ B means A OR B (inclusive)
+* A ∪ B excludes cases where both occur
+* A ∩ B is always larger than A
+
+Solution
+========
+Intersection is AND. Union is inclusive OR (A, B, or both). Union does not exclude overlap. Intersection is a subset of A, so it cannot be larger than A.
+
+Meta-information
+================
+exname: Lec01 Hard mchoice 14
+extype: mchoice
+exsolution: 1100
+exshuffle: TRUE

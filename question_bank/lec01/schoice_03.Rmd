@@ -1,0 +1,21 @@
+Question
+========
+Which statement is an axiom (always true) in probability theory?
+
+Answerlist
+----------
+* Probabilities can be negative for rare events
+* The probability of the sample space is 1
+* Probabilities must sum to 0 across events
+* Probabilities depend on measurement units
+
+Solution
+========
+One axiom is **normalization**: if S is the sample space (all possible outcomes), then P(S)=1. Other axioms include non‑negativity (P(A) ≥ 0) and additivity for disjoint events. Units matter for measurements (e.g., °C vs °F), but not for probability axioms.
+
+Meta-information
+================
+exname: Lec01 Easy schoice 03
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,27 @@
+Question
+========
+An ecologist says: 
+
+“Before I collect new data, I can still assign a probability that a stream reach is occupied by bull trout based on prior surveys and expert knowledge.” 
+
+This statement aligns most closely with which definition of probability?
+
+Answerlist
+----------
+* Frequentist: probability is the long-run relative frequency of outcomes in repeated trials
+* Bayesian: probability represents a degree of belief given current information
+* Frequentist: probability must be 0 or 1 before data are collected
+* Bayesian: probability cannot be updated with data
+
+Solution
+========
+The statement is explicitly about assigning probability **before** collecting new data using existing information and expert knowledge. That is the Bayesian interpretation: probability is a **degree of belief** conditional on what you currently know.  
+
+A frequentist interpretation typically treats probability as a long‑run frequency under repeated identical trials. It does not assign probabilities to fixed but unknown hypotheses (like “this reach is occupied”) in the same way Bayesians do.
+
+Meta-information
+================
+exname: Lec01 Bayes schoice 16
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

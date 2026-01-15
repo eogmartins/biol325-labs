@@ -1,0 +1,13 @@
+Question
+========
+Which base R function makes a histogram?
+
+Solution
+========
+`hist()` is the function that draws a histogram using base R graphics.
+
+Meta-information
+================
+exname: Lab01 (Medium) hist()
+extype: string
+exsolution: ^\\s*hist(\\(\\))?\\s*$

@@ -1,0 +1,14 @@
+Question
+========
+Let `x <- c(3, 5, 7, 9)`. What is `x[3]`?
+
+Solution
+========
+Indexing with `[3]` returns the third element of the vector, which is 7.
+
+Meta-information
+================
+exname: Lab01 (Easy) indexing returns value
+extype: num
+exsolution: 7
+extol: 0

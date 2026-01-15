@@ -1,0 +1,21 @@
+Question
+========
+Which expressions create sequences of values? Select all that apply.
+
+Answerlist
+----------
+* `1:5`
+* `seq(1, 5)`
+* `seq(1, 9, by = 2)`
+* `rep(1, 5)`
+
+Solution
+========
+`1:5` and `seq()` create sequences. `rep()` repeats values rather than stepping through a range.
+
+Meta-information
+================
+exname: Lab01 (Medium) sequences vs repeats
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

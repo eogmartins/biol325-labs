@@ -1,0 +1,25 @@
+Question
+========
+In a landscape study 50% of sites are forested (event F, so P(F) = 0.5) and 75% of sites have a stream  (event S, so P(S) = 0.75). Among forested sites, 60% have a stream, so P(S | F) = 0.6. What is the probability that a site is forested given that it has a stream?
+
+Answerlist
+----------
+* 0.1
+* 0.4
+* 0.5
+* 0.7
+
+Solution
+========
+You are asked to find P(F | S). So, applying Bayes’ rule:
+
+P(F | S) = [P(S | F) × P(F)] / P(S)
+          = (0.6 × 0.5) / 0.75
+          = 0.4
+
+Meta-information
+================
+exname: Lec01 Bayes Easy schoice marginals
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

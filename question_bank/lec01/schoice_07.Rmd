@@ -1,0 +1,21 @@
+Question
+========
+If events A and B are mutually exclusive, which statement is true?
+
+Answerlist
+----------
+* P(A ∩ B) = 0
+* P(A | B) = P(A)
+* A and B must be independent
+* P(A) = P(B)
+
+Solution
+========
+Mutually exclusive means **cannot happen together**, so the overlap is zero: P(A ∩ B) = 0. They are **not independent** unless one event has probability 0.
+
+Meta-information
+================
+exname: Lec01 Medium schoice 07
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

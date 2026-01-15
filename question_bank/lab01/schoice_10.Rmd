@@ -1,0 +1,21 @@
+Question
+========
+In base R graphics, which function creates a scatterplot?
+
+Answerlist
+----------
+* hist()
+* boxplot()
+* plot()
+* barplot()
+
+Solution
+========
+`plot(x, y)` is the standard base R scatterplot function when `x` and `y` are numeric vectors. `hist()` makes histograms, `boxplot()` boxplots, and `barplot()` bar charts.
+
+Meta-information
+================
+exname: Lab01 (Medium) base plot()
+extype: schoice
+exsolution: 0010
+exshuffle: 4

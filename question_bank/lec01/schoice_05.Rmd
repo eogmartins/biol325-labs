@@ -1,0 +1,21 @@
+Question
+========
+Two events are independent if:
+
+Answerlist
+----------
+* They cannot occur together
+* Knowing one occurred gives no information about the other
+* They have equal probability
+* Their probabilities sum to 1
+
+Solution
+========
+Independence is about **no change in probability** when you learn information: P(A | B) = P(A). Independent events can co‑occur; it is mutually exclusive events that cannot. Equal probabilities or summing to 1 are not definitions of independence.
+
+Meta-information
+================
+exname: Lec01 Easy schoice 05
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

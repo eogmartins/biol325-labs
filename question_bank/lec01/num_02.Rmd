@@ -1,0 +1,14 @@
+Question
+========
+In a bird point-count, P(detect) = 0.65. Compute P(not detect).
+
+Solution
+========
+Use complement rule: 1 − 0.65 = 0.35.
+
+Meta-information
+================
+exname: Lec01 Easy num 02
+extype: num
+exsolution: 0.35
+extol: 0

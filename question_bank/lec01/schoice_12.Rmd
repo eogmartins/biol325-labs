@@ -1,0 +1,21 @@
+Question
+========
+If P(A | B) > P(A), what does that suggest?
+
+Answerlist
+----------
+* B makes A less likely
+* B provides information that increases the probability of A
+* A and B must be mutually exclusive
+* A and B must be independent
+
+Solution
+========
+Knowing B increases the probability that A happens. It does not imply mutual exclusivity, and it contradicts independence.
+
+Meta-information
+================
+exname: Lec01 Hard schoice 12
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

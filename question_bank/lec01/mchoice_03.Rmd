@@ -1,0 +1,21 @@
+Question
+========
+Which are always true for any events A and B? Select all that apply.
+
+Answerlist
+----------
+* P(A ∩ B) ≤ P(A)
+* P(A ∩ B) ≤ P(B)
+* P(A ∪ B) ≥ P(A)
+* P(A ∪ B) = P(A) + P(B) always
+
+Solution
+========
+Intersection is a subset of each event, so it cannot be larger than either P(A) or P(B). Union contains A, so it cannot be smaller than A. Union equals sum only when A and B are disjoint / mutually exclusive (i.e., no overlap).
+
+Meta-information
+================
+exname: Lec01 Easy mchoice 03
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

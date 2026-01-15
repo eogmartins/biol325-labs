@@ -1,0 +1,29 @@
+Question
+========
+In a set of lakes, 40% have high nutrient levels (event N), so P(N) = 0.4. Historically, algal blooms (event B) have occurred in 35% of the lakes, so P(B) = 0.35.
+
+Among lakes with high nutrient levels, 70% have algal blooms, so P(B | N) = 0.7.
+
+What is the probability that a lake has high nutrient levels given that it exhibits an algal bloom?
+
+Answerlist
+----------
+* 0.2
+* 0.4
+* 0.6
+* 0.8
+
+Solution
+========
+You are asked to find P(N | B). So, applying Bayes’ rule:
+
+P(N | B) = [P(B | N) × P(N)] / P(B)
+          = (0.7 × 0.4) / 0.35
+          = 0.8
+
+Meta-information
+================
+exname: Lec01 Bayes Easy schoice complements
+extype: schoice
+exsolution: 0001
+exshuffle: TRUE

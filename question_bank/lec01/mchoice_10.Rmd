@@ -1,0 +1,21 @@
+Question
+========
+Which statements about conditional probability are correct? Select all that apply.
+
+Answerlist
+----------
+* It can be larger or smaller than the marginal probability
+* It always increases probability
+* It uses information after the word 'given'
+* If independent, P(A | B) = P(A)
+
+Solution
+========
+Conditioning can increase or decrease probability depending on association. Independence means that conditioning does not change probabilities.
+
+Meta-information
+================
+exname: Lec01 Hard mchoice 11
+extype: mchoice
+exsolution: 1011
+exshuffle: TRUE

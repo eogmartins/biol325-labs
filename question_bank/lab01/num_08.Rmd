@@ -1,0 +1,14 @@
+Question
+========
+Let `x <- seq(0, 1, by = 0.25)`. How many numbers are produced?
+
+Solution
+========
+The sequence is 0, 0.25, 0.5, 0.75, 1. That is 5 numbers.
+
+Meta-information
+================
+exname: Lab01 (Hard) sequence length
+extype: num
+exsolution: 5
+extol: 0

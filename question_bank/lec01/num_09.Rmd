@@ -1,0 +1,14 @@
+Question
+========
+If P(A) = 0.7, what is the minimum possible value of P(A ∪ B)? HINT: it helps to draw Venn diagrams to come up with solution.
+
+Solution
+========
+Union contains A, so it cannot be smaller than P(A). Minimum occurs when B is a subset of A.
+
+Meta-information
+================
+exname: Lec01 Medium num 09
+extype: num
+exsolution: 0.7
+extol: 0

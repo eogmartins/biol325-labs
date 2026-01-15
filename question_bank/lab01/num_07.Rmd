@@ -1,0 +1,14 @@
+Question
+========
+Let `x <- 1:10`. What is `sum(x)`?
+
+Solution
+========
+The sum 1+2+...+10 equals 55.
+
+Meta-information
+================
+exname: Lab01 (Hard) sum of sequence
+extype: num
+exsolution: 55
+extol: 0

@@ -1,0 +1,14 @@
+Question
+========
+Let `x <- rep(5, times = 6)`. What is `length(x)`?
+
+Solution
+========
+`rep(5, times = 6)` repeats 5 six times.
+
+Meta-information
+================
+exname: Lab01 (Easy) rep length
+extype: num
+exsolution: 6
+extol: 0

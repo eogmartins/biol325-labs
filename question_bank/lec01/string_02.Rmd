@@ -1,0 +1,13 @@
+Question
+========
+What is the term for 'not A'?
+
+Solution
+========
+The **complement** of A (or Aᶜ), is the event that A does not occur.
+
+Meta-information
+================
+exname: Lec01 Easy string 03
+extype: string
+exsolution: ^\\s*[Cc]omplement\\s*$

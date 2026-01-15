@@ -1,0 +1,21 @@
+Question
+========
+A researcher surveying pileated woodpeckers visits the same forest twice. Let A = “woodpecker detected on visit 2” and B = “woodpecker detected on visit 1.” Which statement best describes P(A | B)?
+
+Answerlist
+----------
+* Probability of B given A
+* Probability of A given B
+* Probability that both occur
+* Probability that neither occurs
+
+Solution
+========
+P(A | B) is the probability of **A given B** occurred.
+
+Meta-information
+================
+exname: Lec01 Medium schoice 06
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

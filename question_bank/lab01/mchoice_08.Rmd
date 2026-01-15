@@ -1,0 +1,21 @@
+Question
+========
+Which calls will return `NA` without additional arguments? (Select all that apply)
+
+Answerlist
+----------
+* `mean(c(1, NA, 3))`
+* `sum(c(1, NA, 3))`
+* `sum(c(1, 2, 3))`
+* `length(c(1, NA, 3))`
+
+Solution
+========
+Summaries often return `NA` if `NA` is present unless `na.rm = TRUE`. `length()` counts entries including `NA`, so it returns 3 (not `NA`).
+
+Meta-information
+================
+exname: Lab01 (Hard) NA in summaries
+extype: mchoice
+exsolution: 1100
+exshuffle: TRUE

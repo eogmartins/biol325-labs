@@ -1,0 +1,14 @@
+Question
+========
+During a salmon count, 12 of 48 fish are Chinook salmon. Estimate P(Chinook) using relative frequency.
+
+Solution
+========
+Relative frequency estimate is count / total = 12 / 48 = 0.25. This is an empirical estimate that would stabilize with larger samples.
+
+Meta-information
+================
+exname: Lec01 Easy num 01
+extype: num
+exsolution: 0.25
+extol: 0

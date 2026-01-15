@@ -1,0 +1,14 @@
+Question
+========
+Write a function that lists files in the current working directory in base R.
+
+Solution
+========
+`dir()` or `list.files()` returns a character vector of file and folder names in the current directory (or a specified path).
+
+Meta-information
+================
+exname: Lab01 (Easy) list.files()
+extype: string
+exsolution: ^\\s*(list\\.files(\\(\\))?|dir(\\(\\))?)\\s*$
+

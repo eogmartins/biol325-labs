@@ -1,0 +1,13 @@
+Question
+========
+What is the name of the rule P(Aᶜ) = 1 − P(A)?
+
+Solution
+========
+**Complement** rule.
+
+Meta-information
+================
+exname: Lec01 Medium string 07
+extype: string
+exsolution: ^\\s*[Cc]omplement\\s*[Rr]ule\\s*|\\s*[Cc]omplement\\s*$

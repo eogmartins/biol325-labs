@@ -1,0 +1,13 @@
+Question
+========
+In words, what does the symbol ∪ mean?
+
+Solution
+========
+A ∪ B is the **union**, that is outcomes where either A **or** B occurs.
+
+Meta-information
+================
+exname: Lec01 Hard string 11
+extype: string
+exsolution: ^\\s*[Uu]nion\\s*|\\s*[Oo]r\\s*$

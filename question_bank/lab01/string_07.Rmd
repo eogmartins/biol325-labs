@@ -1,0 +1,13 @@
+Question
+========
+Write the base R command that reports how many elements a vector `x ` has.
+
+Solution
+========
+`length(x)` returns the number of elements in `x`.
+
+Meta-information
+================
+exname: Lab01 (Easy) length()
+extype: string
+exsolution: ^\\s*length\\(x\\)\\s*$

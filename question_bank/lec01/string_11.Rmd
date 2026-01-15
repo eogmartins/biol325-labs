@@ -1,0 +1,13 @@
+Question
+========
+If P(A | B) ≠ P(A), what is the relationship between A and B?
+
+Solution
+========
+If conditioning on B changes the probability of A, then A and B are **dependent** (associated).
+
+Meta-information
+================
+exname: Lec01 Hard string 12
+extype: string
+exsolution: ^\\s*[Dd]ependent\\s*$

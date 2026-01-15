@@ -1,0 +1,18 @@
+unit: lec01
+topic: Probability fundamentals (ecological contexts)
+scope:
+  - probability concepts and axioms
+  - complements
+  - unions and intersections
+  - conditional probability (interpretation-focused)
+  - independence vs dependence
+not_in_scope:
+  - random variables
+  - probability distributions
+  - discrete vs continuous
+  - expectation / variance
+difficulty: introductory
+audience: ecology students
+notes:
+  - calculations are simple and can be done by hand
+  - difficulty is encoded in exname

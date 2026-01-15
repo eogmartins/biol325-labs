@@ -1,0 +1,14 @@
+unit: lab01
+focus: Introduction to R (workspace, files, vectors, matrices, plotting)
+skills:
+  - workspace
+  - working_directory
+  - file_paths
+  - reproducibility
+  - vectors
+  - matrices
+  - subsetting
+  - missing_values
+  - sequences
+  - base_graphics
+difficulty: introductory

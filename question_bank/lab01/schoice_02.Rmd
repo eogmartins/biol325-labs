@@ -1,0 +1,21 @@
+Question
+========
+Which function returns the current working directory?
+
+Answerlist
+----------
+* setwd()
+* getwd()
+* list.files()
+* dir.create()
+
+Solution
+========
+`getwd()` returns the current working directory as a character string. `setwd()` changes it; `list.files()` lists contents; `dir.create()` creates a folder.
+
+Meta-information
+================
+exname: Lab01 (Easy) getwd()
+extype: schoice
+exsolution: 0100
+exshuffle: 4

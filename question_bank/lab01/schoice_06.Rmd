@@ -1,0 +1,21 @@
+Question
+========
+What does `x[2]` return for `x <- c(10, 20, 30)`?
+
+Answerlist
+----------
+* 10
+* 20
+* 30
+* `c(20, 30)`
+
+Solution
+========
+The command indicates you want teh second element of `c(10, 20, 30)`, so 20 would be returned.
+
+Meta-information
+================
+exname: Lab01 (Medium) Vector indexing
+extype: schoice
+exsolution: 0100
+exshuffle: 4

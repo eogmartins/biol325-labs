@@ -1,0 +1,14 @@
+Question
+========
+If A and B are independent and P(A) = 0.3, P(B) = 0.3, compute P(A ∩ B).
+
+Solution
+========
+Use product rule: 0.3 × 0.3 = 0.09.
+
+Meta-information
+================
+exname: Lec01 Medium num 10
+extype: num
+exsolution: 0.09
+extol: 0

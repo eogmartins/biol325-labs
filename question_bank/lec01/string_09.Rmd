@@ -1,0 +1,13 @@
+Question
+========
+In words, what does the symbol ∩ mean?
+
+Solution
+========
+A ∩ B is the **intersection**, that is outcomes where both A **and** B occur.
+
+Meta-information
+================
+exname: Lec01 Medium string 10
+extype: string
+exsolution: ^\\s*[Ii]ntersection\\s*|\\s*[Aa]nd\\s*$

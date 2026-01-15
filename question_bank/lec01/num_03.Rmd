@@ -1,0 +1,14 @@
+Question
+========
+If P(A) = 0.2 and P(B) = 0.3 and A and B are mutually exclusive, compute P(A ∪ B).
+
+Solution
+========
+For disjoint events, union is additive: 0.2 + 0.3 = 0.5.
+
+Meta-information
+================
+exname: Lec01 Easy num 03
+extype: num
+exsolution: 0.5
+extol: 0

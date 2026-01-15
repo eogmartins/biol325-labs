@@ -1,0 +1,13 @@
+Question
+========
+What is the name of the rule P(A ∪ B) = P(A) + P(B) − P(A∩B)?
+
+Solution
+========
+**Addition** rule.
+
+Meta-information
+================
+exname: Lec01 Medium string 09
+extype: string
+exsolution: ^\\s*[Aa]ddition\\s*[Rr]ule\\s*|\\s*[Aa]ddition\\s*$

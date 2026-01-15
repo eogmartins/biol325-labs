@@ -1,0 +1,14 @@
+Question
+========
+Given P(A | B) = 0.30 and P(B) = 0.20, compute P(A ∩ B).
+
+Solution
+========
+Multiplication rule: P(A ∩ B) = P(A|B)P(B) = 0.30 × 0.20 = 0.06.
+
+Meta-information
+================
+exname: Lec01 Medium num 06
+extype: num
+exsolution: 0.06
+extol: 0

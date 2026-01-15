@@ -1,0 +1,21 @@
+Question
+========
+Which functions are from **base R graphics**? Select all that apply.
+
+Answerlist
+----------
+* `plot()`
+* `hist()`
+* `ggplot()`
+* `boxplot()`
+
+Solution
+========
+`plot()`, `hist()`, and `boxplot()` are base R graphics. `ggplot()` is from ggplot2.
+
+Meta-information
+================
+exname: Lab01 (Medium) base graphics
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

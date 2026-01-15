@@ -1,0 +1,21 @@
+Question
+========
+Which statements correctly describe complements? Select all that apply.
+
+Answerlist
+----------
+* A and Aᶜ cannot occur together
+* A ∪ Aᶜ equals the sample space
+* P(Aᶜ) = 1 − P(A)
+* A and Aᶜ are independent
+
+Solution
+========
+Complements are mutually exclusive (can't happen together) and exhaustive (one must happen), so their probabilities sum to 1. They are not independent unless P(A) = 0 or P(A) = 1, because knowing A occurred tells you Aᶜ did not occur.
+
+Meta-information
+================
+exname: Lec01 Easy mchoice 04
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

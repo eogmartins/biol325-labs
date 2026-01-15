@@ -1,0 +1,13 @@
+Question
+========
+What do we call the set of all possible outcomes?
+
+Solution
+========
+The **sample space** contains all possible outcomes for the process you are modeling (e.g., {detected, not detected} for one sample).
+
+Meta-information
+================
+exname: Lec01 Easy string 01
+extype: string
+exsolution: ^\\s*[Ss]ample\\s*[Ss]pace\\s*$

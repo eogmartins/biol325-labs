@@ -1,0 +1,21 @@
+Question
+========
+For `x <- c(5, NA, 9)`, what is `sum(x)` by default?
+
+Answerlist
+----------
+* 14
+* NA
+* 9
+* 5
+
+Solution
+========
+By default, arithmetic with missing values returns `NA` because the sum is unknown unless you explicitly remove missing values using `na.rm = TRUE`.
+
+Meta-information
+================
+exname: Lab01 (Medium) NA propagation
+extype: schoice
+exsolution: 0100
+exshuffle: 4

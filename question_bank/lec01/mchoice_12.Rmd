@@ -1,0 +1,21 @@
+Question
+========
+Suppose P(A) = 0.6, P(B) = 0.5, P(A ∩ B) = 0.4. Which statements are true? Select all that apply.
+
+Answerlist
+----------
+* P(A ∪ B) = 0.7
+* A and B are independent
+* A and B are not mutually exclusive
+* P(A | B) = 0.8
+
+Solution
+========
+Compute union: 0.6 + 0.5 − 0.4 = 0.7. Independence would require 0.6 × 0.5 = 0.3, not 0.4. Intersection is not 0, so not mutually exclusive. Conditional: P(A | B) = 0.4 / 0.5 = 0.8.
+
+Meta-information
+================
+exname: Lec01 Hard mchoice 13
+extype: mchoice
+exsolution: 1011
+exshuffle: TRUE

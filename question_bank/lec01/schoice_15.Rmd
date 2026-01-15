@@ -1,0 +1,21 @@
+Question
+========
+You know P(A) = 0.3, P(B) = 0.7, and P(A ∩ B) = 0.4. Which statement is correct?
+
+Answerlist
+----------
+* A and B are mutually exclusive
+* P(A ∪ B) = 0.6
+* A and B are independent because 0.3 × 0.7 = 0.21
+* P(A | B) = 0.4
+
+Solution
+========
+Compute the union using the addition rule: P(A ∪ B) = P(A) + P(B) − P(A ∩ B) = 0.3 + 0.7 − 0.4 = 0.6. They are not mutually exclusive (intersection is not 0). They are not independent (0.3 × 0.7 = 0.21, not 0.4). Also P(A | B) = 0.4 / 0.7 = 0.57, not 0.4.
+
+Meta-information
+================
+exname: Lec01 Hard schoice 15
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

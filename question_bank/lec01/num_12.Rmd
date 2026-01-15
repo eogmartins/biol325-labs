@@ -1,0 +1,14 @@
+Question
+========
+If P(A) = 1, compute P(Aᶜ).
+
+Solution
+========
+A is a certain event, so complement impossible: P(Aᶜ) = 1 − P(A) = 1 - 1 = 0.
+
+Meta-information
+================
+exname: Lec01 Hard num 13
+extype: num
+exsolution: 0
+extol: 0

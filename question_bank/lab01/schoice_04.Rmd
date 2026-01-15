@@ -1,0 +1,21 @@
+Question
+========
+Which statement about the R **workspace** is true?
+
+Answerlist
+----------
+* The workspace is a folder on disk that always matches your working directory.
+* The workspace is the set of objects currently in memory (Environment).
+* The workspace is the same thing as your script file.
+* The workspace is the same thing as the Console.
+
+Solution
+========
+In R, the workspace refers to objects currently in memory (e.g., vectors, data frames) shown in the Environment tab of RStudio. Files live on disk; scripts are text files; the Console is where commands run.
+
+Meta-information
+================
+exname: Lab01 (Easy) Workspace concept
+extype: schoice
+exsolution: 0100
+exshuffle: 4

@@ -1,0 +1,21 @@
+Question
+========
+Which are good ways to create a project-relative path to a file such as `data/penguins.csv`? Select all that apply.
+
+Answerlist
+----------
+* `"data/penguins.csv"`
+* `file.path("data", "penguins.csv")`
+* `"C:/Users/name/course/data/penguins.csv"`
+* `paste("data/", "penguins.csv", sep = "")`
+
+Solution
+========
+Relative paths and `file.path()` are portable. `paste()` works but can be less robust across OS separators; `file.path()` is best practice. Absolute paths are not portable.
+
+Meta-information
+================
+exname: Lab01 (Hard) robust paths
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

@@ -1,0 +1,21 @@
+Question
+========
+Which are good practice habits when using probability in ecology? Select all that apply.
+
+Answerlist
+----------
+* Define events clearly before calculating probabilities
+* Avoid assuming independence without justification
+* Use complements/unions to avoid double-counting
+* Assume everything is independent to simplify
+
+Solution
+========
+Good practice is conceptual: define events, choose the correct rule, and justify assumptions. Unjustified independence can badly mislead inference.
+
+Meta-information
+================
+exname: Lec01 Hard mchoice 12
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

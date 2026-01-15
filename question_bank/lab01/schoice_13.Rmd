@@ -1,0 +1,21 @@
+Question
+========
+For `m <- matrix(1:6, nrow = 2)`, what does `m[2, 3]` return?
+
+Answerlist
+----------
+* 2
+* 4
+* 6
+* 5
+
+Solution
+========
+The matrix is filled by column: columns are (1,2), (3,4), (5,6). Row 2, column 3 is 6.
+
+Meta-information
+================
+exname: Lab01 (Hard) matrix subsetting
+extype: schoice
+exsolution: 0010
+exshuffle: 4

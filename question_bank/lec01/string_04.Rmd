@@ -1,0 +1,13 @@
+Question
+========
+What is the term for events where knowing one occurred does not change the probability of the other?
+
+Solution
+========
+*Independent* events means P(A | B) = P(A), equivalently P(A ∩ B) = P(A)P(B).
+
+Meta-information
+================
+exname: Lec01 Easy string 05
+extype: string
+exsolution: ^\\s*[Ii]ndependent\\s*$

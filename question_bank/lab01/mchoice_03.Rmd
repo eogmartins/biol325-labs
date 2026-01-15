@@ -1,0 +1,21 @@
+Question
+========
+Which practices help keep your analysis reproducible? Select all that apply.
+
+Answerlist
+----------
+* Using an RStudio Project
+* Using relative paths like `data/file.csv`
+* Hard-coding the working directory as`setwd("C:/Users/.../")` in scripts
+* Keeping raw data files in a stable folder within the project
+
+Solution
+========
+Projects, relative paths, and stable data locations make it easy to re-run your analyses. Hard-coded paths defined by `setwd()`are typically not portable between computers.
+
+Meta-information
+================
+exname: Lab01 (Easy) reproducibility practices
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

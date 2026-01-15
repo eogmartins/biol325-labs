@@ -1,0 +1,21 @@
+Question
+========
+You survey a wetland and estimate that the probability a randomly chosen quadrat contains cattails is 0.65. Which interpretation is most appropriate under the frequentist definition of probability?
+
+Answerlist
+----------
+* Exactly 65% of all quadrats always contain cattails
+* In the long run, about 65% of randomly sampled quadrats would contain cattails
+* There are exactly 65 cattails per quadrat
+* Cattails are guaranteed to be present in every wetland
+
+Solution
+========
+A probability like 0.65 describes **uncertainty** and is often interpreted as a long‑run frequency by frequentists. That is, if you repeatedly sample many quadrats under similar conditions, you would expect cattails in about 65% of them **on average**. It does **not** mean you will get exactly 65% in every small sample, it does not describe abundance (how many cattails), and it does not guarantee they will be present in every wetland.
+
+Meta-information
+================
+exname: Lec01 Easy schoice 01
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

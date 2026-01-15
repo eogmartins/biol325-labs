@@ -1,0 +1,22 @@
+Question
+========
+Suppose P(A ∩ B) = P(A). What does this imply about the relationship between A and B?
+
+Answerlist
+----------
+* A and B are independent
+* Whenever A happens, B also happens (A ⊆ B)
+* Whenever B happens, A also happens (B ⊆ A)
+* A and B cannot co-occur
+
+Solution
+========
+If the intersection equals P(A), then **all of A is inside B** (i.e., A ⊆ B).  
+That is, whenever A happens, B must also happen. This is a useful logical interpretation that can appear in ecological event definitions. For example, if A is "juvenile of sockeye" and B is "sockeye", then A is a subset of B. If you sample a fish and it is a sockeye juvenile, then it is also certainly (i.e., P(B) = 1) a sockeye. It follows that P(A ∩ B) = P(A)P(B) = P(A).
+
+Meta-information
+================
+exname: Lec01 Hard schoice 13
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

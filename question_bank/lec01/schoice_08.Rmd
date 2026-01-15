@@ -1,0 +1,21 @@
+Question
+========
+Which statement is always true for any events A and B?
+
+Answerlist
+----------
+* P(A ∩ B) ≥ P(A)
+* P(A ∩ B) ≤ P(A)
+* P(A ∪ B) = P(A) + P(B) always
+* P(A | B) > 1
+
+Solution
+========
+The intersection (A∩B) is a subset of A, so it cannot be more probable than A: P(A ∩ B) ≤ P(A). The union equals the sum only when events are disjoint. Probabilities cannot exceed 1.
+
+Meta-information
+================
+exname: Lec01 Medium schoice 08
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

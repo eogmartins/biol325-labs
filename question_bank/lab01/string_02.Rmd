@@ -1,0 +1,13 @@
+Question
+========
+Write the function that changes the working directory.
+
+Solution
+========
+`setwd()` is the function that changes the working directory for the current R session.
+
+Meta-information
+================
+exname: Lab01 (Easy) setwd()
+extype: string
+exsolution: ^\\s*setwd(\\(\\))?\\s*$

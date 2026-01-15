@@ -1,0 +1,14 @@
+Question
+========
+Given P(A) = 0.6, P(B) = 0.5, P(A ∩ B) = 0.4, compute P(A ∪ B).
+
+Solution
+========
+Use addition rule for overlapping events: P(A ∪ B) = 0.6 + 0.5 − 0.4 = 0.7 (subtract overlap once to avoid double-counting).
+
+Meta-information
+================
+exname: Lec01 Medium num 08
+extype: num
+exsolution: 0.7
+extol: 0

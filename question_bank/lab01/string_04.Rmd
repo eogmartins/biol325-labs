@@ -1,0 +1,14 @@
+Question
+========
+Which base R function returns the number of rows of a matrix `m`?
+
+Solution
+========
+`nrow()` is the function that returns the number of rows in matrix (also works for data frames).
+
+Meta-information
+================
+exname: Lab01 (Medium) nrow()
+extype: string
+exsolution: ^\\s*nrow(\\(\\))?\\s*$
+

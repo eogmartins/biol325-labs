@@ -1,0 +1,21 @@
+Question
+========
+A stream dries during summer (event A) and juvenile salmon experience mortality (event B). Which statements are reasonable? Select all that apply.
+
+Answerlist
+----------
+* A and B are likely dependent
+* A and B are certainly independent
+* If A occurs, B may become more likely
+* Knowing B occurred could provide information about whether A occurred
+
+Solution
+========
+Drying reduces habitat and can increase stress, crowding, and predation risk, so mortality may become more likely. That is **dependence**: learning A changes beliefs about B and vice‑versa. Independence is not automatic and it must be justified.
+
+Meta-information
+================
+exname: Lec01 Easy mchoice 01
+extype: mchoice
+exsolution: 1011
+exshuffle: TRUE

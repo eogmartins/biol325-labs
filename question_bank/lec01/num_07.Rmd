@@ -1,0 +1,14 @@
+Question
+========
+Given P(A ∩ B) = 0.12 and P(B) = 0.30, compute P(A | B).
+
+Solution
+========
+Computation: P(A | B) = P(A ∩ B) / P(B) = 0.12 / 0.30 = 0.4.
+
+Meta-information
+================
+exname: Lec01 Medium num 07
+extype: num
+exsolution: 0.4
+extol: 0

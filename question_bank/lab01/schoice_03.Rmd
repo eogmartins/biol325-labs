@@ -1,0 +1,21 @@
+Question
+========
+You have an RStudio Project with a `data/` folder. Which path is **portable** across computers if you share your RStudio project with a colleague?
+
+Answerlist
+----------
+* C:/Users/Eduardo/Desktop/course/data/penguins.csv
+* /Users/eduardo/Desktop/course/data/penguins.csv
+* data/penguins.csv
+* penguins.csv
+
+Solution
+========
+`data/penguins.csv` is a relative path within the project, so it works as long as the same project structure exists in different computers. Absolute paths (starting with a drive letter or `/Users/...`) typically break on other computers.
+
+Meta-information
+================
+exname: Lab01 (Easy) Relative path
+extype: schoice
+exsolution: 0010
+exshuffle: 4

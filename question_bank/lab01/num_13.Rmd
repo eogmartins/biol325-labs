@@ -1,0 +1,14 @@
+Question
+========
+Let `x <- c(1, NA, 3)`. What is `mean(x, na.rm=TRUE)`?
+
+Solution
+========
+Removing `NA` leaves 1 and 3. Mean is (1 + 3) / 2 = 2.
+
+Meta-information
+================
+exname: Lab01 (Medium) mean with NA
+extype: num
+exsolution: 2
+extol: 0

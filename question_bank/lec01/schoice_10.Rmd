@@ -1,0 +1,21 @@
+Question
+========
+A researcher says: “Because two events happen on different days, they must be independent.” What is the best response?
+
+Answerlist
+----------
+* Correct — different days guarantees independence
+* Incorrect — independence is an assumption; shared drivers (e.g., environmentalc conditons) can create dependence
+* Correct — independence only depends on sample size
+* It depends only on whether events are rare
+
+Solution
+========
+Different days do **not** guarantee independence. If both days share conditions (weather, flow, observer, habitat), then learning about one day can change probabilities about the other. Independence must be justified by mechanism or design, not by calendar time. Independence has nothing to do with sample size or an event being rare.
+
+Meta-information
+================
+exname: Lec01 Medium schoice 10
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

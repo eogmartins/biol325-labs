@@ -1,0 +1,21 @@
+Question
+========
+Which of the following are examples of **missing values** in R? Select all that apply.
+
+Answerlist
+----------
+* `NA`
+* `NaN`
+* `NULL`
+* `""` (empty string)
+
+Solution
+========
+`NA` is the standard missing value in R. `NaN` can arise from undefined numeric operations (e.g., `0/0`). `NULL` means “no value” and `""` is an empty string, not missing.
+
+Meta-information
+================
+exname: Lab01 (Easy) missingness
+extype: mchoice
+exsolution: 1100
+exshuffle: TRUE

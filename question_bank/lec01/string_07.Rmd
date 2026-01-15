@@ -1,0 +1,13 @@
+Question
+========
+What is the name of the rule P(A ∩ B) = P(A | B)P(B)?
+
+Solution
+========
+**Multiplication** rule.
+
+Meta-information
+================
+exname: Lec01 Medium string 08
+extype: string
+exsolution: ^\\s*[Mm]ultiplication\\s*[Rr]ule\\s*|\\s*[Mm]ultiplication\\s*$

@@ -1,0 +1,21 @@
+Question
+========
+Which statement best describes why `setwd()` inside scripts is discouraged?
+
+Answerlist
+----------
+* It is slower than relative paths.
+* It can silently point to the wrong folder on someone else’s computer.
+* It prevents using vectors in R.
+* It breaks the Console.
+
+Solution
+========
+`setwd()` hard-codes assumptions about file locations. In a project workflow, you should rely on the project root and relative paths so your code works for others and on other machines.
+
+Meta-information
+================
+exname: Lab01 (Hard) reproducibility and setwd
+extype: schoice
+exsolution: 0100
+exshuffle: 4
