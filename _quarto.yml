@@ -3,10 +3,16 @@ project:
   output-dir: docs
   resources:
     - images
-    - files
+    - assets
+
+  render:
+    - "*.qmd"
+    - "labs/*.qmd"
+    - "quizzes/*.qmd"
 
 execute:
   dir: project
+  freeze: auto
 
 website:
   title: "BIOL 325 — Ecological Analyses"
