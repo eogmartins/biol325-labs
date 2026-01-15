@@ -1,0 +1,30 @@
+---
+title: "Practice Quiz - Introduction to R"
+---
+
+```{r renumber_questions_lab01, echo = FALSE, message = FALSE, eval = TRUE}
+source("../scripts/setup_quiz.R")
+renumber_questions("../question_bank/lab01")
+```
+  
+```{r quiz_lab01, echo = FALSE, results = "asis"}
+# Collect files from multiple question types
+files <- c(
+  list.files("../question_bank/lab01", pattern = "^schoice_\\d+\\.Rmd$",
+             full.names = TRUE),
+  list.files("../question_bank/lab01", pattern = "^mchoice_\\d+\\.Rmd$",
+             full.names = TRUE),
+  list.files("../question_bank/lab01", pattern = "^num_\\d+\\.Rmd$",
+             full.names = TRUE),
+  list.files("../question_bank/lab01", pattern = "^string_\\d+\\.Rmd$",    
+             full.names = TRUE)
+)
+
+# files <- sample(files, size = 40)
+  
+set.seed(2026)
+  
+files <- sample(files)
+  
+exams2forms(files, n = 1, regex = TRUE)
+```
