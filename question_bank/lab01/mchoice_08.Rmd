@@ -1,6 +1,6 @@
 Question
 ========
-Which calls will return `NA` without additional arguments? (Select all that apply)
+Which calls will return `NA` without additional arguments? Select all that apply.
 
 Answerlist
 ----------

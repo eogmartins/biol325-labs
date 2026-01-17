@@ -1,6 +1,6 @@
 Question
 ========
-For `x <- c(10, 20, 30)`, which expressions return **20**? (Select all that apply)
+For `x <- c(10, 20, 30)`, which expressions return **20**? Select all that apply.
 
 Answerlist
 ----------

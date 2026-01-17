@@ -1,13 +1,13 @@
 Question
 ========
-Write the base R function that returns the current working directory.
+Write the base R command that reports how many elements a vector `x ` has.
 
 Solution
 ========
-`getwd()` is the function returns the current working directory.
+`length(x)` returns the number of elements in `x`.
 
 Meta-information
 ================
-exname: Lab01 (Easy) getwd()
+exname: Lab01 (Easy) length()
 extype: string
-exsolution: ^\\s*getwd(\\(\\))?\\s*$
+exsolution: ^\\s*length(x)\\s*$
