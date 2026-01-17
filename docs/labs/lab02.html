@@ -5149,10 +5149,17 @@ accent-color: var(--webex-accent);
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Lab Instructions</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lab-instructions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Lab Instructions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lab-instructions">    
+        <li>
+    <a class="dropdown-item" href="../labs/lab01.html">
+ <span class="dropdown-text">Introduction to R</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lab-quizzes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lab Quizzes</span>
@@ -5344,10 +5351,12 @@ Data dictonary for the tutorial data set
 <li><p>Install package <strong>tidyverse</strong> by running the command below in the <strong>Console</strong></p></li>
 </ol>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="4" type="1">
-<li><p>In the <strong>Files</strong> tab (located in the bottom right panel of RStudio), click on <strong>Upload</strong> and then <strong>Choose File</strong>. Navigate to where the assignment file was downloaded to in your computer, select it, and click Open or OK.</p></li>
-<li><p>Repeat step 4, but this time upload the CSV file you downloaded in step 2.</p></li>
+<ol start="5" type="1">
+<li><p>In the <strong>Files</strong> tab (located in the bottom right panel of RStudio), click on <strong>Upload</strong> and then <strong>Choose File</strong>. Navigate to where the assignment file was downloaded in your computer, select it, and click Open or OK.</p></li>
+<li><p>In the <strong>Files</strong> tab, click <strong>New Folder</strong>, type <strong>data</strong> in the box that appears, and click OK.</p></li>
+<li><p>In the <strong>Files</strong> tab, click on <strong>Upload</strong> and then <strong>Browse</strong>. Select the <strong>data</strong> folder you created in the previous step and click <strong>Choose</strong>. Then click <strong>Choose File</strong>, navigate to where the <strong>pie_crab.csv</strong> file was downloaded in your computer, select it, and click Open or OK.</p></li>
 <li><p>After the uploads, click on the assignment file name in the <strong>Files</strong> tab. An R script file will open in the Sources panel of RStudio. Follow the instructions in the R script.</p></li>
+<li><p>When you complete your assignment, submit only the <strong>assignment01.R</strong> file via the <strong>Assignment 1</strong> assignment on Moodle. Email submissions will not be accepted.</p></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">

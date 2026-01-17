@@ -102,14 +102,7 @@
     "href": "index.html",
     "title": "BIOL 325 — Ecological Analyses",
     "section": "",
-    "text": "Welcome to the lab website of BIOL 325 — Ecological Analyses at UNBC. This site contains lab materials and instructions."
-  },
-  {
-    "objectID": "index.html#labs",
-    "href": "index.html#labs",
-    "title": "BIOL 325 — Ecological Analyses",
-    "section": "Labs",
-    "text": "Labs\n\nLab 01 — Introduction to R"
+    "text": "Welcome to the website of BIOL 325 — Ecological Analyses at UNBC. This site contains\n\nLab instructions\nPractice lab quizzes\nPractice lecture quizzes\n\nUse the navigation bar at the top to select among this material."
   },
   {
     "objectID": "labs/lab02.html",
