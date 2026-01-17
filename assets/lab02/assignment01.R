@@ -47,7 +47,7 @@ dir.create("outputs", showWarnings = FALSE, recursive = TRUE)
 #
 # HINTS: filter(), mutate(), group_by(), summarise()
 
-crab_summary <- crab_csv |>
+crab_summary <- pie_crab |>
   # TODO: REPLACE THIS LINE WITH YOUR CODE FOR filter(...) 
   # TODO: REPLACE THIS LINE WITH YOUR CODE FOR mutate(...) 
   # TODO: REPLACE THIS LINE WITH YOUR CODE FOR group_by(...) 

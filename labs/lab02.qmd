@@ -133,11 +133,15 @@ After you complete the tutorial, you will be required to submit an assignment th
 ```r
 install.packages("tidyverse")
 ```
-4. In the **Files** tab (located in the bottom right panel of RStudio), click on **Upload** and then **Choose File**. Navigate to where the assignment file was downloaded to in your computer, select it, and click Open or OK.
+5. In the **Files** tab (located in the bottom right panel of RStudio), click on **Upload** and then **Choose File**. Navigate to where the assignment file was downloaded in your computer, select it, and click Open or OK.
 
-5. Repeat step 4, but this time upload the CSV file you downloaded in step 2.
+6. In the **Files** tab, click **New Folder**, type **data** in the box that appears, and click OK.
+
+7. In the **Files** tab, click on **Upload** and then **Browse**. Select the **data** folder you created in the previous step and click **Choose**. Then click **Choose File**, navigate to where the **pie_crab.csv** file was downloaded in your computer, select it, and click Open or OK.
  
-6. After the uploads, click on the assignment file name in the **Files** tab. An R script file will open in the Sources panel of RStudio. Follow the instructions in the R script.
+8. After the uploads, click on the assignment file name in the **Files** tab. An R script file will open in the Sources panel of RStudio. Follow the instructions in the R script.
+
+9. When you complete your assignment, submit only the **assignment01.R** file via the **Assignment 1** assignment on Moodle. Email submissions will not be accepted.
 
 ::: {.callout-note collapse="false"}
 ## Data dictonary for the assignment data set

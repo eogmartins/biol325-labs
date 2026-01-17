@@ -9,7 +9,7 @@
 ## Exercise 2 — Wrangle: filter + mutate + summarise (8 marks)
 -----------------------------------------------------------
 2A. Filters missing values correctly (2)
-- 2: filters in only size >= 10
+- 2: filters in only size >= 10 or > 9.99
 - 1: filters incorrectly but intent is clear
 - 0: not attempted
 
@@ -19,7 +19,7 @@
 - 0: not attempted
 
 2C. Summary table correct structure and stats (4)
-- 4: groups by `site`, summarises `mean_size_cm` and `n`
+- 4: groups by `site` (2), summarises `mean_size_cm` (1) and `n` (1)
 - 3: correct grouping but one summary missing or named incorrectly
 - 2: summary attempted but grouping wrong
 - 1: minimal attempt
