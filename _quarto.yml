@@ -20,7 +20,9 @@ website:
     logo: images/unbc_logo.png
     left:
       - text: "Lab Instructions"
-        href: index.qmd
+        menu: 
+          - text: "Introduction to R"
+            href: labs/lab01.qmd
 
       - text: "Lab Quizzes"
         menu:
